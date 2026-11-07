@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="es-AR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>¿Qué variables aportaron valor? · Versión en español</title>
+<style>
+:root{color-scheme:dark;background:#0b0f14;color:#e8eef1;font-family:Arial,sans-serif}*{box-sizing:border-box}body{margin:0}main{max-width:1440px;margin:auto;padding:30px 24px 60px}.eyebrow{font-size:11px;letter-spacing:.2em;color:#70d4bc;text-transform:uppercase}header{display:flex;align-items:baseline;justify-content:space-between;gap:24px}h1{font:normal 34px Georgia,serif;margin:10px 0 16px}.status{font-size:12px;color:#98a8b7;max-width:450px;line-height:1.6}.stage{aspect-ratio:16/9;overflow:hidden;border:1px solid #30404d;background:#0b0f14}.stage svg{width:100%;height:100%;display:block}.controls{display:flex;align-items:center;gap:16px;margin:18px 0}button{cursor:pointer;color:#e8eef1;background:#14202a;border:1px solid #34434f;border-radius:6px;padding:10px 15px;font:inherit}button:hover,button:focus-visible,button[aria-pressed=true]{border-color:#70d4bc}#play{background:#70d4bc;color:#0b0f14;min-width:80px}input[type=range]{flex:1;min-width:60px;accent-color:#70d4bc}time{min-width:100px;font-size:13px;font-variant-numeric:tabular-nums}.controls label{font-size:12px;color:#98a8b7}nav{display:flex;gap:8px;flex-wrap:wrap}nav button{font-size:12px}#narration{line-height:1.75;font-size:18px;border-left:2px solid #70d4bc;padding:8px 22px;margin:22px 0;min-height:100px}.note,details{color:#98a8b7;font-size:13px;line-height:1.7}details{margin-top:28px}summary{color:#e8eef1;cursor:pointer}table{width:100%;border-collapse:collapse;margin:16px 0}th,td{text-align:left;padding:10px;border-bottom:1px solid #30404d}a{color:#70d4bc}
+@media(max-width:700px){main{padding:18px 10px}header{display:block}h1{font-size:28px}.controls{gap:8px}.controls label{display:none}#narration{font-size:16px}.stage{margin-top:12px}}
+</style></head><body><main>
+<header><div><div class="eyebrow">Ingeniería de variables / una pregunta, una comparación</div><h1>¿Qué variables aportaron valor?</h1></div><p class="status">Versión 7 · español · 1:48 · sin audio<br>PELÍCULA COMPLETA · incluye la apertura 3D y las construcciones animadas.</p></header>
+<div id="stage" class="stage" aria-label="Vista previa del video"></div>
+<div class="controls"><button id="play" aria-label="Reproducir el video">Reproducir</button><input id="scrub" type="range" min="0" max="108" step="0.05" value="0" aria-label="Tiempo de reproducción"><time id="time"></time><label><input id="headshot" type="checkbox"> Guía de cámara del presentador</label></div>
+<nav id="navigation" aria-label="Escenas"></nav><p id="narration"></p>
+<p class="note">Espacio: reproducir o pausar. Flechas: escena anterior o siguiente. La apertura 3D está incluida. Las nueve construcciones terminan en una vista general. La comparación usa solo ganancia; los valores monetarios siguen pendientes de verificación. Los tiempos se ajustarán a la locución grabada.</p>
+<details><summary>Definiciones y alcance de la evidencia</summary>
+<p>Cada punto monetario debe corresponder a una medición de ganancia comparable, con referencia, población, período y política de contactos explícitos. Todavía no se verificaron valores monetarios por variable: el gráfico queda preparado para incorporar los resultados. Un valor ausente no es cero.</p>
+<p>La recomendación de priorizar saldo y haberes relativos surge de la evaluación controlada de ordenamiento. No demuestra una mejora confirmada de ganancia pública. El AUC y los hallazgos históricos quedan documentados a continuación, sin convertirlos en pesos.</p>
+<div id="evidence"></div>
+<p>Los rangos monetarios fueron probados, también en combinaciones; sus resultados exactos siguen pendientes de verificación. Las nueve familias no representan nueve ajustes idénticos ni nueve efectos individuales aislados. Cinco semillas pareadas son repeticiones aleatorias del entrenamiento, no cinco períodos temporales independientes.</p>
+<p>Los fondos relativos utilizan el cambio frente al promedio previo, un denominador mínimo de 1, recorte entre −10 y 10 e indicadores de escala casi nula. La referencia de tres meses exige al menos dos valores conocidos; la de seis meses, al menos tres. El uso relativo aplica esa construcción a operaciones de débito y consumos de tarjeta. Los rangos respetan signos, ceros y valores ausentes. El promedio exponencial usa la historia previa disponible, con decaimiento de 0,5; no es una ventana fija de tres meses.</p>
+<p>Los saldos, operaciones y montos utilizados en las demostraciones son ilustrativos. No son registros de clientes reales ni resultados de experimentos. El promedio exponencial ilustrativo es 97,6 y excluye el valor actual. Las hipótesis de utilidad no son conclusiones causales.</p>
+<p>La configuración completa seleccionada obtuvo un puntaje público de 401,915 millones de ARS en Inicial, después del ajuste, reentrenamiento y ensamble. Ese puntaje no identifica la contribución pública aislada de una variable. La inflación, el ajuste por IPC y el inventario de variables preexistentes quedan fuera del video.</p>
+</details></main><script id="payload" type="application/json">{"feature_beats": [0.0, 3.649, 6.777, 11.468, 19.809, 25.543, 29.713, 37.011, 43.266], "duration": 108, "rows": [{"profit_delta_million_ars": null, "profit_result_status": "awaiting_matched_profit", "id": "lag1_core", "label": "Valor del mes anterior", "definition": "Valor del mes calendario anterior", "hypothesis": "Aportar contexto reciente.", "delta_auc": -0.0005083908519920577, "selected": false, "profit": "unavailable", "profit_label": "—"}, {"profit_delta_million_ars": null, "profit_result_status": "awaiting_matched_profit", "id": "delta1_core", "label": "Cambios mensuales", "definition": "Valor actual menos el del mes anterior", "hypothesis": "Revelar movimientos bruscos.", "delta_auc": 0.00044658387166396363, "selected": false, "profit": "unavailable", "profit_label": "—"}, {"profit_delta_million_ars": null, "profit_result_status": "awaiting_matched_profit", "id": "prior3_core", "label": "Promedios de tres meses", "definition": "Promedio de los tres meses previos", "hypothesis": "Estimar la conducta habitual.", "delta_auc": 0.000678153220296962, "selected": false, "profit": "unavailable", "profit_label": "—"}, {"profit_delta_million_ars": null, "profit_result_status": "awaiting_matched_profit", "id": "relative3_funds", "label": "Fondos relativos · 3 meses", "definition": "Cambio de saldo/haberes frente a su historia", "hypothesis": "Comparar cambios a escala personal.", "delta_auc": 0.0014559700527430053, "selected": true, "profit": "reference", "profit_label": "Referencia"}, {"profit_delta_million_ars": null, "profit_result_status": "awaiting_matched_profit", "id": "card_utilization", "label": "Utilización de tarjeta", "definition": "Saldo de tarjeta ÷ límite positivo", "hypothesis": "Medir el uso del crédito.", "delta_auc": -0.0001688409800850721, "selected": false, "profit": "unavailable", "profit_label": "—"}, {"profit_delta_million_ars": null, "profit_result_status": "awaiting_matched_profit", "id": "relative6_funds", "label": "Fondos relativos · 6 meses", "definition": "Fondos relativos con más historia", "hypothesis": "Usar una referencia más estable.", "delta_auc": null, "selected": false, "profit": "both_months", "profit_label": "Mejoró en ambos meses"}, {"profit_delta_million_ars": null, "profit_result_status": "awaiting_matched_profit", "id": "relative3_usage", "label": "Uso relativo", "definition": "Uso frente al promedio propio de 3 meses", "hypothesis": "Detectar cambios en la actividad.", "delta_auc": null, "selected": false, "profit": "both_months", "profit_label": "Mejoró en ambos meses"}, {"profit_delta_million_ars": null, "profit_result_status": "awaiting_matched_profit", "id": "monetary_ranks", "label": "Rangos monetarios", "definition": "Orden de los montos dentro del mismo mes", "hypothesis": "Llevar los montos a una escala común.", "delta_auc": null, "selected": false, "profit": "unverified", "profit_label": "Resultado pendiente de verificación"}, {"profit_delta_million_ars": null, "profit_result_status": "awaiting_matched_profit", "id": "prior_ema3", "label": "Promedio exponencial", "definition": "Promedio exponencial del pasado", "hypothesis": "Dar más peso a lo reciente.", "delta_auc": null, "selected": false, "profit": "mixed", "profit_label": "Resultado mixto entre meses"}], "scenes": [{"id": "question", "start": 0, "end": 16, "label": "Mismo saldo, otra historia", "title": "Mismo saldo. Otra historia.", "voiceover": "Mismo saldo. ¿Misma historia? En un cliente, el saldo se mantiene estable. En otro, acaba de caer. La foto del mes oculta esa diferencia. Creamos variables para revelar el contexto detrás del número."}, {"id": "features", "start": 16, "end": 70, "label": "Variables e hipótesis", "title": "Nueve formas de revelar el contexto", "voiceover": "El valor del mes anterior aporta memoria. El cambio mensual muestra movimientos bruscos. El promedio de tres meses estima el comportamiento habitual. Los cambios relativos de saldo y haberes comparan el presente con la historia de cada cliente. La utilización de tarjeta relaciona el saldo con el límite disponible. Una referencia de seis meses incorpora más historia. El uso relativo compara las operaciones con la actividad habitual, buscando señales de desinterés. Los rangos monetarios indican la posición de cada cliente dentro del mes. Y el promedio exponencial da más peso a las observaciones recientes."}, {"id": "comparison", "start": 70, "end": 94, "label": "Comparación de resultados", "title": "¿Qué variables mejoran la ganancia?", "voiceover": "La comparación final usa una sola medida: la ganancia adicional. Evaluaremos cada conjunto de variables contra su referencia, con la misma política de contactos. Las pruebas públicas pareadas y los resultados históricos aportarán esos valores. Hasta verificarlos, dejamos las comparaciones monetarias pendientes: no convertimos las mejoras de ordenamiento en pesos."}, {"id": "takeaway", "start": 94, "end": 108, "label": "Recomendación", "title": "Priorizar saldo y haberes relativos", "voiceover": "Recomendamos saldo y haberes relativos al promedio de los tres meses previos, con indicadores de escala casi nula. Lideraron la evaluación controlada; falta confirmar la ganancia incremental."}], "economics": {"correct_contact_ars": 975000, "wrong_contact_ars": -25000, "no_contact_ars": 0, "reference_public_score_million_ars": 401.915, "feature_public_results_pending": true}, "references": {"auc": "Variables originales con reparaciones", "profit": "Variables originales + fondos relativos de 3 meses"}, "limits": {"no_common_performance_scale": true, "rank_outcome_verified": false, "no_global_ranking": true, "exact_pilot_profit_deltas_included": false, "source_gaps": ["HT5955 per-seed outcomes absent: original 1/3/3/5/2 seed-win counts cannot be independently reproduced.", "HT5956 summary/per-month outcomes absent: original exact profit deltas and all month-win counts cannot be independently reproduced.", "Earlier Inicial reference 408.498 / submission 57670712 absent from supplied exports and audit report.", "Training data, native models, live submission queries, and source-manifest hashes are not supplied or rerun."]}}</script><script>'use strict';
+const DATA=JSON.parse(document.getElementById('payload').textContent), ROWS=DATA.rows, SCENES=DATA.scenes;
+const C={bg:'#0b0f14',ink:'#e8eef1',muted:'#9daebb',line:'#2b3c4a',blue:'#78abff',teal:'#6cdbba',amber:'#f3b773',rose:'#ec8aa6',violet:'#b8a0f6',red:'#f08d99'};
+const FAMILY=[C.blue,C.amber,C.blue,C.teal,C.rose,C.teal,C.teal,C.rose,C.violet];
+const E=v=>String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const clamp=v=>Math.max(0,Math.min(1,v));
+const ease=v=>{v=clamp(v);return v*v*(3-2*v)};
+const lerp=(a,b,t)=>a+(b-a)*t;
+const T=(x,y,v,size=30,color=C.ink,anchor='start',extra='')=>`<text x="${x}" y="${y}" font-size="${size}" fill="${color}" text-anchor="${anchor}" ${extra}>${E(v)}</text>`;
+const L=(x1,y1,x2,y2,color=C.line,width=2,extra='')=>`<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="${color}" stroke-width="${width}" ${extra}/>`;
+const O=(x,y,r,color,extra='')=>`<circle cx="${x}" cy="${y}" r="${r}" fill="${color}" ${extra}/>`;
+const R=(x,y,w,h,color,extra='')=>`<rect x="${x}" y="${y}" width="${w}" height="${h}" fill="${color}" ${extra}/>`;
+const P=(points,color=C.blue,width=3,extra='')=>`<polyline points="${points.map(p=>p.join(',')).join(' ')}" fill="none" stroke="${color}" stroke-width="${width}" stroke-linecap="round" stroke-linejoin="round" ${extra}/>`;
+const arrive=(t,start,body,duration=.7)=>`<g opacity="${ease((t-start)/duration)}" transform="translate(0 ${14*(1-ease((t-start)/duration))})">${body}</g>`;
+const halo=(x,y,r,color,a=.14)=>O(x,y,r,color,`opacity="${a}" filter="url(#glow)"`);
+const footer=v=>L(120,874,1790,874)+T(120,926,v,33,C.ink,'start','data-fit="1660"');
+const subtitle=v=>T(120,244,v,27,C.muted,'start','data-fit="1420"');
+const arrow=(x1,y,x2,color=C.teal)=>L(x1,y,x2,y,color,3)+P([[x2-12,y-9],[x2,y],[x2-12,y+9]],color,3);
+
+// Genuine 3D coordinates, projected orthographically into the SVG. Depth means past time.
+function historyWorld(t){
+  const camera=ease((t-2.6)/3.8),az=-.32*camera,el=.40*camera;
+  function project([x,y,z]){
+    const xr=x*Math.cos(az)-z*Math.sin(az),zr=x*Math.sin(az)+z*Math.cos(az);
+    return [960+xr,610-y*Math.cos(el)-zr*Math.sin(el)];
+  }
+  let s='';
+  for(let k=3;k>=0;k--){
+    const alpha=ease((t-3-(3-k)*.3)/1.1),z=k*85;
+    const polygon=[[-650,-40,z],[650,-40,z],[650,190,z],[-650,190,z]].map(project);
+    s+=`<g opacity="${alpha}"><polygon points="${polygon.map(p=>p.join(',')).join(' ')}" fill="${C.blue}" fill-opacity="${k?.025:.055}" stroke="${C.blue}" stroke-opacity=".22" stroke-width="1.4"/>`;
+    for(const xx of [-350,0,350]){const a=project([xx,-40,z]),b=project([xx,190,z]);s+=L(...a,...b,C.line,1)}
+    const label=project([675,-10,z]);
+    s+=T(label[0],label[1]+6,["Actual","Hace 1 mes","Hace 2 meses","Hace 3 meses"][k],22,k?C.muted:C.ink)+'</g>';
+  }
+  [-350,350].forEach((xx,g)=>{
+    const color=g?C.blue:C.amber, values=g?[80,80,80,80]:[110,100,90,80];
+    const points=values.map((v,i)=>project([xx,(v-80)*6,(3-i)*85]));
+    const past=ease((t-3.7)/2.2);
+    s+=`<g opacity="${past}">`+P(points,color,3.5);
+    points.slice(0,3).forEach((p,i)=>s+=O(p[0],p[1],6,color,`opacity="${.45+i*.15}"`));
+    s+='</g>';
+    const now=points[3], pulse=1+Math.sin(t*2.7)*.05*(1-camera);
+    s+=halo(now[0],now[1],35*pulse,color,.2)+O(now[0],now[1],12*pulse,color);
+    s+=T(now[0],now[1]+68,'80',57,C.ink,'middle','font-family="Georgia,serif"');
+    s+=T(g?1320:600,785,t<7?(g?"Cliente B":"Cliente A"):(g?"Saldo estable":"Caída reciente"),30,color,'middle');
+    s+=arrive(t,8.1,T(g?1320:600,839,g?"0% frente al promedio propio":"−20% frente al promedio propio",30,color,'middle'));
+  });
+  return s;
+}
+
+function question(t){
+  let s=subtitle("Dos clientes ilustrativos. El mismo saldo actual.");
+  s+=historyWorld(t);
+  s+=arrive(t,5.8,T(120,330,"La historia revela lo que oculta la foto.",31,C.ink));
+  return s+footer(t<8?"¿La foto del mes permite distinguirlos?":"La señal puede estar en el cambio frente a lo habitual.");
+}
+
+// All glyphs are schematics, not experimental observations. Each encodes its operation.
+function glyph(index,x,y,t,scale=1){
+  const color=FAMILY[index],phase=(Math.sin(t*1.3)+1)/2;
+  let s='';
+  const dots=[[10,45],[35,27],[60,36],[88,14]];
+  if(index===0){
+    s+=L(0,54,106,54,C.line,1.5);
+    dots.forEach((p,i)=>s+=O(p[0],p[1],i===2?6:4,color,`opacity="${i===3?.25:.8}"`));
+    s+=P([[63+phase*12,5],[53+phase*12,5],[53+phase*12,18]],color,2.5);
+  }else if(index===1){
+    s+=O(18,14,5,color)+O(86,45,5,color)+L(18,14,86,45,color,3);
+    s+=P([[90,15],[90,41],[83,34]],color,2.5);
+  }else if(index===2||index===5){
+    const n=index===5?6:3;
+    for(let i=0;i<n;i++)s+=O(8+i*92/(n-1),16+((i*13)%29),4.5,color);
+    s+=L(1,32,105,32,color,3,'stroke-dasharray="5 5"')+halo(52,32,18,color,.15);
+  }else if(index===3||index===6){
+    s+=L(2,54,47,54,C.line,1.4)+L(61,54,106,54,C.line,1.4);
+    s+=R(8,10,13,44,color,'opacity=".4"')+R(27,23,13,31,color);
+    s+=R(66,10,13,44,color,'opacity=".4"')+R(85,index===3?14:32,13,index===3?40:22,color);
+    s+=P([[45,2],[53,2],[53,9]],color,2);
+  }else if(index===4){
+    s+=O(52,30,25,'none',`stroke="${C.line}" stroke-width="7"`);
+    s+=`<circle cx="52" cy="30" r="25" fill="none" stroke="${color}" stroke-width="7" stroke-dasharray="108 157" transform="rotate(-90 52 30)"/>`;
+    s+=T(52,37,'÷',26,color,'middle');
+  }else if(index===7){
+    [3,2,0,1].forEach((v,i)=>{const a=[12+i*27,8+v*13],b=[12+i*27,48-i*11];s+=O(lerp(a[0],b[0],phase),lerp(a[1],b[1],phase),5,color)});
+    s+=L(3,58,107,58,C.line,1.5);
+  }else{
+    for(let i=0;i<5;i++){const r=2.5+i*1.4;s+=O(8+i*23,35-(i%2)*15,r,color,`opacity="${.2+i*.17}"`)}
+    s+=halo(100,35,15,color,.2);
+  }
+  return `<g transform="translate(${x} ${y}) scale(${scale})">${s}</g>`;
+}
+
+const DEFINITIONS=[
+  ["Valor del mes anterior","Recordar el nivel reciente."],
+  ["Actual menos mes anterior","Revelar movimientos bruscos."],
+  ["Promedio de 3 meses previos","Estimar la conducta habitual."],
+  ["Saldo/haberes vs. media propia","Considerar la escala personal."],
+  ["Saldo de tarjeta ÷ límite","Expresar el uso del crédito."],
+  ["Fondos relativos de 6 meses","Ampliar la referencia."],
+  ["Uso vs. promedio propio de 3 meses","Detectar menor actividad."],
+  ["Orden de montos del mismo mes","Comparar la posición relativa."],
+  ["Media ponderada del pasado","Dar más peso a lo reciente."],
+];
+
+const STORY_VALUES=[120,115,110,110,100,90,80];
+const BEATS=DATA.feature_beats;
+const EQ=["rezago₁ = 90",'80 − 90 = −10','(110 + 100 + 90) ÷ 3 = 100','(80 − 100) ÷ 100 = −20%','80 ÷ 100 = 80%',"80 vs. habitual 107,5 → −25,6%","6 vs. habitual 12 → −50%","80 ocupa el 2.º lugar de 4","Promedio exponencial previo = 97,6"];
+const WHY=["Conservar el último nivel conocido.","Hacer explícita la caída reciente.","Construir una referencia personal.","Expresar la caída frente a lo habitual.","Expresar el saldo frente al límite disponible.","Usar más historia para definir lo habitual.","Hacer visible la reducción de actividad.","Representar la posición relativa en una escala común.","Dar más influencia a las observaciones recientes."];
+function timeline(active,phase){
+ const X=i=>205+i*135,Y=v=>720-v*2.15;
+ let s=L(180,740,1100,740,C.line,2);
+ s+=P(STORY_VALUES.map((v,i)=>[X(i),Y(v)]),C.muted,2,'opacity=".38"');
+ STORY_VALUES.forEach((v,i)=>{
+  let bright=i===6||(active===0&&i===5)||(active===2&&i>=3&&i<6)||(active===5&&i<6);
+  s+=O(X(i),Y(v),bright?9:5,bright?FAMILY[active]:C.muted,`opacity="${bright?1:.45}"`);
+  s+=T(X(i),Y(v)-20,v,25,bright?C.ink:C.muted,'middle');
+  s+=T(X(i),778,i===6?"Actual":`t−${6-i}`,23,C.muted,'middle');
+ });
+ return s;
+}
+// A small geometry renderer: explicit XYZ coordinates, orthographic camera,
+// shaded faces, wireframes, contact shadows. Depth is visual structure, not a new measured outcome.
+function spatialCamera(phase,options={}){
+ const {cx=710,cy=715,scale=.96,az=-.34,el=.53}=options;
+ const tilt=ease(phase/1.15),yaw=az+.025*Math.sin(phase*.9);
+ return {project:([x,y,z])=>{
+  const a=yaw,b=lerp(.12,el,tilt),rx=x*Math.cos(a)-z*Math.sin(a),depth=x*Math.sin(a)+z*Math.cos(a);
+  return [cx+scale*rx,cy-scale*(y*Math.cos(b)+depth*Math.sin(b))];
+ }};
+}
+const tint=(hex,f)=>'#'+hex.slice(1).match(/../g).map(v=>Math.max(0,Math.min(255,Math.round(parseInt(v,16)*f))).toString(16).padStart(2,'0')).join('');
+function surface(cam,points,color,opacity=1,stroke='none'){
+ return `<polygon points="${points.map(v=>cam.project(v).join(',')).join(' ')}" fill="${color}" fill-opacity="${opacity}" stroke="${stroke}" stroke-width="1.3" stroke-linejoin="round"/>`;
+}
+function prism(cam,x,z,w,d,h,color,bottom=0,alpha=1){
+ const a=[x-w/2,bottom,z-d/2],b=[x+w/2,bottom,z-d/2],c=[x+w/2,bottom,z+d/2],e=[x-w/2,bottom,z+d/2];
+ const top=v=>[v[0],v[1]+h,v[2]];
+ return surface(cam,[a,b,top(b),top(a)],tint(color,.58),alpha)+surface(cam,[b,c,top(c),top(b)],tint(color,.8),alpha)+surface(cam,[top(a),top(b),top(c),top(e)],tint(color,1.1),alpha);
+}
+function wireBox(cam,x,z,w,d,h,color,bottom=0){
+ const pts=[[-1,-1],[1,-1],[1,1],[-1,1]].map(([a,b])=>[x+a*w/2,bottom,z+b*d/2]);let s='';
+ for(let i=0;i<4;i++){
+  s+=P([cam.project(pts[i]),cam.project(pts[(i+1)%4])],color,1.2,'opacity=".5"');
+  const top=[pts[i][0],bottom+h,pts[i][2]],next=pts[(i+1)%4];
+  s+=P([cam.project(top),cam.project([next[0],bottom+h,next[2]])],color,1.2,'opacity=".5"');
+  s+=P([cam.project(pts[i]),cam.project(top)],color,1.2,'opacity=".5"');
+ }
+ return s;
+}
+function bench(cam){
+ let s=surface(cam,[[-500,0,-70],[500,0,-70],[500,0,140],[-500,0,140]],'#263948',.3,C.line);
+ for(let i=0;i<7;i++)s+=P([cam.project([-420+i*140,0,-70]),cam.project([-420+i*140,0,140])],C.line,1);
+ s+=P([cam.project([-500,0,0]),cam.project([500,0,0])],C.muted,1.5);
+ return s;
+}
+function chartWorld(active,phase){
+ const cam=spatialCamera(phase),progress=ease(phase/1.8),X=i=>-420+i*140;
+ let s=bench(cam);
+ STORY_VALUES.forEach((v,i)=>{
+  const selected=(i===6&&active!==8)||(active===0&&i===5)||(active===2&&i>=3&&i<6)||(active===5&&i<6);
+  const c=active===8&&i===6?C.muted:selected?FAMILY[active]:C.blue;
+  const meanHeight=active===2&&i>=3&&i<6?lerp(v,100,progress):v;
+  s+=prism(cam,X(i),0,70,48,meanHeight*1.3,c,0,selected?.85:.25);
+  if(active===2&&i>=3&&i<6)s+=wireBox(cam,X(i),0,70,48,v*1.3,C.muted);
+  const p=cam.project([X(i),v*1.3+18,0]);s+=T(p[0],p[1],v,25,selected?C.ink:C.muted,'middle');
+  const lab=cam.project([X(i),0,-92]);s+=T(lab[0],lab[1]+25,i===6?"Actual":`t−${6-i}`,23,C.muted,'middle');
+ });
+ return {cam,s,X,progress};
+}
+function referencePlane(cam,start,end,value,color,alpha=.18){
+ return surface(cam,[[start,value*1.3,-45],[end,value*1.3,-45],[end,value*1.3,100],[start,value*1.3,100]],color,alpha,color);
+}
+function spatialDemo(active,phase){
+ const color=FAMILY[active],p=ease(phase/1.8);
+ let s=T(150,401,EQ[active],47,color,'start','data-fit="1120"');
+ if([0,1,2,3,5,8].includes(active)){
+  const world=chartWorld(active,phase);s+=world.s;const {cam,X}=world;
+  if(active===0){
+   const x=lerp(X(5),580,p),z=lerp(0,95,p),y=lerp(0,60,p);
+   s+=prism(cam,x,z,70,48,90*1.3,color,y,.94);
+   s+=P([cam.project([X(5),90*1.3,0]),cam.project([x,90*1.3+y,z])],color,2,'stroke-dasharray="5 7"');
+   const end=cam.project([580,95*1.3+75,95]);s+=arrive(phase,1.15,T(end[0],end[1],"rezago = 90",29,color,'middle'));
+  }else if(active===1){
+   s+=referencePlane(cam,270,500,90,color,.14);
+   s+=prism(cam,420,0,72,50,10*1.3*p,color,80*1.3,.9);
+   const a=cam.project([485,90*1.3,0]),b=cam.project([485,80*1.3,0]);s+=P([a,b],color,5);
+   s+=arrive(phase,1.1,T(1120,615,"caída = 10",32,color,'middle'));
+  }else if(active===2){
+   s+=referencePlane(cam,X(3)-50,X(5)+60,100,color,.26*p);
+   s+=arrive(phase,1.2,T(1090,450,"promedio propio",27,color,'middle'));
+  }else if(active===3){
+   s+=referencePlane(cam,X(3)-50,500,100,color,.18);
+   s+=prism(cam,420,0,74,52,20*1.3*p,color,80*1.3,.9);
+   s+=arrive(phase,1.2,T(1120,610,'−20%',56,color,'middle'));
+  }else if(active===5){
+   const start=lerp(X(3)-50,X(0)-50,p),value=lerp(100,107.5,p);
+   s+=referencePlane(cam,start,X(5)+60,value,color,.24);
+   s+=arrive(phase,1.3,T(1090,450,"seis meses previos",27,color,'middle'));
+  }else{
+   const weights=[1/32,1/16,1/8,1/4,1/2,1],end=[570,97.619*1.3+25,80];
+   weights.forEach((w,i)=>{
+    const a=[X(i),STORY_VALUES[i]*1.3+12,0],pos=a.map((v,j)=>lerp(v,end[j],p*.88)),q=cam.project(pos);
+    s+=P([cam.project(a),cam.project(end)],color,1.5,`opacity="${.15+.4*w}" stroke-dasharray="4 7"`);
+    s+=halo(q[0],q[1],10+25*Math.sqrt(w),color,.13)+O(q[0],q[1],4+15*Math.sqrt(w),color,`opacity="${.2+.8*Math.sqrt(w)}"`);
+    const lab=cam.project([X(i),0,-95]);s+=T(lab[0],455,['1/32','1/16','1/8','1/4','1/2','1'][i],22,color,'middle');
+   });
+   s+=wireBox(cam,420,0,76,55,80*1.3,C.muted);
+   s+=T(1130,455,"Pesos relativos",23,C.muted,'middle')+T(1220,790,"Excluido",22,C.muted,'middle');
+   const output=cam.project(end);s+=arrive(phase,1,T(output[0],output[1]+65,"97,6",48,color,'middle'));
+  }
+ }else if(active===4){
+  const cam=spatialCamera(phase,{cx:620,cy:640,el:.85,scale:1.12}),N=56,point=(r,a,y)=>[r*Math.cos(a),y,r*Math.sin(a)];
+  const quads=[];
+  for(let i=0;i<N;i++){
+   const a=i/N*Math.PI*2,b=(i+1)/N*Math.PI*2,filled=i/N<.8*p,c=filled?color:C.line;
+   quads.push({depth:Math.sin((a+b)/2),s:surface(cam,[point(135,a,0),point(135,b,0),point(135,b,28),point(135,a,28)],tint(c,.55))+
+    surface(cam,[point(135,a,28),point(135,b,28),point(90,b,28),point(90,a,28)],c)});
+  }
+  quads.sort((a,b)=>b.depth-a.depth).forEach(q=>s+=q.s);
+  s+=T(620,643,'80%',61,color,'middle')+T(1070,560,"Saldo 80",34,C.ink,'middle')+T(1070,630,"Límite 100",34,C.muted,'middle');
+ }else if(active===6){
+  const cam=spatialCamera(phase,{cx:710,cy:700,el:.65});s+=bench(cam);
+  [0,1].forEach(row=>{
+   const z=row?0:165,n=row?6:12;
+   for(let i=0;i<12;i++){
+    const q=cam.project([-440+i*78,30,z]);const fade=row&&i>=n?1-p:1;
+    s+=halo(q[0],q[1],16,color,.08*fade)+O(q[0],q[1],12,color,`opacity="${fade}"`);
+    if(row&&i>=n)s+=O(q[0],q[1],12,'none',`stroke="${C.line}" stroke-width="2"`);
+   }
+   const lab=cam.project([500,30,z]);s+=T(lab[0],lab[1]+9,row?"Actual: 6":"Habitual: 12",30,row?color:C.muted,'middle');
+  });
+  s+=arrive(phase,1.2,T(1050,530,'−50%',55,color,'middle'));
+ }else{
+  const cam=spatialCamera(phase,{cx:705,cy:720,az:lerp(-.32,.05,p),el:.45});s+=bench(cam);
+  [200,40,120,80].forEach((v,i)=>{
+   const rank=[3,0,2,1][i],x=lerp(-420+i*280,-420+rank*280,p),c=v===80?C.teal:color;
+   s+=prism(cam,x,0,115,75,v*.95,c,0,v===80?1:.55);
+   const q=cam.project([x,v*.95+18,0]);s+=T(q[0],q[1],v,30,c,'middle');
+   if(p>.95){const q=cam.project([x,0,-80]);s+=T(q[0],q[1]+30,["1.º","2.º","3.º","4.º"][rank],25,c,'middle')}
+  });
+ }
+ return s+T(150,832,WHY[active],32,C.ink,'start','data-fit="1130"');
+}
+
+function demo(active,phase){return spatialDemo(active,phase);}
+function featureOverview(t){
+ let s=subtitle("El mapa completo: cada variable, su definición y su hipótesis.");
+ [663,1233].forEach(x=>s+=L(x,300,x,843,C.line,1));
+ [475,660].forEach(y=>s+=L(120,y,1790,y,C.line,1));
+ ROWS.forEach((r,i)=>{
+  const x=120+(i%3)*570,y=304+Math.floor(i/3)*185,col=FAMILY[i];
+  const tile=spatialCamera(2,{cx:x+60,cy:y+128,scale:.5,az:-.3,el:.6});
+  s+=prism(tile,0,0,200,100,18,col,0,.3);
+  s+=T(x+4,y+21,r.label,30,col,'start','data-fit="520"')+glyph(i,x+8,y+60,t,1);
+  s+=T(x+145,y+76,DEFINITIONS[i][0],24,C.ink,'start','data-fit="380"');
+  s+=T(x+145,y+120,DEFINITIONS[i][1],23,C.muted,'start','data-fit="380"');
+ });
+ return s+footer("Nueve construcciones para hacer explícitas distintas partes de la historia.");
+}
+function features(t){
+ if(t>=49)return featureOverview(t);
+ const active=Math.max(0,BEATS.filter(start=>t>=start).length-1),phase=t-BEATS[active],c=FAMILY[active];
+ let s=subtitle("Saldos y actividad ilustrativos; no son resultados de los experimentos.");
+ s+=T(150,322,ROWS[active].label,44,c,'start','data-fit="1130"');
+ s+=demo(active,phase)+L(1340,300,1340,850,C.line,1);
+ ROWS.forEach((r,i)=>{
+  const y=324+i*57,color=i===active?FAMILY[i]:i<active?C.ink:C.muted;
+  if(i===active)s+=R(1370,y-28,420,52,FAMILY[i],'opacity=".09" rx="6"');
+  s+=O(1388,y-5,i<active?4:6,i<=active?FAMILY[i]:C.line);
+  s+=T(1406,y,r.label,22,color,'start','data-fit="370"');
+  if(i<=active)s+=T(1406,y+23,DEFINITIONS[i][0],19,C.muted,'start','data-fit="370"');
+ });
+ return s+footer("Cada construcción revela una señal y se incorpora al mapa de variables.");
+}
+
+
+function comparison(t){
+ let s=subtitle("Ganancia adicional frente a la referencia · millones de ARS · misma política de contactos");
+ s+=T(120,315,"VARIABLES AGREGADAS",23,C.muted)+T(1320,315,"Δ GANANCIA · MILLONES DE ARS",29,C.teal,'middle');
+ s+=L(680,345,680,805,C.line,1)+L(680,805,1760,805,C.line,2);
+ ROWS.forEach((r,i)=>{
+  const y=365+i*49;
+  const settle=ease((t-i*.07)/2.4);
+  const tx=lerp(400+i*64,120,settle),ty=lerp(780,y-13,settle);
+  const tile=spatialCamera(t,{cx:tx+20,cy:ty+25,scale:.18,az:lerp(-.8,-.25,settle),el:.5});
+  s+=prism(tile,0,0,210,90,25,FAMILY[i],0,.4)+glyph(i,tx,ty,t,.35);
+  s+=T(170,y+10,r.label,29,C.ink,'start','data-fit="460"');
+  s+=L(700,y,1720,y,C.line,1,'stroke-dasharray="3 8" opacity=".5"');
+  s+=T(1220,y+9,'—',28,C.muted,'middle');
+ });
+ s+=T(1220,849,"Pendiente: resultados de ganancia comparables y verificados.",24,C.muted,'middle');
+ return s+footer("Una sola medida. Sin convertir mejoras de ordenamiento en pesos.");
+}
+function recommendation(t){
+ let s=subtitle("El mejor conjunto en la evaluación controlada; falta confirmar su ganancia pública incremental.");
+ s+=T(120,333,"PRIORIZAR: saldo y haberes relativos",44,C.teal,'start','data-fit="1650"');
+ s+=T(120,391,"2 cambios relativos + 2 indicadores de escala casi nula",31,C.muted);
+ const cam=spatialCamera(t,{cx:670,cy:710,scale:.85,el:.6});s+=bench(cam);
+ const names=["Cambio de saldo","Cambio de haberes","Ind. de saldo","Ind. de haberes"];
+ names.forEach((name,i)=>{
+  const p=ease((t-.5-i*.7)/1.3),x=-360+i*240,color=i<2?C.teal:C.blue;
+  s+=prism(cam,x,35,165,110,75*p,color,0,.9);
+  const q=cam.project([x,100,35]);s+=arrive(t,.5+i*.7,T(q[0],q[1]-20,name,25,color,'middle'));
+ });
+ s+=arrive(t,3.7,T(1320,513,"Promedio propio de 3 meses previos",29,C.ink,'middle')+T(1320,566,"La escala personal queda explícita",27,C.muted,'middle'));
+ s+=arrive(t,5.4,arrow(1090,652,1225)+T(1490,661,"Validar la ganancia incremental",29,C.ink,'middle'));
+ s+=arrive(t,7.2,T(120,818,"Próximas pruebas: fondos de 6 meses y uso relativo.",29,C.muted));
+ return s+footer("Recomendación: fondos relativos al historial propio. Falta confirmar la ganancia.");
+}
+
+const DRAW={question,features,comparison,takeaway:recommendation};
+const stage=document.getElementById('stage'),scrub=document.getElementById('scrub'),play=document.getElementById('play');
+let current=0,playing=false,last=null,raf=null;
+const clock=t=>`${Math.floor(t/60)}:${String(Math.floor(t%60)).padStart(2,'0')}`;
+const sceneAt=t=>SCENES.find(s=>t>=s.start&&t<s.end)||SCENES[SCENES.length-1];
+function renderAt(t){
+  current=Math.max(0,Math.min(DATA.duration,Number(t)||0));const s=sceneAt(current),local=current-s.start;
+  const guide=document.getElementById('headshot').checked?O(1730,180,100,'none',`data-headshot-guide="true" stroke="${C.line}" stroke-dasharray="6 7"`):'';
+  stage.innerHTML=`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" role="img" aria-label="${E(s.title)}" data-scene="${s.id}"><defs><filter id="glow" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="10"/></filter><radialGradient id="background"><stop offset="0" stop-color="#12212a"/><stop offset="1" stop-color="${C.bg}"/></radialGradient></defs><style>text{font-family:Arial,sans-serif}text[font-family]{font-family:Georgia,serif}</style>${R(0,0,1920,1080,'url(#background)')}${T(120,86,"INGENIERÍA DE VARIABLES / EL CONTEXTO DETRÁS DEL NÚMERO",22,C.muted)}${T(120,174,s.title,61,C.ink,'start','font-family="Georgia,serif" data-fit="1420"')}${DRAW[s.id](local)}${guide}</svg>`;
+  stage.querySelectorAll('[data-fit]').forEach(el=>{const w=el.getComputedTextLength(),max=Number(el.dataset.fit);if(w>max)el.setAttribute('font-size',Number(el.getAttribute('font-size'))*max/w)});
+  scrub.value=current;document.getElementById('time').textContent=`${clock(current)} / ${clock(DATA.duration)}`;
+  document.getElementById('narration').textContent=s.voiceover;
+  document.querySelectorAll('[data-seek]').forEach(el=>el.setAttribute('aria-pressed',String(Number(el.dataset.seek)===s.start)));
+  return s.id;
+}
+function stop(){playing=false;last=null;cancelAnimationFrame(raf);play.textContent="Reproducir"}
+function seek(t){stop();renderAt(t)}
+function tick(now){if(!playing)return;if(last!==null)current+=(now-last)/1000;last=now;renderAt(current);if(current>=DATA.duration){stop();return}raf=requestAnimationFrame(tick)}
+function toggle(){if(playing){stop();return}if(current>=DATA.duration)renderAt(0);playing=true;last=null;play.textContent="Pausar";raf=requestAnimationFrame(tick)}
+SCENES.forEach(s=>{const b=document.createElement('button');b.dataset.seek=s.start;b.textContent=`${clock(s.start)} · ${s.label}`;b.onclick=()=>seek(s.start);document.getElementById('navigation').appendChild(b)});
+document.getElementById('evidence').innerHTML='<table><thead><tr><th>Familia de variables</th><th>Cambio medio de AUC</th><th>Resultado de ganancia</th></tr></thead><tbody>'+ROWS.map(r=>`<tr><td>${E(r.label)}</td><td>${r.delta_auc===null?'Sin resultado comparable verificado':r.delta_auc.toLocaleString('es-AR',{minimumFractionDigits:9,maximumFractionDigits:9})}</td><td>${E(r.profit_label)}</td></tr>`).join('')+'</tbody></table>';
+play.onclick=toggle;scrub.oninput=e=>seek(e.target.value);document.getElementById('headshot').onchange=()=>renderAt(current);
+document.addEventListener('keydown',e=>{if(['INPUT','BUTTON','SUMMARY'].includes(e.target.tagName))return;if(e.code==='Space'){e.preventDefault();toggle()}else if(e.code==='ArrowRight'){e.preventDefault();seek(SCENES.find(s=>s.start>current+.1)?.start??DATA.duration)}else if(e.code==='ArrowLeft'){e.preventDefault();seek([...SCENES].reverse().find(s=>s.start<current-.1)?.start??0)}});
+window.renderAt=renderAt;window.storyboardData=DATA;window.storyboardScenes=SCENES;
+renderAt(Number(new URLSearchParams(location.search).get('t'))||0);
+</script></body></html>

@@ -1,0 +1,253 @@
+'use strict';
+const DATA=JSON.parse(document.getElementById('payload').textContent), ROWS=DATA.rows, SCENES=DATA.scenes;
+const C={bg:'#0b0f14',ink:'#e8eef1',muted:'#9daebb',line:'#2b3c4a',blue:'#78abff',teal:'#6cdbba',amber:'#f3b773',rose:'#ec8aa6',violet:'#b8a0f6',red:'#f08d99'};
+const FAMILY=[C.blue,C.amber,C.blue,C.teal,C.rose,C.teal,C.teal,C.rose,C.violet];
+const E=v=>String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const clamp=v=>Math.max(0,Math.min(1,v));
+const ease=v=>{v=clamp(v);return v*v*(3-2*v)};
+const lerp=(a,b,t)=>a+(b-a)*t;
+const T=(x,y,v,size=30,color=C.ink,anchor='start',extra='')=>`<text x="${x}" y="${y}" font-size="${size}" fill="${color}" text-anchor="${anchor}" ${extra}>${E(v)}</text>`;
+const L=(x1,y1,x2,y2,color=C.line,width=2,extra='')=>`<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="${color}" stroke-width="${width}" ${extra}/>`;
+const O=(x,y,r,color,extra='')=>`<circle cx="${x}" cy="${y}" r="${r}" fill="${color}" ${extra}/>`;
+const R=(x,y,w,h,color,extra='')=>`<rect x="${x}" y="${y}" width="${w}" height="${h}" fill="${color}" ${extra}/>`;
+const P=(points,color=C.blue,width=3,extra='')=>`<polyline points="${points.map(p=>p.join(',')).join(' ')}" fill="none" stroke="${color}" stroke-width="${width}" stroke-linecap="round" stroke-linejoin="round" ${extra}/>`;
+const arrive=(t,start,body,duration=.7)=>`<g opacity="${ease((t-start)/duration)}" transform="translate(0 ${14*(1-ease((t-start)/duration))})">${body}</g>`;
+const halo=(x,y,r,color,a=.14)=>O(x,y,r,color,`opacity="${a}" filter="url(#glow)"`);
+const footer=v=>L(120,874,1790,874)+T(120,926,v,33,C.ink,'start','data-fit="1660"');
+const subtitle=v=>T(120,244,v,27,C.muted,'start','data-fit="1420"');
+const arrow=(x1,y,x2,color=C.teal)=>L(x1,y,x2,y,color,3)+P([[x2-12,y-9],[x2,y],[x2-12,y+9]],color,3);
+
+// Genuine 3D coordinates, projected orthographically into the SVG. Depth means past time.
+function historyWorld(t){
+  const camera=ease((t-2.6)/3.8),az=-.32*camera,el=.40*camera;
+  function project([x,y,z]){
+    const xr=x*Math.cos(az)-z*Math.sin(az),zr=x*Math.sin(az)+z*Math.cos(az);
+    return [960+xr,610-y*Math.cos(el)-zr*Math.sin(el)];
+  }
+  let s='';
+  for(let k=3;k>=0;k--){
+    const alpha=ease((t-3-(3-k)*.3)/1.1),z=k*85;
+    const polygon=[[-650,-40,z],[650,-40,z],[650,190,z],[-650,190,z]].map(project);
+    s+=`<g opacity="${alpha}"><polygon points="${polygon.map(p=>p.join(',')).join(' ')}" fill="${C.blue}" fill-opacity="${k?.025:.055}" stroke="${C.blue}" stroke-opacity=".22" stroke-width="1.4"/>`;
+    for(const xx of [-350,0,350]){const a=project([xx,-40,z]),b=project([xx,190,z]);s+=L(...a,...b,C.line,1)}
+    const label=project([675,-10,z]);
+    s+=T(label[0],label[1]+6,['Now','1 month ago','2 months ago','3 months ago'][k],22,k?C.muted:C.ink)+'</g>';
+  }
+  [-350,350].forEach((xx,g)=>{
+    const color=g?C.blue:C.amber, values=g?[80,80,80,80]:[110,100,90,80];
+    const points=values.map((v,i)=>project([xx,(v-80)*6,(3-i)*85]));
+    const past=ease((t-3.7)/2.2);
+    s+=`<g opacity="${past}">`+P(points,color,3.5);
+    points.slice(0,3).forEach((p,i)=>s+=O(p[0],p[1],6,color,`opacity="${.45+i*.15}"`));
+    s+='</g>';
+    const now=points[3], pulse=1+Math.sin(t*2.7)*.05*(1-camera);
+    s+=halo(now[0],now[1],35*pulse,color,.2)+O(now[0],now[1],12*pulse,color);
+    s+=T(now[0],now[1]+68,'80',57,C.ink,'middle','font-family="Georgia,serif"');
+    s+=T(g?1320:600,785,t<7?(g?'Customer B':'Customer A'):(g?'Steady level':'Recent drop'),30,color,'middle');
+    s+=arrive(t,8.1,T(g?1320:600,839,g?'0% vs own recent mean':'−20% vs own recent mean',30,color,'middle'));
+  });
+  return s;
+}
+
+function question(t){
+  let s=subtitle('Two illustrative customers. The same balance today.');
+  s+=historyWorld(t);
+  s+=arrive(t,5.8,T(120,330,'History reveals what the snapshot hides.',31,C.ink));
+  return s+footer(t<8?'Would a snapshot tell them apart?':'The useful signal can be the change relative to normal.');
+}
+
+// All glyphs are schematics, not experimental observations. Each encodes its operation.
+function glyph(index,x,y,t,scale=1){
+  const color=FAMILY[index],phase=(Math.sin(t*1.3)+1)/2;
+  let s='';
+  const dots=[[10,45],[35,27],[60,36],[88,14]];
+  if(index===0){
+    s+=L(0,54,106,54,C.line,1.5);
+    dots.forEach((p,i)=>s+=O(p[0],p[1],i===2?6:4,color,`opacity="${i===3?.25:.8}"`));
+    s+=P([[63+phase*12,5],[53+phase*12,5],[53+phase*12,18]],color,2.5);
+  }else if(index===1){
+    s+=O(18,14,5,color)+O(86,45,5,color)+L(18,14,86,45,color,3);
+    s+=P([[90,15],[90,41],[83,34]],color,2.5);
+  }else if(index===2||index===5){
+    const n=index===5?6:3;
+    for(let i=0;i<n;i++)s+=O(8+i*92/(n-1),16+((i*13)%29),4.5,color);
+    s+=L(1,32,105,32,color,3,'stroke-dasharray="5 5"')+halo(52,32,18,color,.15);
+  }else if(index===3||index===6){
+    s+=L(2,54,47,54,C.line,1.4)+L(61,54,106,54,C.line,1.4);
+    s+=R(8,10,13,44,color,'opacity=".4"')+R(27,23,13,31,color);
+    s+=R(66,10,13,44,color,'opacity=".4"')+R(85,index===3?14:32,13,index===3?40:22,color);
+    s+=P([[45,2],[53,2],[53,9]],color,2);
+  }else if(index===4){
+    s+=O(52,30,25,'none',`stroke="${C.line}" stroke-width="7"`);
+    s+=`<circle cx="52" cy="30" r="25" fill="none" stroke="${color}" stroke-width="7" stroke-dasharray="108 157" transform="rotate(-90 52 30)"/>`;
+    s+=T(52,37,'÷',26,color,'middle');
+  }else if(index===7){
+    [3,2,0,1].forEach((v,i)=>{const a=[12+i*27,8+v*13],b=[12+i*27,48-i*11];s+=O(lerp(a[0],b[0],phase),lerp(a[1],b[1],phase),5,color)});
+    s+=L(3,58,107,58,C.line,1.5);
+  }else{
+    for(let i=0;i<5;i++){const r=2.5+i*1.4;s+=O(8+i*23,35-(i%2)*15,r,color,`opacity="${.2+i*.17}"`)}
+    s+=halo(100,35,15,color,.2);
+  }
+  return `<g transform="translate(${x} ${y}) scale(${scale})">${s}</g>`;
+}
+
+const DEFINITIONS=[
+  ['Last month’s value','Remember the recent level.'],
+  ['Current minus last month','Expose sudden movement.'],
+  ['Mean of prior 3 months','Estimate usual behavior.'],
+  ['Balance/payroll vs own mean','Account for personal scale.'],
+  ['Card balance ÷ credit limit','Express credit pressure.'],
+  ['Relative funds over 6 months','Use a longer reference.'],
+  ['Usage vs own 3-month mean','Reveal disengagement.'],
+  ['Rank amounts in same month','Compare relative position.'],
+  ['Weighted mean of past values','Emphasize recent changes.'],
+];
+
+const STORY_VALUES=[120,115,110,110,100,90,80];
+const BEATS=[0,4.7,8.2,12.5,20,25.8,31,36.5,42.5];
+const EQ=['lag₁ = 90','80 − 90 = −10','(110 + 100 + 90) ÷ 3 = 100','(80 − 100) ÷ 100 = −20%','80 ÷ 100 = 80%','80 vs usual 107.5 → −25.6%','6 vs usual 12 → −50%','80 is 2nd of 4','Recent-weighted prior mean = 97.6'];
+const WHY=['Keep the last known level.','Make the recent fall explicit.','Create a personal reference level.','Express the fall relative to normal.','Express the balance relative to capacity.','Use more history to define normal.','Make disengagement visible in activity.','Encode relative position on a common scale.','Let recent past observations speak louder.'];
+function timeline(active,phase){
+ const X=i=>205+i*135,Y=v=>720-v*2.15;
+ let s=L(180,740,1100,740,C.line,2);
+ s+=P(STORY_VALUES.map((v,i)=>[X(i),Y(v)]),C.muted,2,'opacity=".38"');
+ STORY_VALUES.forEach((v,i)=>{
+  let bright=i===6||(active===0&&i===5)||(active===2&&i>=3&&i<6)||(active===5&&i<6);
+  s+=O(X(i),Y(v),bright?9:5,bright?FAMILY[active]:C.muted,`opacity="${bright?1:.45}"`);
+  s+=T(X(i),Y(v)-20,v,25,bright?C.ink:C.muted,'middle');
+  s+=T(X(i),778,i===6?'Now':`t−${6-i}`,23,C.muted,'middle');
+ });
+ return s;
+}
+function demo(active,phase){
+ const c=FAMILY[active],p=ease(phase/1.7),X=i=>205+i*135,Y=v=>720-v*2.15;
+ let s=T(150,401,EQ[active],47,c,'start','data-fit="1120"');
+ if([0,1,2,3,5,8].includes(active))s+=timeline(active,p);
+ if(active===0){
+  const x=lerp(X(5),1150,p),y=lerp(Y(90),490,p);
+  s+=P([[X(5),Y(90)],[x,y]],c,3,'stroke-dasharray="5 6"')+halo(x,y,28,c,.18)+O(x,y,12,c);
+  s+=arrive(phase,1.1,T(1150,556,'90',54,c,'middle'));
+ }else if(active===1){
+  s+=L(X(5),Y(90),X(6)+55,Y(90),c,2,'stroke-dasharray="6 5"');
+  const yy=lerp(Y(90),Y(80),p);
+  s+=L(X(6)+45,Y(90),X(6)+45,yy,c,6)+P([[X(6)+35,yy-8],[X(6)+45,yy],[X(6)+55,yy-8]],c,3);
+  s+=arrive(phase,1.4,T(1160,610,'−10',55,c,'middle'));
+ }else if(active===2){
+  [3,4,5].forEach(i=>s+=O(X(i),lerp(Y(STORY_VALUES[i]),Y(100),p),11,c));
+  s+=L(X(3)-40,Y(100),lerp(X(3),X(6)+80,p),Y(100),c,4);
+  s+=arrive(phase,1,T(1155,610,'mean 100',29,c,'middle'));
+ }else if(active===3){
+  s+=L(X(3)-25,Y(100),X(6)+85,Y(100),c,3,'stroke-dasharray="8 6"');
+  s+=R(X(6)-30,Y(100),60,Math.max(1,(Y(80)-Y(100))*p),c,'opacity=".23"');
+  s+=L(X(6)+48,Y(100),X(6)+48,lerp(Y(100),Y(80),p),c,5);
+  s+=arrive(phase,1.1,T(1150,635,'−20%',58,c,'middle'));
+ }else if(active===4){
+  const radius=126,circ=2*Math.PI*radius;
+  s+=O(630,595,radius,'none',`stroke="${C.line}" stroke-width="20"`);
+  s+=`<circle cx="630" cy="595" r="${radius}" fill="none" stroke="${c}" stroke-width="20" stroke-dasharray="${circ*.8*p} ${circ}" transform="rotate(-90 630 595)"/>`;
+  s+=T(630,613,'80%',64,c,'middle')+T(1000,550,'Balance 80',34,C.ink,'middle')+T(1000,620,'Limit 100',34,C.muted,'middle');
+ }else if(active===5){
+  const x=lerp(X(3),X(0),p),yy=Y(lerp(100,107.5,p));
+  s+=L(x,yy,1100,yy,c,4)+L(x,743,x,762,c,3)+L(x,755,880,755,c,3);
+  s+=arrive(phase,1.2,T(1150,620,'6 months',29,c,'middle'));
+ }else if(active===6){
+  for(let i=0;i<12;i++){
+   s+=O(230+i*64,550,14,c);
+   s+=O(230+i*64,670,14,c,`opacity="${i<6?1:1-p}"`);
+  }
+  s+=T(1140,560,'Usual 12',32,C.muted,'middle')+T(1140,680,'Now 6',38,c,'middle');
+ }else if(active===7){
+  [200,40,120,80].forEach((v,i)=>{
+   const rank=[3,0,2,1][i],x=lerp(230+i*260,230+rank*260,p),color=v===80?C.teal:c;
+   s+=R(x,720-v*.95,92,v*.95,color,`opacity="${v===80?1:.45}" rx="5"`)+T(x+46,700-v*.95,v,31,color,'middle');
+   if(p>.95)s+=T(x+46,770,`${rank+1}${rank===0?'st':rank===1?'nd':rank===2?'rd':'th'}`,25,color,'middle');
+  });
+ }else if(active===8){
+  const weights=[1/32,1/16,1/8,1/4,1/2,1];
+  weights.forEach((w,i)=>{
+   s+=halo(X(i),Y(STORY_VALUES[i]),12+20*Math.sqrt(w)*p,c,.12);
+   s+=O(X(i),Y(STORY_VALUES[i]),5+16*Math.sqrt(w)*p,c,`opacity="${.2+.8*Math.sqrt(w)}"`);
+   s+=T(X(i),665,['1/32','1/16','1/8','1/4','1/2','1'][i],26,c,'middle');
+  });
+  s+=L(180,Y(97.619),1100,Y(97.619),c,3,'stroke-dasharray="6 5"');
+  s+=T(630,709,'Relative weights · current value excluded',25,C.muted,'middle');
+ }
+ return s+T(150,832,WHY[active],32,C.ink,'start','data-fit="1130"');
+}
+function featureOverview(t){
+ let s=subtitle('The complete map: each feature, its definition, and its hypothesis.');
+ [663,1233].forEach(x=>s+=L(x,300,x,843,C.line,1));
+ [475,660].forEach(y=>s+=L(120,y,1790,y,C.line,1));
+ ROWS.forEach((r,i)=>{
+  const x=120+(i%3)*570,y=304+Math.floor(i/3)*185,col=FAMILY[i];
+  s+=T(x+4,y+21,r.label,30,col,'start','data-fit="520"')+glyph(i,x+8,y+60,t,1);
+  s+=T(x+145,y+76,DEFINITIONS[i][0],24,C.ink,'start','data-fit="380"');
+  s+=T(x+145,y+120,DEFINITIONS[i][1],23,C.muted,'start','data-fit="380"');
+ });
+ return s+footer('Nine constructions. Each makes a different part of the history explicit.');
+}
+function features(t){
+ if(t>=49)return featureOverview(t);
+ const active=Math.max(0,BEATS.filter(start=>t>=start).length-1),phase=t-BEATS[active],c=FAMILY[active];
+ let s=subtitle('Illustrative balances and activity counts—not measured experiment results.');
+ s+=T(150,322,ROWS[active].label,44,c,'start','data-fit="1130"');
+ s+=demo(active,phase)+L(1340,300,1340,850,C.line,1);
+ ROWS.forEach((r,i)=>{
+  const y=324+i*57,color=i===active?FAMILY[i]:i<active?C.ink:C.muted;
+  if(i===active)s+=R(1370,y-28,420,52,FAMILY[i],'opacity=".09" rx="6"');
+  s+=O(1388,y-5,i<active?4:6,i<=active?FAMILY[i]:C.line);
+  s+=T(1406,y,r.label,22,color,'start','data-fit="370"');
+  if(i<=active)s+=T(1406,y+23,DEFINITIONS[i][0],19,C.muted,'start','data-fit="370"');
+ });
+ return s+footer('Watch the construction; keep the definition as it joins the feature map.');
+}
+
+
+function comparison(t){
+ let s=subtitle('Additional profit vs the stated reference · million ARS · matched contact policy');
+ s+=T(120,315,'TESTED ADDITION',23,C.muted)+T(1320,315,'Δ PROFIT · MILLION ARS',29,C.teal,'middle');
+ s+=L(680,345,680,805,C.line,1)+L(680,805,1760,805,C.line,2);
+ ROWS.forEach((r,i)=>{
+  const y=365+i*49;
+  s+=glyph(i,120,y-13,0,.35)+T(170,y+10,r.label,29,C.ink,'start','data-fit="460"');
+  s+=L(700,y,1720,y,C.line,1,'stroke-dasharray="3 8" opacity=".5"');
+  s+=T(1220,y+9,'—',28,C.muted,'middle');
+ });
+ s+=T(1220,849,'No plotted values until comparable profit data are available.',24,C.muted,'middle');
+ return s+footer('One metric. No inferred peso values from ranking scores.');
+}
+function recommendation(t){
+ let s=subtitle('The strongest package in the controlled screen—not yet a confirmed public-profit gain.');
+ s+=arrive(t,.3,glyph(3,145,380,t,2.6)+T(620,377,'ADD FIRST',24,C.teal)+T(620,447,'Relative balance + payroll',52,C.teal,'start','data-fit="1120"'));
+ s+=arrive(t,1.8,T(620,510,'Against each customer’s own prior 3-month mean',31,C.ink));
+ s+=arrive(t,3.3,T(620,579,'2 relative changes + 2 near-zero flags',32,C.muted));
+ s+=arrive(t,5.0,L(120,653,1780,653)+T(120,715,'Then verify the incremental profit in matched tests.',38,C.ink));
+ s+=arrive(t,7.2,T(120,818,'Next candidates: 6-month funds history and relative usage.',29,C.muted));
+ return s+footer('Recommendation: personal-relative funds. Profit confirmation pending.');
+}
+
+const DRAW={question,features,comparison,takeaway:recommendation};
+const stage=document.getElementById('stage'),scrub=document.getElementById('scrub'),play=document.getElementById('play');
+let current=0,playing=false,last=null,raf=null;
+const clock=t=>`${Math.floor(t/60)}:${String(Math.floor(t%60)).padStart(2,'0')}`;
+const sceneAt=t=>SCENES.find(s=>t>=s.start&&t<s.end)||SCENES[SCENES.length-1];
+function renderAt(t){
+  current=Math.max(0,Math.min(DATA.duration,Number(t)||0));const s=sceneAt(current),local=current-s.start;
+  const guide=document.getElementById('headshot').checked?O(1730,180,100,'none',`data-headshot-guide="true" stroke="${C.line}" stroke-dasharray="6 7"`):'';
+  stage.innerHTML=`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" role="img" aria-label="${E(s.title)}" data-scene="${s.id}"><defs><filter id="glow" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="10"/></filter><radialGradient id="background"><stop offset="0" stop-color="#12212a"/><stop offset="1" stop-color="${C.bg}"/></radialGradient></defs><style>text{font-family:Arial,sans-serif}text[font-family]{font-family:Georgia,serif}</style>${R(0,0,1920,1080,'url(#background)')}${T(120,86,'FEATURE ENGINEERING / THE CONTEXT BEHIND THE NUMBER',22,C.muted)}${T(120,174,s.title,61,C.ink,'start','font-family="Georgia,serif" data-fit="1420"')}${DRAW[s.id](local)}${guide}</svg>`;
+  stage.querySelectorAll('[data-fit]').forEach(el=>{const w=el.getComputedTextLength(),max=Number(el.dataset.fit);if(w>max)el.setAttribute('font-size',Number(el.getAttribute('font-size'))*max/w)});
+  scrub.value=current;document.getElementById('time').textContent=`${clock(current)} / ${clock(DATA.duration)}`;
+  document.getElementById('narration').textContent=s.voiceover;
+  document.querySelectorAll('[data-seek]').forEach(el=>el.setAttribute('aria-pressed',String(Number(el.dataset.seek)===s.start)));
+  return s.id;
+}
+function stop(){playing=false;last=null;cancelAnimationFrame(raf);play.textContent='Play'}
+function seek(t){stop();renderAt(t)}
+function tick(now){if(!playing)return;if(last!==null)current+=(now-last)/1000;last=now;renderAt(current);if(current>=DATA.duration){stop();return}raf=requestAnimationFrame(tick)}
+function toggle(){if(playing){stop();return}if(current>=DATA.duration)renderAt(0);playing=true;last=null;play.textContent='Pause';raf=requestAnimationFrame(tick)}
+SCENES.forEach(s=>{const b=document.createElement('button');b.dataset.seek=s.start;b.textContent=`${clock(s.start)} · ${s.label}`;b.onclick=()=>seek(s.start);document.getElementById('navigation').appendChild(b)});
+document.getElementById('evidence').innerHTML='<table><thead><tr><th>Feature family</th><th>Mean Δ AUC</th><th>Profit result</th></tr></thead><tbody>'+ROWS.map(r=>`<tr><td>${E(r.label)}</td><td>${r.delta_auc===null?'No comparable verified result':r.delta_auc.toFixed(9)}</td><td>${E(r.profit_label)}</td></tr>`).join('')+'</tbody></table>';
+play.onclick=toggle;scrub.oninput=e=>seek(e.target.value);document.getElementById('headshot').onchange=()=>renderAt(current);
+document.addEventListener('keydown',e=>{if(['INPUT','BUTTON','SUMMARY'].includes(e.target.tagName))return;if(e.code==='Space'){e.preventDefault();toggle()}else if(e.code==='ArrowRight'){e.preventDefault();seek(SCENES.find(s=>s.start>current+.1)?.start??DATA.duration)}else if(e.code==='ArrowLeft'){e.preventDefault();seek([...SCENES].reverse().find(s=>s.start<current-.1)?.start??0)}});
+window.renderAt=renderAt;window.storyboardData=DATA;window.storyboardScenes=SCENES;
+renderAt(Number(new URLSearchParams(location.search).get('t'))||0);

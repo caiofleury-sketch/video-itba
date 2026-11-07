@@ -1,0 +1,7 @@
+node_modules/
+__pycache__/
+# Temporary float renders; the mastered WAV stems and composition are versioned.
+music_raw.wav
+fx_raw.wav
+# Analysis-only copy of the uploaded reference audio (not our original score).
+referencia/audio_analisis.wav

@@ -1,0 +1,24 @@
+{
+  "engine": "Tone.js 15.1.22 / Chromium OfflineAudioContext",
+  "stems": [
+    {
+      "stem": "music",
+      "duration": 108,
+      "sampleRate": 48000,
+      "channels": 2,
+      "length": 5184000,
+      "sample_peak": 0.21640969812870026
+    },
+    {
+      "stem": "fx",
+      "duration": 108,
+      "sampleRate": 48000,
+      "channels": 2,
+      "length": 5184000,
+      "sample_peak": 0.06437475234270096
+    }
+  ],
+  "score_sha256": "2d0b043b7644b65bee811bca0432ca44e29c8ead7f1ba62af3bf83606ccc2c75",
+  "synth_sha256": "482bede226f174ca67a3b02f8b5dc715f2066c0a595bc4f1664ba9cf8a5eae75",
+  "tone_distribution_sha256": "e290952fa43d9a7a780182a83c6fccf44d79cb7ae2cba102ef1f2b9d98124e22"
+}

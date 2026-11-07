@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>What our added features taught us — visual draft</title>
+<style>
+:root{color-scheme:dark;font-family:Arial,sans-serif;background:#0b0f14;color:#e8eef1}
+*{box-sizing:border-box}body{margin:0}main{max-width:1440px;margin:auto;padding:32px 28px 60px}
+header{display:flex;align-items:baseline;gap:24px;justify-content:space-between}h1{font:normal 32px Georgia,serif;margin:0 0 14px}p{color:#a7b3be;line-height:1.6}
+.kicker{font-size:11px;letter-spacing:.2em;color:#70d4bc;text-transform:uppercase;margin:0 0 10px}
+.status{font-size:12px;color:#f2bd75;max-width:520px}.stage{border:1px solid #263340;aspect-ratio:16/9;overflow:hidden;border-radius:4px;background:#0b0f14}
+.stage svg{display:block;width:100%;height:100%}.controls{display:flex;gap:16px;align-items:center;margin:18px 0}button{font:inherit;cursor:pointer;background:#14202a;border:1px solid #34434f;border-radius:6px;padding:10px 16px;color:#e8eef1}button:hover,button:focus-visible{border-color:#70d4bc}button[aria-pressed=true]{border-color:#70d4bc;color:#70d4bc}#play{min-width:84px;background:#70d4bc;color:#0b0f14;border-color:#70d4bc}input[type=range]{flex:1;min-width:60px;accent-color:#70d4bc}time{font-variant-numeric:tabular-nums;min-width:104px;font-size:13px}label{font-size:12px;color:#a7b3be}.scene-nav{display:flex;gap:8px;flex-wrap:wrap}.scene-nav button{font-size:12px;padding:9px 13px}#narration{font-size:19px;line-height:1.7;min-height:100px;border-left:2px solid #70d4bc;padding:10px 22px;margin:22px 0}details{margin-top:30px;color:#a7b3be;font-size:14px;line-height:1.7}summary{cursor:pointer;color:#e8eef1}table{width:100%;border-collapse:collapse;margin:16px 0;font-size:13px}td,th{padding:10px;text-align:left;border-bottom:1px solid #263340}a{color:#70d4bc}.note{font-size:12px}#export{display:none}
+@media(max-width:700px){main{padding:20px 12px}header{display:block}h1{font-size:26px}.controls{gap:8px}.controls label{display:none}#narration{font-size:16px}.status{margin-bottom:18px}}
+</style></head><body><main>
+<header><div><p class="kicker">Added features / rationale → measurement → outcome</p><h1>What our added features taught us</h1></div><p class="status">Visual draft · 90s · no audio yet<br>CSV/source reconciliation passed. Pilot outcomes are report-supported; raw pilot metrics remain unverified.</p></header>
+<div class="stage" id="stage" aria-label="Animated storyboard"></div>
+<div class="controls"><button id="play" aria-label="Play storyboard">Play</button><input id="scrub" type="range" min="0" max="90" step="0.05" value="0" aria-label="Preview time"><time id="time"></time><label><input type="checkbox" id="headshot"> Headshot guide</label></div>
+<nav class="scene-nav" id="scenes" aria-label="Storyboard scenes"></nav>
+<p id="narration"></p>
+<p class="note">Edit targets until your voiceover is recorded. Space: play/pause. Left/right: previous/next scene. The upper-right corner remains clear for a small headshot; captions can occupy the empty bottom band.</p>
+<details><summary>What is supported by the supplied evidence?</summary>
+<p>Mean AUC values and the selected feature package come from the configuration catalog. Formula, support rules, and the selection rule are checked against notebook source. The public curve comes from nine uploaded submission records, reconciled with the published recipe export. This review did not rerun training or query Kaggle.</p>
+<div id="evidence"></div>
+<p>The follow-up pilot's funds/usage/EMA outcomes are corroborated qualitatively by the supplied research report. Exact pilot profit deltas and per-seed win counts from the original proposal are omitted from this draft because their raw summaries were not supplied. The pilot examples shown are not an exhaustive ranking of all eight variants.</p>
+<p>Inflation/IPC analysis, pre-existing feature inventories, and general model-family comparisons are outside this video's scope. Full original uploads are preserved in <code>source/</code>.</p>
+</details></main>
+<script id="payload" type="application/json">__PAYLOAD__</script><script>__SCENE_SOURCE__</script></body></html>

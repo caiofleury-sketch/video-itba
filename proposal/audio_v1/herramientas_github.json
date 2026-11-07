@@ -1,0 +1,34 @@
+[
+  {
+    "repo": "Tonejs/Tone.js",
+    "url": "https://github.com/Tonejs/Tone.js",
+    "description": "A Web Audio framework for making interactive music in the browser. - Tonejs/Tone.js",
+    "archived": false,
+    "stars": 14891,
+    "consultado_utc": "2026-11-07T04:35:33.732964+00:00"
+  },
+  {
+    "repo": "johnnesky/beepbox",
+    "url": "https://github.com/johnnesky/beepbox",
+    "description": "An online tool for sketching and sharing instrumental melodies. - johnnesky/beepbox",
+    "archived": false,
+    "stars": 1218,
+    "consultado_utc": "2026-11-07T04:35:33.837505+00:00"
+  },
+  {
+    "repo": "KilledByAPixel/ZzFX",
+    "url": "https://github.com/KilledByAPixel/ZzFX",
+    "description": "A Tiny JavaScript Sound FX System. Contribute to KilledByAPixel/ZzFX development by creating an account on GitHub.",
+    "archived": false,
+    "stars": 810,
+    "consultado_utc": "2026-11-07T04:35:33.977042+00:00"
+  },
+  {
+    "repo": "tidalcycles/strudel",
+    "url": "https://github.com/tidalcycles/strudel",
+    "description": "MOVED TO CODEBERG - Web-based environment for live coding algorithmic patterns, incorporating a faithful port of TidalCycles to JavaScript - tidalcycles/strudel",
+    "archived": true,
+    "stars": 3041,
+    "consultado_utc": "2026-11-07T04:35:34.012398+00:00"
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "id": "question",
+    "start": 0,
+    "end": 16,
+    "label": "Mismo saldo, otra historia",
+    "title": "Mismo saldo. Otra historia.",
+    "voiceover": "Mismo saldo. ¿Misma historia? En un cliente, el saldo se mantiene estable. En otro, acaba de caer. La foto del mes oculta esa diferencia. Creamos variables para revelar el contexto detrás del número."
+  },
+  {
+    "id": "features",
+    "start": 16,
+    "end": 70,
+    "label": "Variables e hipótesis",
+    "title": "Nueve formas de revelar el contexto",
+    "voiceover": "El valor del mes anterior aporta memoria. El cambio mensual muestra movimientos bruscos. El promedio de tres meses estima el comportamiento habitual. Los cambios relativos de saldo y haberes comparan el presente con la historia de cada cliente. La utilización de tarjeta relaciona el saldo con el límite disponible. Una referencia de seis meses incorpora más historia. El uso relativo compara las operaciones con la actividad habitual, buscando señales de desinterés. Los rangos monetarios indican la posición de cada cliente dentro del mes. Y el promedio exponencial da más peso a las observaciones recientes."
+  },
+  {
+    "id": "comparison",
+    "start": 70,
+    "end": 94,
+    "label": "Comparación de resultados",
+    "title": "¿Qué variables mejoran la ganancia?",
+    "voiceover": "La comparación final usa una sola medida: la ganancia adicional. Evaluaremos cada conjunto de variables contra su referencia, con la misma política de contactos. Las pruebas públicas pareadas y los resultados históricos aportarán esos valores. Hasta verificarlos, dejamos las comparaciones monetarias pendientes: no convertimos las mejoras de ordenamiento en pesos."
+  },
+  {
+    "id": "takeaway",
+    "start": 94,
+    "end": 108,
+    "label": "Recomendación",
+    "title": "Priorizar saldo y haberes relativos",
+    "voiceover": "Recomendamos saldo y haberes relativos al promedio de los tres meses previos, con indicadores de escala casi nula. Lideraron la evaluación controlada; falta confirmar la ganancia incremental."
+  }
+]

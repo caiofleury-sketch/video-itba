@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "rendered_pngs": [
+    "frame_15s.png",
+    "frame_30s.png",
+    "frame_45s.png",
+    "frame_60s.png",
+    "frame_75s.png",
+    "frame_90s.png",
+    "insert_35s_inicial.png"
+  ],
+  "dimensions": [
+    1920,
+    1080
+  ],
+  "html_stage_rendered": true,
+  "high_point_thumbnails": 3,
+  "quarter_minute_thumbnails": 6,
+  "narration_matches_selected_milestone": true,
+  "isolated_browser_profile": true
+}

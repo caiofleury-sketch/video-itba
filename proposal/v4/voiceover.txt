@@ -1,0 +1,9 @@
+Same balance. Same story? One customer's balance is steady. The other's has just fallen. A snapshot hides the difference. We designed features to reveal the context behind the number.
+
+Lags preserve last month's values, adding recent context. Monthly changes expose sudden movement. Three-month averages estimate a customer's normal behavior. Relative balance and payroll compare today's values with that personal baseline, making changes comparable across customers. Card utilization relates balances to available credit, suggesting financial pressure. Six-month relative funds use a longer personal baseline. Relative usage measures debit and card activity against the customer's usual level, looking for disengagement. Monetary ranks represent a customer's position within the same month, putting amounts on comparable scales. Finally, exponential averages emphasize recent past behavior, so emerging changes matter more.
+
+We want to contact November leavers. Each correct contact scores nine hundred and seventy-five thousand pesos; each wrong contact costs twenty-five thousand. Better rankings help us prioritize.
+
+Compare ten thousand pairs, each with one November leaver and one other customer. Relative funds puts the November leaver first in about fifteen more pairs than the reference. Changes and averages add fewer correct orderings; lags and utilization lose ground. Longer funds history and usage improved profit in both test months; recent-weighted history was mixed. These are ranking gains and historical profit findings, not measured public profit increases.
+
+The selected complete recipe scored about four hundred and two million pesos on Kaggle. That is a public campaign estimate. Matched tests are needed to isolate the feature contributions.

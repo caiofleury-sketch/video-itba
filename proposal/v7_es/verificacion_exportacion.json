@@ -1,0 +1,58 @@
+{
+  "estado": "VERIFICADO",
+  "idioma": "español",
+  "duracion_segundos": 108,
+  "resolucion": [
+    1920,
+    1080
+  ],
+  "fotogramas": 2592,
+  "fotogramas_por_segundo": 24,
+  "locucion_incluida": false,
+  "apertura_3d_incluida": true,
+  "muestras": [
+    {
+      "escena": "Apertura 3D",
+      "segundo": 10,
+      "diferencia_media_pixeles": 1.2172,
+      "coincide": true
+    },
+    {
+      "escena": "Promedio exponencial",
+      "segundo": 61.366,
+      "diferencia_media_pixeles": 1.2797,
+      "coincide": true
+    },
+    {
+      "escena": "Recomendación",
+      "segundo": 106,
+      "diferencia_media_pixeles": 1.2231,
+      "coincide": true
+    }
+  ],
+  "metadatos": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_type": "video",
+        "width": 1920,
+        "height": 1080,
+        "r_frame_rate": "24/1",
+        "nb_frames": "2592",
+        "tags": {
+          "language": "spa"
+        },
+        "side_data_list": [
+          {}
+        ]
+      }
+    ],
+    "format": {
+      "duration": "108.000000",
+      "tags": {
+        "title": "Ingeniería de variables — El contexto detrás del número"
+      }
+    }
+  }
+}

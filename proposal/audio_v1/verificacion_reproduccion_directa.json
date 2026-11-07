@@ -1,0 +1,187 @@
+[
+  {
+    "file": "video_con_sonido.mp4",
+    "status": "PASS",
+    "decoded_picture_audio_seek_end": true,
+    "samples": [
+      {
+        "time": 10.368,
+        "videoWidth": 1920,
+        "videoHeight": 1080,
+        "frames": 289,
+        "litPixels": 1888,
+        "audioRms": 0.027838221035220146,
+        "paused": false,
+        "error": null
+      },
+      {
+        "time": 33.381333,
+        "videoWidth": 1920,
+        "videoHeight": 1080,
+        "frames": 460,
+        "litPixels": 3415,
+        "audioRms": 0.02708194188820533,
+        "paused": false,
+        "error": null
+      },
+      {
+        "time": 94.38113,
+        "videoWidth": 1920,
+        "videoHeight": 1080,
+        "frames": 550,
+        "litPixels": 2473,
+        "audioRms": 0.028582439920860372,
+        "paused": false,
+        "error": null
+      }
+    ]
+  },
+  {
+    "file": "video_con_sonido_compatible.mp4",
+    "status": "PASS",
+    "decoded_picture_audio_seek_end": true,
+    "samples": [
+      {
+        "time": 10.370667,
+        "videoWidth": 1920,
+        "videoHeight": 1080,
+        "frames": 49,
+        "litPixels": 2089,
+        "audioRms": 0.028010037822546404,
+        "paused": false,
+        "error": null
+      },
+      {
+        "time": 33.365993,
+        "videoWidth": 1920,
+        "videoHeight": 1080,
+        "frames": 86,
+        "litPixels": 3722,
+        "audioRms": 0.02819349746279768,
+        "paused": false,
+        "error": null
+      },
+      {
+        "time": 94.368,
+        "videoWidth": 1920,
+        "videoHeight": 1080,
+        "frames": 99,
+        "litPixels": 2680,
+        "audioRms": 0.030558044592723405,
+        "paused": false,
+        "error": null
+      }
+    ]
+  },
+  {
+    "file": "video_con_sonido_alternativa.webm",
+    "status": "PASS",
+    "decoded_picture_audio_seek_end": true,
+    "samples": [
+      {
+        "time": 10.36,
+        "videoWidth": 1280,
+        "videoHeight": 720,
+        "frames": 97,
+        "litPixels": 2074,
+        "audioRms": 0.026548673304478118,
+        "paused": false,
+        "error": null
+      },
+      {
+        "time": 33.373333,
+        "videoWidth": 1280,
+        "videoHeight": 720,
+        "frames": 134,
+        "litPixels": 3817,
+        "audioRms": 0.02655777440289328,
+        "paused": false,
+        "error": null
+      },
+      {
+        "time": 94.36,
+        "videoWidth": 1280,
+        "videoHeight": 720,
+        "frames": 195,
+        "litPixels": 2751,
+        "audioRms": 0.02976620247936928,
+        "paused": false,
+        "error": null
+      }
+    ]
+  },
+  {
+    "file": "video_con_subtitulos.mp4",
+    "status": "PASS",
+    "decoded_picture_audio_seek_end": true,
+    "samples": [
+      {
+        "time": 10.380667,
+        "videoWidth": 1920,
+        "videoHeight": 1080,
+        "frames": 50,
+        "litPixels": 2279,
+        "audioRms": 0.027894447569321936,
+        "paused": false,
+        "error": null
+      },
+      {
+        "time": 33.378781,
+        "videoWidth": 1920,
+        "videoHeight": 1080,
+        "frames": 87,
+        "litPixels": 3999,
+        "audioRms": 0.026442466774227444,
+        "paused": false,
+        "error": null
+      },
+      {
+        "time": 94.379282,
+        "videoWidth": 1920,
+        "videoHeight": 1080,
+        "frames": 100,
+        "litPixels": 2910,
+        "audioRms": 0.028508850786760836,
+        "paused": false,
+        "error": null
+      }
+    ]
+  },
+  {
+    "file": "video_con_subtitulos.webm",
+    "status": "PASS",
+    "decoded_picture_audio_seek_end": true,
+    "samples": [
+      {
+        "time": 10.378667,
+        "videoWidth": 1280,
+        "videoHeight": 720,
+        "frames": 97,
+        "litPixels": 2246,
+        "audioRms": 0.026108021581646722,
+        "paused": false,
+        "error": null
+      },
+      {
+        "time": 33.36,
+        "videoWidth": 1280,
+        "videoHeight": 720,
+        "frames": 134,
+        "litPixels": 4074,
+        "audioRms": 0.02732481744974477,
+        "paused": false,
+        "error": null
+      },
+      {
+        "time": 94.355059,
+        "videoWidth": 1280,
+        "videoHeight": 720,
+        "frames": 195,
+        "litPixels": 2959,
+        "audioRms": 0.02931452683453034,
+        "paused": false,
+        "error": null
+      }
+    ]
+  }
+]

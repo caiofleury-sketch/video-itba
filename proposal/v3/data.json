@@ -1,0 +1,153 @@
+{
+  "duration": 120,
+  "rows": [
+    {
+      "id": "lag1_core",
+      "label": "Last-month values",
+      "definition": "Previous exact-calendar-month value",
+      "hypothesis": "Add recent context.",
+      "delta_auc": -0.0005083908519920577,
+      "selected": false,
+      "profit": "unavailable",
+      "profit_label": "—"
+    },
+    {
+      "id": "delta1_core",
+      "label": "Monthly changes",
+      "definition": "Current value minus last month",
+      "hypothesis": "Expose sudden movement.",
+      "delta_auc": 0.00044658387166396363,
+      "selected": false,
+      "profit": "unavailable",
+      "profit_label": "—"
+    },
+    {
+      "id": "prior3_core",
+      "label": "Three-month averages",
+      "definition": "Mean of the prior three months",
+      "hypothesis": "Estimate usual behavior.",
+      "delta_auc": 0.000678153220296962,
+      "selected": false,
+      "profit": "unavailable",
+      "profit_label": "—"
+    },
+    {
+      "id": "relative3_funds",
+      "label": "Relative funds · 3 months",
+      "definition": "Balance/payroll change vs own history",
+      "hypothesis": "Compare personal-scale changes.",
+      "delta_auc": 0.0014559700527430053,
+      "selected": true,
+      "profit": "reference",
+      "profit_label": "Reference"
+    },
+    {
+      "id": "card_utilization",
+      "label": "Card utilization",
+      "definition": "Card balance ÷ positive credit limit",
+      "hypothesis": "Express pressure on credit.",
+      "delta_auc": -0.0001688409800850721,
+      "selected": false,
+      "profit": "unavailable",
+      "profit_label": "—"
+    },
+    {
+      "id": "relative6_funds",
+      "label": "Relative funds · 6 months",
+      "definition": "Relative funds with a longer baseline",
+      "hypothesis": "Use a steadier personal reference.",
+      "delta_auc": null,
+      "selected": false,
+      "profit": "both_months",
+      "profit_label": "Improved both months"
+    },
+    {
+      "id": "relative3_usage",
+      "label": "Relative usage",
+      "definition": "Debit/card use vs own 3-month mean",
+      "hypothesis": "Reveal changing engagement.",
+      "delta_auc": null,
+      "selected": false,
+      "profit": "both_months",
+      "profit_label": "Improved both months"
+    },
+    {
+      "id": "monetary_ranks",
+      "label": "Monetary ranks",
+      "definition": "Rank amounts within the same month",
+      "hypothesis": "Put amounts on comparable scales.",
+      "delta_auc": null,
+      "selected": false,
+      "profit": "unverified",
+      "profit_label": "Result needs verification"
+    },
+    {
+      "id": "prior_ema3",
+      "label": "Recent-weighted history",
+      "definition": "Exponential mean of past behavior",
+      "hypothesis": "Respond to recent changes.",
+      "delta_auc": null,
+      "selected": false,
+      "profit": "mixed",
+      "profit_label": "Mixed across months"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "question",
+      "start": 0,
+      "end": 16,
+      "label": "Same balance, different story",
+      "title": "Same balance. Different story.",
+      "voiceover": "Same balance. Same story? One customer's balance is steady. The other's has just fallen. A snapshot hides the difference. We designed features to reveal the context behind the number."
+    },
+    {
+      "id": "features",
+      "start": 16,
+      "end": 62,
+      "label": "Features and hypotheses",
+      "title": "Nine ways to reveal the context",
+      "voiceover": "Lags preserve last month's values, adding recent context. Monthly changes expose sudden movement. Three-month averages estimate a customer's normal behavior. Relative balance and payroll compare today's values with that personal baseline, making changes comparable across customers. Card utilization relates balances to available credit, suggesting financial pressure. Six-month relative funds use a longer personal baseline. Relative usage measures debit and card activity against the customer's usual level, looking for disengagement. Monetary ranks represent a customer's position within the same month, putting amounts on comparable scales. Finally, exponential averages emphasize recent past behavior, so emerging changes matter more."
+    },
+    {
+      "id": "measurement",
+      "start": 62,
+      "end": 74,
+      "label": "A fair comparison",
+      "title": "Give every addition a fair test",
+      "voiceover": "We compared each feature package with its reference model, retraining with five matched random seeds. We tracked ranking quality and profit, comparing results within each measurement."
+    },
+    {
+      "id": "comparison",
+      "start": 74,
+      "end": 108,
+      "label": "All results together",
+      "title": "Which signals helped?",
+      "voiceover": "Here are the results together. Relative balance and payroll gave the largest ranking gain and were the only package to pass our screening rule. Monthly changes and averages had smaller positive gains. Lags and utilization did not improve this screen. For profit, longer funds history and relative usage improved both historical months. Exponential averaging was mixed. The columns measure different outcomes, so compare within each column."
+    },
+    {
+      "id": "takeaway",
+      "start": 108,
+      "end": 120,
+      "label": "Takeaway",
+      "title": "The clearest signal was personal context",
+      "voiceover": "Relative balance and payroll were our strongest ranking addition. Longer funds history and usage are promising profit candidates. These are historical findings; individual public gains remain unproven."
+    }
+  ],
+  "references": {
+    "auc": "Original repaired snapshot",
+    "profit": "Snapshot + 3-month relative funds"
+  },
+  "limits": {
+    "no_common_performance_scale": true,
+    "rank_outcome_verified": false,
+    "no_global_ranking": true,
+    "exact_pilot_profit_deltas_included": false,
+    "source_gaps": [
+      "HT5955 per-seed outcomes absent: original 1/3/3/5/2 seed-win counts cannot be independently reproduced.",
+      "HT5956 summary/per-month outcomes absent: original exact profit deltas and all month-win counts cannot be independently reproduced.",
+      "Earlier Inicial reference 408.498 / submission 57670712 absent from supplied exports and audit report.",
+      "Training data, native models, live submission queries, and source-manifest hashes are not supplied or rerun."
+    ]
+  }
+}

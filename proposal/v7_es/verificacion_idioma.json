@@ -1,0 +1,32 @@
+{
+  "idioma": "es-AR",
+  "estado": "VERIFICADO",
+  "muestras_temporales": 217,
+  "rotulos_unicos_revisados": 124,
+  "texto_ingles_detectado": [],
+  "palabras_guion": 204,
+  "palabras_por_escena": [
+    33,
+    94,
+    50,
+    27
+  ],
+  "ritmo_objetivo_palabras_por_minuto": [
+    123.8,
+    104.4,
+    125.0,
+    115.7
+  ],
+  "marcas_variables": [
+    0.0,
+    3.649,
+    6.777,
+    11.468,
+    19.809,
+    25.543,
+    29.713,
+    37.011,
+    43.266
+  ],
+  "audio_grabado": "No proporcionado; tiempos orientativos"
+}

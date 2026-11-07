@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "full_film_duration": 108,
+  "first_scene_present_in_export": true,
+  "frame_checks": [
+    {
+      "scene": "history",
+      "time": 10,
+      "mean_absolute_pixel_difference": 1.2016,
+      "matches_expected_frame": true
+    },
+    {
+      "scene": "utilization",
+      "time": 38,
+      "mean_absolute_pixel_difference": 1.1759,
+      "matches_expected_frame": true
+    },
+    {
+      "scene": "recommendation",
+      "time": 106,
+      "mean_absolute_pixel_difference": 1.2114,
+      "matches_expected_frame": true
+    }
+  ],
+  "note": "The earlier 54-second feature excerpt intentionally omitted the opening; this file is the full film."
+}

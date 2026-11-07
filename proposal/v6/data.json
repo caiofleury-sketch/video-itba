@@ -1,0 +1,170 @@
+{
+  "duration": 108,
+  "rows": [
+    {
+      "profit_delta_million_ars": null,
+      "profit_result_status": "awaiting_matched_profit",
+      "id": "lag1_core",
+      "label": "Last-month values",
+      "definition": "Previous exact-calendar-month value",
+      "hypothesis": "Add recent context.",
+      "delta_auc": -0.0005083908519920577,
+      "selected": false,
+      "profit": "unavailable",
+      "profit_label": "—"
+    },
+    {
+      "profit_delta_million_ars": null,
+      "profit_result_status": "awaiting_matched_profit",
+      "id": "delta1_core",
+      "label": "Monthly changes",
+      "definition": "Current value minus last month",
+      "hypothesis": "Expose sudden movement.",
+      "delta_auc": 0.00044658387166396363,
+      "selected": false,
+      "profit": "unavailable",
+      "profit_label": "—"
+    },
+    {
+      "profit_delta_million_ars": null,
+      "profit_result_status": "awaiting_matched_profit",
+      "id": "prior3_core",
+      "label": "Three-month averages",
+      "definition": "Mean of the prior three months",
+      "hypothesis": "Estimate usual behavior.",
+      "delta_auc": 0.000678153220296962,
+      "selected": false,
+      "profit": "unavailable",
+      "profit_label": "—"
+    },
+    {
+      "profit_delta_million_ars": null,
+      "profit_result_status": "awaiting_matched_profit",
+      "id": "relative3_funds",
+      "label": "Relative funds · 3 months",
+      "definition": "Balance/payroll change vs own history",
+      "hypothesis": "Compare personal-scale changes.",
+      "delta_auc": 0.0014559700527430053,
+      "selected": true,
+      "profit": "reference",
+      "profit_label": "Reference"
+    },
+    {
+      "profit_delta_million_ars": null,
+      "profit_result_status": "awaiting_matched_profit",
+      "id": "card_utilization",
+      "label": "Card utilization",
+      "definition": "Card balance ÷ positive credit limit",
+      "hypothesis": "Express pressure on credit.",
+      "delta_auc": -0.0001688409800850721,
+      "selected": false,
+      "profit": "unavailable",
+      "profit_label": "—"
+    },
+    {
+      "profit_delta_million_ars": null,
+      "profit_result_status": "awaiting_matched_profit",
+      "id": "relative6_funds",
+      "label": "Relative funds · 6 months",
+      "definition": "Relative funds with a longer baseline",
+      "hypothesis": "Use a steadier personal reference.",
+      "delta_auc": null,
+      "selected": false,
+      "profit": "both_months",
+      "profit_label": "Improved both months"
+    },
+    {
+      "profit_delta_million_ars": null,
+      "profit_result_status": "awaiting_matched_profit",
+      "id": "relative3_usage",
+      "label": "Relative usage",
+      "definition": "Debit/card use vs own 3-month mean",
+      "hypothesis": "Reveal changing engagement.",
+      "delta_auc": null,
+      "selected": false,
+      "profit": "both_months",
+      "profit_label": "Improved both months"
+    },
+    {
+      "profit_delta_million_ars": null,
+      "profit_result_status": "awaiting_matched_profit",
+      "id": "monetary_ranks",
+      "label": "Monetary ranks",
+      "definition": "Rank amounts within the same month",
+      "hypothesis": "Put amounts on comparable scales.",
+      "delta_auc": null,
+      "selected": false,
+      "profit": "unverified",
+      "profit_label": "Result needs verification"
+    },
+    {
+      "profit_delta_million_ars": null,
+      "profit_result_status": "awaiting_matched_profit",
+      "id": "prior_ema3",
+      "label": "Recent-weighted history",
+      "definition": "Exponential mean of past behavior",
+      "hypothesis": "Respond to recent changes.",
+      "delta_auc": null,
+      "selected": false,
+      "profit": "mixed",
+      "profit_label": "Mixed across months"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "question",
+      "start": 0,
+      "end": 16,
+      "label": "Same balance, different story",
+      "title": "Same balance. Different story.",
+      "voiceover": "Same balance. Same story? One customer's balance is steady. The other's has just fallen. A snapshot hides the difference. We designed features to reveal the context behind the number."
+    },
+    {
+      "id": "features",
+      "start": 16,
+      "end": 70,
+      "label": "Features and hypotheses",
+      "title": "Nine ways to reveal the context",
+      "voiceover": "Lags preserve last month's values, adding recent context. Monthly changes expose sudden movement. Three-month averages estimate a customer's normal behavior. Relative balance and payroll compare today's values with that personal baseline, making changes comparable across customers. Card utilization relates balances to available credit, suggesting financial pressure. Six-month relative funds use a longer personal baseline. Relative usage measures debit and card activity against the customer's usual level, looking for disengagement. Monetary ranks represent a customer's position within the same month, putting amounts on comparable scales. Finally, exponential averages emphasize recent past behavior, so emerging changes matter more."
+    },
+    {
+      "id": "comparison",
+      "start": 70,
+      "end": 94,
+      "label": "All results together",
+      "title": "Which additions improve profit?",
+      "voiceover": "The final comparison uses one business measure: additional profit. We will compare each tested addition with its stated reference under the same contact policy. The matched public submissions and historical profit exports will supply those values. Until those results are verified, we leave the monetary comparisons open rather than translating ranking scores into pesos."
+    },
+    {
+      "id": "takeaway",
+      "start": 94,
+      "end": 108,
+      "label": "Takeaway",
+      "title": "Our first addition: personal-relative funds",
+      "voiceover": "Start with balance and payroll relative to each customer’s prior three-month average, including near-zero flags. It led the controlled screen; confirm its profit with matched tests. Then test longer history and usage."
+    }
+  ],
+  "economics": {
+    "correct_contact_ars": 975000,
+    "wrong_contact_ars": -25000,
+    "no_contact_ars": 0,
+    "reference_public_score_million_ars": 401.915,
+    "feature_public_results_pending": true
+  },
+  "references": {
+    "auc": "Original repaired snapshot",
+    "profit": "Snapshot + 3-month relative funds"
+  },
+  "limits": {
+    "no_common_performance_scale": true,
+    "rank_outcome_verified": false,
+    "no_global_ranking": true,
+    "exact_pilot_profit_deltas_included": false,
+    "source_gaps": [
+      "HT5955 per-seed outcomes absent: original 1/3/3/5/2 seed-win counts cannot be independently reproduced.",
+      "HT5956 summary/per-month outcomes absent: original exact profit deltas and all month-win counts cannot be independently reproduced.",
+      "Earlier Inicial reference 408.498 / submission 57670712 absent from supplied exports and audit report.",
+      "Training data, native models, live submission queries, and source-manifest hashes are not supplied or rerun."
+    ]
+  }
+}

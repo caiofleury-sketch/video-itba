@@ -1,0 +1,440 @@
+[
+  {
+    "group": "apertura",
+    "time": 2.8,
+    "collisions": []
+  },
+  {
+    "group": "apertura",
+    "time": 3.5,
+    "collisions": []
+  },
+  {
+    "group": "apertura",
+    "time": 4.2,
+    "collisions": []
+  },
+  {
+    "group": "apertura",
+    "time": 4.9,
+    "collisions": []
+  },
+  {
+    "group": "apertura",
+    "time": 5.6,
+    "collisions": []
+  },
+  {
+    "group": "apertura",
+    "time": 6.3,
+    "collisions": []
+  },
+  {
+    "group": "promedio",
+    "time": 22.877,
+    "collisions": []
+  },
+  {
+    "group": "promedio",
+    "time": 23.227,
+    "collisions": []
+  },
+  {
+    "group": "promedio",
+    "time": 23.577,
+    "collisions": []
+  },
+  {
+    "group": "promedio",
+    "time": 23.927,
+    "collisions": []
+  },
+  {
+    "group": "promedio",
+    "time": 24.277,
+    "collisions": []
+  },
+  {
+    "group": "promedio",
+    "time": 25.177,
+    "collisions": []
+  },
+  {
+    "group": "rangos",
+    "time": 53.111,
+    "collisions": []
+  },
+  {
+    "group": "rangos",
+    "time": 53.461,
+    "collisions": []
+  },
+  {
+    "group": "rangos",
+    "time": 53.811,
+    "collisions": []
+  },
+  {
+    "group": "rangos",
+    "time": 54.161,
+    "collisions": []
+  },
+  {
+    "group": "rangos",
+    "time": 54.511,
+    "collisions": []
+  },
+  {
+    "group": "rangos",
+    "time": 55.411,
+    "collisions": []
+  },
+  {
+    "group": "transiciones",
+    "time": 64.8,
+    "collisions": []
+  },
+  {
+    "group": "transiciones",
+    "time": 65.0,
+    "collisions": []
+  },
+  {
+    "group": "transiciones",
+    "time": 65.3,
+    "collisions": []
+  },
+  {
+    "group": "transiciones",
+    "time": 69.9,
+    "collisions": []
+  },
+  {
+    "group": "transiciones",
+    "time": 70.2,
+    "collisions": []
+  },
+  {
+    "group": "transiciones",
+    "time": 71.0,
+    "collisions": []
+  },
+  {
+    "group": "recomendacion",
+    "time": 94.0,
+    "collisions": []
+  },
+  {
+    "group": "recomendacion",
+    "time": 94.5,
+    "collisions": []
+  },
+  {
+    "group": "recomendacion",
+    "time": 95.3,
+    "collisions": []
+  },
+  {
+    "group": "recomendacion",
+    "time": 96.1,
+    "collisions": []
+  },
+  {
+    "group": "recomendacion",
+    "time": 97.0,
+    "collisions": []
+  },
+  {
+    "group": "recomendacion",
+    "time": 98.5,
+    "collisions": []
+  },
+  {
+    "group": "rezago",
+    "time": 16.1,
+    "collisions": []
+  },
+  {
+    "group": "rezago",
+    "time": 16.45,
+    "collisions": []
+  },
+  {
+    "group": "rezago",
+    "time": 16.8,
+    "collisions": []
+  },
+  {
+    "group": "rezago",
+    "time": 17.15,
+    "collisions": []
+  },
+  {
+    "group": "rezago",
+    "time": 17.5,
+    "collisions": []
+  },
+  {
+    "group": "rezago",
+    "time": 18.4,
+    "collisions": []
+  },
+  {
+    "group": "cambio",
+    "time": 19.749,
+    "collisions": []
+  },
+  {
+    "group": "cambio",
+    "time": 20.099,
+    "collisions": []
+  },
+  {
+    "group": "cambio",
+    "time": 20.449,
+    "collisions": []
+  },
+  {
+    "group": "cambio",
+    "time": 20.799,
+    "collisions": []
+  },
+  {
+    "group": "cambio",
+    "time": 21.149,
+    "collisions": [
+      {
+        "a": "80",
+        "b": "caída = 10",
+        "area": 230.7
+      }
+    ]
+  },
+  {
+    "group": "cambio",
+    "time": 22.049,
+    "collisions": []
+  },
+  {
+    "group": "fondos_3",
+    "time": 27.568,
+    "collisions": []
+  },
+  {
+    "group": "fondos_3",
+    "time": 27.918,
+    "collisions": []
+  },
+  {
+    "group": "fondos_3",
+    "time": 28.268,
+    "collisions": []
+  },
+  {
+    "group": "fondos_3",
+    "time": 28.618,
+    "collisions": []
+  },
+  {
+    "group": "fondos_3",
+    "time": 28.968,
+    "collisions": [
+      {
+        "a": "80",
+        "b": "−20%",
+        "area": 313.6
+      }
+    ]
+  },
+  {
+    "group": "fondos_3",
+    "time": 29.868,
+    "collisions": []
+  },
+  {
+    "group": "utilizacion",
+    "time": 35.909,
+    "collisions": []
+  },
+  {
+    "group": "utilizacion",
+    "time": 36.259,
+    "collisions": []
+  },
+  {
+    "group": "utilizacion",
+    "time": 36.609,
+    "collisions": []
+  },
+  {
+    "group": "utilizacion",
+    "time": 36.959,
+    "collisions": []
+  },
+  {
+    "group": "utilizacion",
+    "time": 37.309,
+    "collisions": []
+  },
+  {
+    "group": "utilizacion",
+    "time": 38.209,
+    "collisions": []
+  },
+  {
+    "group": "fondos_6",
+    "time": 41.643,
+    "collisions": []
+  },
+  {
+    "group": "fondos_6",
+    "time": 41.993,
+    "collisions": []
+  },
+  {
+    "group": "fondos_6",
+    "time": 42.343,
+    "collisions": []
+  },
+  {
+    "group": "fondos_6",
+    "time": 42.693,
+    "collisions": []
+  },
+  {
+    "group": "fondos_6",
+    "time": 43.043,
+    "collisions": []
+  },
+  {
+    "group": "fondos_6",
+    "time": 43.943,
+    "collisions": []
+  },
+  {
+    "group": "uso",
+    "time": 45.813,
+    "collisions": [
+      {
+        "a": "Habitual: 12",
+        "b": "Actual: 6",
+        "area": 1154.0
+      }
+    ]
+  },
+  {
+    "group": "uso",
+    "time": 46.163,
+    "collisions": []
+  },
+  {
+    "group": "uso",
+    "time": 46.513,
+    "collisions": []
+  },
+  {
+    "group": "uso",
+    "time": 46.863,
+    "collisions": []
+  },
+  {
+    "group": "uso",
+    "time": 47.213,
+    "collisions": []
+  },
+  {
+    "group": "uso",
+    "time": 48.113,
+    "collisions": []
+  },
+  {
+    "group": "exponencial",
+    "time": 59.366,
+    "collisions": []
+  },
+  {
+    "group": "exponencial",
+    "time": 59.716,
+    "collisions": []
+  },
+  {
+    "group": "exponencial",
+    "time": 60.066,
+    "collisions": []
+  },
+  {
+    "group": "exponencial",
+    "time": 60.416,
+    "collisions": []
+  },
+  {
+    "group": "exponencial",
+    "time": 60.766,
+    "collisions": []
+  },
+  {
+    "group": "exponencial",
+    "time": 61.666,
+    "collisions": []
+  },
+  {
+    "group": "ganancia",
+    "time": 70,
+    "collisions": []
+  },
+  {
+    "group": "ganancia",
+    "time": 70.35,
+    "collisions": []
+  },
+  {
+    "group": "ganancia",
+    "time": 70.7,
+    "collisions": []
+  },
+  {
+    "group": "ganancia",
+    "time": 71.05,
+    "collisions": []
+  },
+  {
+    "group": "ganancia",
+    "time": 71.4,
+    "collisions": []
+  },
+  {
+    "group": "ganancia",
+    "time": 72.0,
+    "collisions": []
+  },
+  {
+    "group": "cierre",
+    "time": 99,
+    "collisions": []
+  },
+  {
+    "group": "cierre",
+    "time": 99.5,
+    "collisions": []
+  },
+  {
+    "group": "cierre",
+    "time": 100,
+    "collisions": []
+  },
+  {
+    "group": "cierre",
+    "time": 101,
+    "collisions": []
+  },
+  {
+    "group": "cierre",
+    "time": 104,
+    "collisions": []
+  },
+  {
+    "group": "cierre",
+    "time": 107.9,
+    "collisions": []
+  }
+]

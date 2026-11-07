@@ -1,0 +1,69 @@
+{
+  "estado": "VERIFICADO",
+  "guion_integro": true,
+  "subtitulos": 31,
+  "muestras_visuales": [
+    {
+      "tiempo": 3.875,
+      "texto": "En un cliente, el saldo se mantiene estable.",
+      "limites_pixeles_subtitulo": [
+        635,
+        1024,
+        1284,
+        1052
+      ]
+    },
+    {
+      "tiempo": 25.125,
+      "texto": "El promedio de tres meses estima el comportamiento habitual.",
+      "limites_pixeles_subtitulo": [
+        706,
+        986,
+        1216,
+        1055
+      ]
+    },
+    {
+      "tiempo": 37.625,
+      "texto": "La utilización de tarjeta relaciona el saldo",
+      "limites_pixeles_subtitulo": [
+        652,
+        1023,
+        1269,
+        1055
+      ]
+    },
+    {
+      "tiempo": 76.70833333333333,
+      "texto": "Evaluaremos cada conjunto de variables contra su referencia,",
+      "limites_pixeles_subtitulo": [
+        729,
+        986,
+        1191,
+        1052
+      ]
+    },
+    {
+      "tiempo": 86.08333333333333,
+      "texto": "aportarán esos valores.",
+      "limites_pixeles_subtitulo": [
+        784,
+        1023,
+        1134,
+        1055
+      ]
+    },
+    {
+      "tiempo": 104.375,
+      "texto": "Lideraron la evaluación controlada;",
+      "limites_pixeles_subtitulo": [
+        698,
+        1023,
+        1220,
+        1052
+      ]
+    }
+  ],
+  "franja_inferior_despejada": true,
+  "tiempos_provisionales": true
+}

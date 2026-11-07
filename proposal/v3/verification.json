@@ -1,0 +1,103 @@
+{
+  "status": "VISUAL_DRAFT_VERIFIED_WITH_SOURCE_GAPS",
+  "duration_seconds": 120,
+  "scenes": 5,
+  "feature_families": 9,
+  "feature_definition_scenes": 1,
+  "consolidated_comparison_figure": true,
+  "distinct_metric_columns": true,
+  "global_numeric_feature_ranking": false,
+  "rank_result_unverified": true,
+  "narration_word_count": 244,
+  "segment_word_counts": [
+    29,
+    96,
+    26,
+    66,
+    27
+  ],
+  "target_segment_wpm": [
+    108.8,
+    125.2,
+    130.0,
+    116.5,
+    135.0
+  ],
+  "feature_scene_minimum_fit_font": 23,
+  "browser_errors": [],
+  "layout_issues": [],
+  "scene_checks": [
+    {
+      "time": 0,
+      "scene": "question"
+    },
+    {
+      "time": 8.0,
+      "scene": "question"
+    },
+    {
+      "time": 15.999,
+      "scene": "question"
+    },
+    {
+      "time": 16,
+      "scene": "features"
+    },
+    {
+      "time": 39.0,
+      "scene": "features"
+    },
+    {
+      "time": 61.999,
+      "scene": "features"
+    },
+    {
+      "time": 62,
+      "scene": "measurement"
+    },
+    {
+      "time": 68.0,
+      "scene": "measurement"
+    },
+    {
+      "time": 73.999,
+      "scene": "measurement"
+    },
+    {
+      "time": 74,
+      "scene": "comparison"
+    },
+    {
+      "time": 91.0,
+      "scene": "comparison"
+    },
+    {
+      "time": 107.999,
+      "scene": "comparison"
+    },
+    {
+      "time": 108,
+      "scene": "takeaway"
+    },
+    {
+      "time": 114.0,
+      "scene": "takeaway"
+    },
+    {
+      "time": 119.999,
+      "scene": "takeaway"
+    }
+  ],
+  "deterministic_animation_checks_passed": true,
+  "play_restart_and_end_checked": true,
+  "rendered_keyframes": 6,
+  "illustrative_history_values_are_experimental_data": false,
+  "source_gaps": [
+    "HT5955 per-seed outcomes absent: original 1/3/3/5/2 seed-win counts cannot be independently reproduced.",
+    "HT5956 summary/per-month outcomes absent: original exact profit deltas and all month-win counts cannot be independently reproduced.",
+    "Earlier Inicial reference 408.498 / submission 57670712 absent from supplied exports and audit report.",
+    "Training data, native models, live submission queries, and source-manifest hashes are not supplied or rerun."
+  ],
+  "final_recorded_audio": "NOT PROVIDED",
+  "final_manim_render": "NOT RUN"
+}

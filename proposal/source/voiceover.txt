@@ -1,0 +1,11 @@
+We tested whether recent behavior helps predict leaving the Premium package. Each feature variant was retrained with the same learner settings and training rules, using five matched random seeds.
+
+We compared last-month values, monthly changes, three-month averages, balance and payroll relative to their own recent averages, and card utilization. Only relative funds passed our predeclared selection rule.
+
+After tuning, that ensemble scored about four hundred and two on Inicial, below our earlier reference. We then tested six-month history, monetary ranks, usage changes, and an exponential moving average.
+
+We expected EMA to flag disengagement by emphasizing recent behavior. Six-month funds and three-month usage improved historical profit in both months. EMA’s profit benefit was inconsistent. These variants were never publicly scored.
+
+Later engineered pipelines reached the Senior leaderboard. None beat our champion’s public score of about four hundred and fifty-four. That champion already includes extensive historical features.
+
+Our recommendation: keep the rich-history champion. Prioritize controlled retests of six-month funds history and three-month usage. Keep EMA exploratory, and distinguish historical improvements from measured public performance.

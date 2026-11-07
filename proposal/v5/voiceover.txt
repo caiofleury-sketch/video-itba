@@ -1,0 +1,7 @@
+Same balance. Same story? One customer's balance is steady. The other's has just fallen. A snapshot hides the difference. We designed features to reveal the context behind the number.
+
+Lags preserve last month's values, adding recent context. Monthly changes expose sudden movement. Three-month averages estimate a customer's normal behavior. Relative balance and payroll compare today's values with that personal baseline, making changes comparable across customers. Card utilization relates balances to available credit, suggesting financial pressure. Six-month relative funds use a longer personal baseline. Relative usage measures debit and card activity against the customer's usual level, looking for disengagement. Monetary ranks represent a customer's position within the same month, putting amounts on comparable scales. Finally, exponential averages emphasize recent past behavior, so emerging changes matter more.
+
+The final comparison uses one business measure: additional profit. We will compare each tested addition with its stated reference under the same contact policy. The matched public submissions and historical profit exports will supply those values. Until those results are verified, we leave the monetary comparisons open rather than translating ranking scores into pesos.
+
+Start with balance and payroll relative to each customer’s prior three-month average, including near-zero flags. It led the controlled screen; confirm its profit with matched tests. Then test longer history and usage.

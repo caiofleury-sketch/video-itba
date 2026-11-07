@@ -1,0 +1,133 @@
+1
+00:00:00,040 --> 00:00:01,899
+Mismo saldo. ¿Misma historia?
+
+2
+00:00:01,979 --> 00:00:05,778
+En un cliente, el saldo se mantiene estable.
+
+3
+00:00:05,858 --> 00:00:08,202
+En otro, acaba de caer.
+
+4
+00:00:08,282 --> 00:00:11,596
+La foto del mes oculta esa diferencia.
+
+5
+00:00:11,676 --> 00:00:13,536
+Creamos variables para revelar
+
+6
+00:00:13,616 --> 00:00:15,960
+el contexto detrás del número.
+
+7
+00:00:16,040 --> 00:00:19,609
+El valor del mes anterior aporta memoria.
+
+8
+00:00:19,689 --> 00:00:22,737
+El cambio mensual muestra movimientos bruscos.
+
+9
+00:00:22,817 --> 00:00:27,428
+El promedio de tres meses estima
+el comportamiento habitual.
+
+10
+00:00:27,508 --> 00:00:31,077
+Los cambios relativos de saldo y haberes
+
+11
+00:00:31,157 --> 00:00:35,769
+comparan el presente con la
+historia de cada cliente.
+
+12
+00:00:35,849 --> 00:00:39,418
+La utilización de tarjeta relaciona el saldo
+
+13
+00:00:39,498 --> 00:00:41,503
+con el límite disponible.
+
+14
+00:00:41,583 --> 00:00:45,673
+Una referencia de seis meses
+incorpora más historia.
+
+15
+00:00:45,753 --> 00:00:50,886
+El uso relativo compara las
+operaciones con la actividad habitual,
+
+16
+00:00:50,966 --> 00:00:52,971
+buscando señales de desinterés.
+
+17
+00:00:53,051 --> 00:00:59,226
+Los rangos monetarios indican la
+posición de cada cliente dentro del mes.
+
+18
+00:00:59,306 --> 00:01:04,960
+Y el promedio exponencial da más
+peso a las observaciones recientes.
+
+19
+00:01:10,040 --> 00:01:13,320
+La comparación final usa una sola medida:
+
+20
+00:01:13,400 --> 00:01:14,760
+la ganancia adicional.
+
+21
+00:01:14,840 --> 00:01:18,600
+Evaluaremos cada conjunto de
+variables contra su referencia,
+
+22
+00:01:18,680 --> 00:01:21,480
+con la misma política de contactos.
+
+23
+00:01:21,560 --> 00:01:25,320
+Las pruebas públicas pareadas
+y los resultados históricos
+
+24
+00:01:25,400 --> 00:01:26,760
+aportarán esos valores.
+
+25
+00:01:26,840 --> 00:01:30,120
+Hasta verificarlos, dejamos las
+comparaciones monetarias pendientes:
+
+26
+00:01:30,200 --> 00:01:33,960
+no convertimos las mejoras
+de ordenamiento en pesos.
+
+27
+00:01:34,040 --> 00:01:36,553
+Recomendamos saldo y haberes relativos
+
+28
+00:01:36,633 --> 00:01:40,182
+al promedio de los tres meses previos,
+
+29
+00:01:40,262 --> 00:01:43,293
+con indicadores de escala casi nula.
+
+30
+00:01:43,373 --> 00:01:45,367
+Lideraron la evaluación controlada;
+
+31
+00:01:45,447 --> 00:01:47,960
+falta confirmar la ganancia incremental.

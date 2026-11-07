@@ -1,0 +1,58 @@
+{
+  "duracion": 40.054421768707485,
+  "onsets_detectados": 167,
+  "primeros_onsets": [
+    0.279,
+    0.418,
+    0.534,
+    0.65,
+    0.789,
+    0.906,
+    1.045,
+    1.161,
+    1.277,
+    1.416,
+    1.533,
+    1.649,
+    1.788,
+    1.904,
+    2.043,
+    2.159,
+    2.531,
+    2.786,
+    2.902,
+    3.042,
+    3.158,
+    3.274,
+    3.413,
+    3.529
+  ],
+  "intervalos_recurrentes_segundos": [
+    {
+      "intervalo": 0.115,
+      "cuenta": 51
+    },
+    {
+      "intervalo": 0.255,
+      "cuenta": 43
+    },
+    {
+      "intervalo": 0.135,
+      "cuenta": 34
+    },
+    {
+      "intervalo": 0.235,
+      "cuenta": 12
+    },
+    {
+      "intervalo": 0.485,
+      "cuenta": 6
+    },
+    {
+      "intervalo": 0.185,
+      "cuenta": 5
+    }
+  ],
+  "centroide_energia_hz": 449,
+  "proporcion_energia_entre_200_y_4000_hz": 0.583
+}

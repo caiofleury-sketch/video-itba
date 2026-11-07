@@ -1,0 +1,101 @@
+{
+  "title": "What feature engineering actually taught us",
+  "version": 1,
+  "language": "English",
+  "duration_seconds": 90,
+  "canvas": {"width": 1920, "height": 1080},
+  "presenter": {"x": 1512, "y": 96, "width": 312, "height": 312},
+  "safe_content": {"left": 96, "right": 1424, "top": 72, "bottom": 864},
+  "palette": {
+    "background": "#F7F8F5", "ink": "#172B3A", "muted": "#627079",
+    "line": "#DCE3DF", "teal": "#157F75", "teal_light": "#E4F3EC",
+    "amber": "#9A690C", "amber_light": "#FFF2D7", "clay": "#A45248"
+  },
+  "segments": [
+    {
+      "start": 0, "end": 15, "frame": 15,
+      "voiceover": "We tested whether recent behavior helps predict leaving the Premium package. Each feature variant was retrained with the same learner settings and training rules, using five matched random seeds.",
+      "takeaway": "One feature package at a time. Five matched seeds."
+    },
+    {
+      "start": 15, "end": 30, "frame": 30,
+      "voiceover": "We compared last-month values, monthly changes, three-month averages, balance and payroll relative to their own recent averages, and card utilization. Only relative funds passed our predeclared selection rule.",
+      "takeaway": "Only relative funds passed the first selection rule."
+    },
+    {
+      "start": 30, "end": 45, "frame": 45,
+      "voiceover": "After tuning, that ensemble scored about four hundred and two on Inicial, below our earlier reference. We then tested six-month history, monetary ranks, usage changes, and an exponential moving average.",
+      "takeaway": "One published final recipe; then a separate history pilot."
+    },
+    {
+      "start": 45, "end": 60, "frame": 60,
+      "voiceover": "We expected EMA to flag disengagement by emphasizing recent behavior. Six-month funds and three-month usage improved historical profit in both months. EMA’s profit benefit was inconsistent. These variants were never publicly scored.",
+      "takeaway": "Historical profit improved for some variants; none was public-scored."
+    },
+    {
+      "start": 60, "end": 75, "frame": 75,
+      "voiceover": "Later engineered pipelines reached the Senior leaderboard. None beat our champion’s public score of about four hundred and fifty-four. That champion already includes extensive historical features.",
+      "takeaway": "The rich-history champion remains the public reference."
+    },
+    {
+      "start": 75, "end": 90, "frame": 90,
+      "voiceover": "Our recommendation: keep the rich-history champion. Prioritize controlled retests of six-month funds history and three-month usage. Keep EMA exploratory, and distinguish historical improvements from measured public performance.",
+      "takeaway": "Keep the champion. Test funds6 and usage3 separately."
+    }
+  ],
+  "feature_screen": [
+    {"id": "lag1_core", "label": "Last-month values", "parameter": "Lag 1", "added_columns": 6, "seeds_improved": 1, "selected": false},
+    {"id": "delta1_core", "label": "Month-to-month changes", "parameter": "Delta 1", "added_columns": 6, "seeds_improved": 3, "selected": false},
+    {"id": "prior3_core", "label": "Three-month averages", "parameter": "Prior 3 · minimum 2", "added_columns": 12, "seeds_improved": 3, "selected": false},
+    {"id": "relative3_funds", "label": "Relative balance + payroll", "parameter": "Change vs own prior 3", "added_columns": 4, "seeds_improved": 5, "selected": true},
+    {"id": "card_utilization", "label": "Card utilization", "parameter": "Balance ÷ positive limit", "added_columns": 2, "seeds_improved": 2, "selected": false}
+  ],
+  "feature_selection_rule": "Positive mean paired AUC change and improvement in at least 4 of 5 matched seeds",
+  "initial_public": {
+    "study": "HT5955", "competition": "Inicial", "score": 401.915,
+    "contacts": [11500, 12000], "final_columns": 156, "hpo_configurations": 20, "ensemble_seeds": 5,
+    "previous_reference_score": 408.498, "previous_reference_submission": "57670712",
+    "attribution": "Selected feature package plus tuned learner, full-history refit, ensemble and contact policy"
+  },
+  "ema": {
+    "label": "Prior-only EMA3", "decay": 0.5, "minimum_known": 2,
+    "include_current": false, "adjusted": true, "all_available_past": true,
+    "relative_weight_labels": ["…", "0.125", "0.25", "0.5", "1.0"],
+    "illustration_is_observed_customer_data": false,
+    "hypothesis": "Recent changes may signal emerging disengagement more clearly than equally weighted older behavior"
+  },
+  "pilot": {
+    "study": "HT5956", "origins": [202105, 202107], "seeds": 5,
+    "metric": "Mean paired historical profit delta per 100,000 customers versus funds3",
+    "units": "million ARS", "public_submissions": 0,
+    "rows": [
+      {"id": "A_snapshot", "label": "Raw snapshot", "delta_millions": 0.24, "months_improved": 1, "reference": false},
+      {"id": "B_funds3", "label": "Funds3", "delta_millions": 0.0, "months_improved": 0, "reference": true},
+      {"id": "C_snapshot_rank", "label": "Raw + monetary ranks", "delta_millions": -1.15, "months_improved": 1, "reference": false},
+      {"id": "D_funds3_rank", "label": "Funds3 + ranks", "delta_millions": 1.76, "months_improved": 2, "reference": false},
+      {"id": "E_funds6", "label": "Funds3 + funds6", "delta_millions": 4.32, "months_improved": 2, "reference": false},
+      {"id": "F_usage3", "label": "Funds3 + usage3", "delta_millions": 2.49, "months_improved": 2, "reference": false},
+      {"id": "G_prior_ema3", "label": "Funds3 + prior EMA3", "delta_millions": 4.01, "months_improved": 1, "reference": false},
+      {"id": "H_rank_usage3", "label": "Funds3 + ranks + usage3", "delta_millions": -0.18, "months_improved": 1, "reference": false}
+    ]
+  },
+  "senior_public": {
+    "competition": "Senior", "contacts": 9000,
+    "rows": [
+      {"study": "HT5958", "label": "Rich-history champion", "recipe": "legacy_B_unchanged_ranking", "wave": "", "score": 453.831, "seed_count": 3},
+      {"study": "HT5960", "label": "Complete Senior pipeline", "recipe": "complete_Senior_reference", "wave": "", "score": 447.998, "seed_count": 10},
+      {"study": "HT5959", "label": "Repairs + funds3/6 (R2)", "recipe": "R2", "wave": "W2", "score": 439.331, "seed_count": 3}
+    ],
+    "attribution": "Matched contact count; complete recipes differ in representation, learner settings and seeds"
+  },
+  "recommendation": {
+    "retain": "The 1,914-feature rich-history champion",
+    "next_tests": ["Six-month funds history", "Three-month usage"],
+    "test_as_separate_additions": true,
+    "funds6_minimum_known": 3, "usage3_minimum_known": 2,
+    "relative_scale_floor": 1, "relative_clip": [-10, 10],
+    "exploratory": "Prior-only EMA3, decay 0.5; historical profit inconsistent across months",
+    "deployment_claim": false
+  },
+  "evidence_directory": "../../research_notes/Feature engineering public outcome audit"
+}

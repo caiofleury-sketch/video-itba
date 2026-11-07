@@ -1,0 +1,120 @@
+{
+  "estado": "VERIFICADO",
+  "motor": "Tone.js 15.1.22 / Chromium OfflineAudioContext",
+  "duracion_segundos": 108,
+  "frecuencia_muestreo": 48000,
+  "canales": 2,
+  "pcm_bits": 24,
+  "locucion_incluida": false,
+  "audio_referencia_reutilizado": false,
+  "pistas": {
+    "musica": {
+      "objetivo_lufs": -30,
+      "ganancia_aplicada_db": -2.71,
+      "medicion": {
+        "input_i": -30.02,
+        "input_tp": -16.0,
+        "input_lra": 5.5,
+        "input_thresh": -40.41
+      },
+      "formato": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "pcm_s24le",
+            "codec_type": "audio",
+            "sample_rate": "48000",
+            "channels": 2,
+            "r_frame_rate": "0/0"
+          }
+        ],
+        "format": {
+          "duration": "108.000000"
+        }
+      }
+    },
+    "acentos": {
+      "objetivo_lufs": -33,
+      "ganancia_aplicada_db": 3.83,
+      "medicion": {
+        "input_i": -39.91,
+        "input_tp": -20.0,
+        "input_lra": 6.6,
+        "input_thresh": -50.53
+      },
+      "formato": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "pcm_s24le",
+            "codec_type": "audio",
+            "sample_rate": "48000",
+            "channels": 2,
+            "r_frame_rate": "0/0"
+          }
+        ],
+        "format": {
+          "duration": "108.000000"
+        }
+      }
+    },
+    "mezcla": {
+      "medicion": {
+        "input_i": -29.97,
+        "input_tp": -16.0,
+        "input_lra": 5.6,
+        "input_thresh": -40.29
+      },
+      "formato": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "pcm_s24le",
+            "codec_type": "audio",
+            "sample_rate": "48000",
+            "channels": 2,
+            "r_frame_rate": "0/0"
+          }
+        ],
+        "format": {
+          "duration": "108.000000"
+        }
+      }
+    }
+  },
+  "video": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "codec_type": "video",
+        "width": 1920,
+        "height": 1080,
+        "r_frame_rate": "24/1",
+        "nb_frames": "2592",
+        "side_data_list": [
+          {}
+        ]
+      },
+      {
+        "codec_name": "aac",
+        "codec_type": "audio",
+        "sample_rate": "48000",
+        "channels": 2,
+        "r_frame_rate": "0/0",
+        "nb_frames": "5064"
+      }
+    ],
+    "format": {
+      "duration": "108.000000"
+    }
+  },
+  "video_sin_modificaciones": true,
+  "hash_video": "SHA256=c21c650b593793dd9dfbc85f510d1c61d17e51c85009ed5f37e47913d4257ca9",
+  "error_suma_pcm": 0,
+  "pico_ultimos_100ms": 0.0
+}

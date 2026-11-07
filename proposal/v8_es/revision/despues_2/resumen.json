@@ -1,0 +1,40 @@
+{
+  "revision": "final",
+  "frames": 84,
+  "frames_with_text_intersections": 3,
+  "intersections": [
+    {
+      "group": "cambio",
+      "time": 21.149,
+      "collisions": [
+        {
+          "a": "80",
+          "b": "caída = 10",
+          "area": 230.7
+        }
+      ]
+    },
+    {
+      "group": "fondos_3",
+      "time": 28.968,
+      "collisions": [
+        {
+          "a": "80",
+          "b": "−20%",
+          "area": 313.6
+        }
+      ]
+    },
+    {
+      "group": "uso",
+      "time": 45.813,
+      "collisions": [
+        {
+          "a": "Habitual: 12",
+          "b": "Actual: 6",
+          "area": 1154.0
+        }
+      ]
+    }
+  ]
+}

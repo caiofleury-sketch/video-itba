@@ -1,0 +1,52 @@
+{
+  "estado": "VERIFICADO",
+  "reproduccion_y_pausa": true,
+  "salto_de_escenas": true,
+  "silenciar_capas": true,
+  "ajuste_de_niveles": true,
+  "reinicio_al_final": true,
+  "vista_movil_sin_desbordes": true,
+  "errores_javascript": [],
+  "estados": [
+    {
+      "time": 1.4096,
+      "musicTime": 1.33686,
+      "fxTime": 1.33683,
+      "paused": false,
+      "musicVolume": 1,
+      "fxVolume": 1,
+      "musicMuted": false,
+      "fxMuted": false
+    },
+    {
+      "time": 94,
+      "musicTime": 94,
+      "fxTime": 94,
+      "paused": true,
+      "musicVolume": 1,
+      "fxVolume": 1,
+      "musicMuted": false,
+      "fxMuted": false
+    },
+    {
+      "time": 95.0054,
+      "musicTime": 94.933458,
+      "fxTime": 94.933437,
+      "paused": false,
+      "musicVolume": 0.45,
+      "fxVolume": 0.65,
+      "musicMuted": false,
+      "fxMuted": false
+    },
+    {
+      "time": 0.4444,
+      "musicTime": 0.368953,
+      "fxTime": 0.368937,
+      "paused": false,
+      "musicVolume": 0.45,
+      "fxVolume": 0.65,
+      "musicMuted": false,
+      "fxMuted": false
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+Description
+Competencia
+Esta es la cmpetencia Inicial de la materia Data Mining, edición 2026, cohorte C, de la Maestría en Ciencia de Datos, ITBA
+
+La competencia se utilizará las primeras clases para tratar con conceptos simples.
+
+Temporalidad
+Desde el punto de vista de los datos estamos parados al 30-septiembre-2021 a las 23:59:59
+
+Ganancia en el leaderboard
+La ganancia en el leaderboard está expresada en MILLONES de pesos argentinos.
+
+Objetivo
+El objetivo es predecir que clientes de Paquete Premium de la foto al 30-septiembre-2021 se darán de baja durante noviembre-2021, es decir predecir las BAJA+2 de la foto de 202109
+
+Funcion Ganancia
+La ganancia esta definida como
+
+ganancia = 975000* "BAJA+2" - 25000*( "BAJA+1" + "CONTINUA" )
+
+Objetivos Pedagógicos
+Conocer los hiperparámetros de un LightGBM y aprender a optimizarlos
+Feature Engineering de datos históricos
+Entender los conceptos de Data Drifting y Concept Drifting
+Aprender a reducir la varianza de los modelos
+Manejo de grandes volúmenes de datos en ambiente Cloud
+Evaluation
+Leaderboard publico y privado
+El leaderboard publico contiene aproximadamente el 30% de los registros, y el privado el otro 70% .
+
+La evaluación de la competencia se hace sobre el leaderboard privado, que solo será visible una vez finalizada la competencia.
+
+Se debe tener cuidado con no hacer overfitting en el leaderboard público.
+
+¿Qué se ve en el Public Leaderboard?
+De todas las predicciones subidas por un usuario a Kaggle, en el Public Leaderboard siempre se muestra la mayor ganancia pública, independientemente de la predicción elegida.
+
+Selección manual de una predicción
+Por default, Kaggle elige como predicción final a la que performa mejor en el Public Leaderboard. Paradojicamente esta no es siempre la mejor elección, ya que en el caso de haber subido muchas predicciones se puede estar "overfiteando el Public Leaderboard". Esto causará gran sorpresa y desazón entre los alumnos, realmente el fenómeno del overfitting es complejo y contraintuitivo.
+
+Para elegir manualmente una opcion, dentro de la competencia Kaggle se debe ir a la solapa My Submissions, y elegir manualmente en la columna Use for Final Score la opción que se desea. En caso que ya tuviera una opcion seleccionada manualmente, deberá primero desmarcarla antes de marcar la nueva.
+
+Es muy importante notar que esta elección manual NO alterará lo que se muestra en el Public Leaderboard, ya que Kaggle siempre muestra la ganancia del mejor submit público, y ahora acabamos de elegir otro submit.
+
+Formato del archivo
+Para cada numero_de_cliente del periodo 202109, los submits deben tener dos columnas separadas por una coma : numero_de_cliente y Predicted.
+
+numero_de_cliente toma los valores de los numero_de_cliente de los clientes de paquete premium del periodo 202109
+
+Predicted toma solamente los valores {0,1} e indica si ese cliente participa de la campaña de retención proactiva de clientes
+
+Se deben entregar 164935 predicciones, que es la cantidad de clientes de paquete premium de 202109
+
+La primer linea del archivo tiene los títulos, con lo cual el archivo debe tener 164935 + 1 lineas
+
+Este es un ejemplo de formato:
+
+numero_de_cliente,Predicted
+29186441,0
+29187730,0
+188009390,1
+Evaluation Details Pequeña
+Ganancia de un registro individual
+La predicción debe hacerse sobre el período 202109 , el que no tiene la clase. Este periodo consta de 164935 registros, o sea la predicción debe tener 165076 registros.
+
+Kaggle conoce el futuro, para cada uno de los 164935 registros del periodo 202109 sabe su clase, es decir si son { BAJA+1, BAJA+2, CONTINUA }
+
+Cuando se hace el submit para scorear el archivo [numero_de_cliente, estimulo], Kaggle calcula la ganancia de cada registro, hay solo TRES ganancias posibles.
+
+Si Predicted == 0 entonces no se envia nada a ese registro, bajo nuestra función de ganancia no se gana ni se pierde nada, entonces ganacia=0
+Si Predicted == 1 y realmente la persona es un BAJA+2 entonces la ganancia de ese registro es +975000
+Si Predicted == 1 pero en realidad la persona es un { CONTINUA, BAJA+1 } la ganancia de ese registro es -25000 (se pierden dos mil pesos)
+Leaderboards Público y Privado
+Internamente Kaggle dividió el dataset al azar en forma estratificada según la clase en dos partes, un 30% para el Leaderboard Publico y un 70% para el Leaderboard Privado. Estratificada significa que la división se hace cuidando que se mantenga la exacta proporción de cada clase en el Publico y el Privado.
+
+Kaggle jamás mostrará que registro está en el Publico y cual el Privado, eso es algo que se mantiene en secreto, al igual que obviamente se mantiene en secreto la clase del periodo 202109.
+
+Kaggle calcula la ganancia de cada registro, luego hace la suma de las ganancias para los leaderboards Público y Privado, y finalmente las escala. Escalar signfica lo siguiente, sea ganPublica la suma de las ganancias individuales del Leaderboard Publico, entonces lo que se muestra en este caso es ganPublica/0.30 dado que el Publico es el 30% del total.
+
+De igual forma, si ganPrivada es la suma de las ganancias individuales del Leaderboard Privado, lo que se muestra es ganPublica/0.70
+
+Detalles internos en Kaggle sobre la evaluacion
+La predicción debe hacerse sobre el periodo 202109 el que no tiene la clase. Este periodo consta de 165076 registros.
+
+El leaderboard publico esta compuesto por el 30% de los datos, 49523 registros mientras que el leaderboard privado es el 70% de los datos o sea 115553 registros. Se cumple que 49523 + 115553 = 165076
+
+Para reprensentar la verdadera formula del problema que es ganancia = 975000*aciertos - 25000*no_aciertos internamente en Kaggle se elige como métrica de evaluacion MeanUtility
+
+La métrica Kaggle de MeanUtility necesita de 4 parámetros TPGain, TNGain, FPLoss, FNLoss . En nuestro caso los positivos son los registros a los que se decide enviar el estímulo, los negativos a los que **no** se les envia.
+
+TP son los que se les envia el estímulo y efectivamente se dan de baja en el mes+2 (BAJA+2). A estos se les debe asignar el valor de 975000 * 165076 = 160949100000, para claridad en la visualización se lo divide por un millon y decimos que el valor esta expresado en millones. O sea, en Kaggle se carga el valor de TPGain 160949.1
+FP son los que se les envia el estímulo PERO no se dan de baja en el mes+2 ( BAJA+1 o CONTINUA). A estos se les debe asignar el valor de -25000 * 165076 = -4126900000, para claridad en la visualización se lo divide por un millon O sea, en Kaggle se carga el valor de FPLoss -4126.9
+TN son a quienes NO les envia estímulo y efectivamente son CONTINUA o BAJA+1, es decir fue correcta la decisión de no enviar. El valor de TNGain es de cero 0
+FN son a quienes NO les envia estímulo pero en realidad eran BAJA+2. Estas pesonas ya se me iban a ir si no hacia nada, con lo cual bajo la ganancia definina no se esta ganando ni perdiendo nada. El valor de FNGain es de cero 0

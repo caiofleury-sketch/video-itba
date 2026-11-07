@@ -1,0 +1,170 @@
+[
+  {
+    "group": "apertura",
+    "time": 2.8,
+    "collisions": []
+  },
+  {
+    "group": "apertura",
+    "time": 3.5,
+    "collisions": []
+  },
+  {
+    "group": "apertura",
+    "time": 4.2,
+    "collisions": []
+  },
+  {
+    "group": "apertura",
+    "time": 4.9,
+    "collisions": []
+  },
+  {
+    "group": "apertura",
+    "time": 5.6,
+    "collisions": []
+  },
+  {
+    "group": "apertura",
+    "time": 6.3,
+    "collisions": []
+  },
+  {
+    "group": "promedio",
+    "time": 22.877,
+    "collisions": []
+  },
+  {
+    "group": "promedio",
+    "time": 23.227,
+    "collisions": []
+  },
+  {
+    "group": "promedio",
+    "time": 23.577,
+    "collisions": []
+  },
+  {
+    "group": "promedio",
+    "time": 23.927,
+    "collisions": []
+  },
+  {
+    "group": "promedio",
+    "time": 24.277,
+    "collisions": []
+  },
+  {
+    "group": "promedio",
+    "time": 24.777,
+    "collisions": []
+  },
+  {
+    "group": "rangos",
+    "time": 53.111,
+    "collisions": []
+  },
+  {
+    "group": "rangos",
+    "time": 53.461,
+    "collisions": []
+  },
+  {
+    "group": "rangos",
+    "time": 53.811,
+    "collisions": [
+      {
+        "a": "80 ocupa el 2.º lugar de 4",
+        "b": "200",
+        "area": 654.2
+      }
+    ]
+  },
+  {
+    "group": "rangos",
+    "time": 54.161,
+    "collisions": [
+      {
+        "a": "80 ocupa el 2.º lugar de 4",
+        "b": "200",
+        "area": 353.4
+      }
+    ]
+  },
+  {
+    "group": "rangos",
+    "time": 54.511,
+    "collisions": []
+  },
+  {
+    "group": "rangos",
+    "time": 55.011,
+    "collisions": []
+  },
+  {
+    "group": "transiciones",
+    "time": 64.8,
+    "collisions": [
+      {
+        "a": "120",
+        "b": "1/32",
+        "area": 144.1
+      }
+    ]
+  },
+  {
+    "group": "transiciones",
+    "time": 65.0,
+    "collisions": []
+  },
+  {
+    "group": "transiciones",
+    "time": 65.3,
+    "collisions": []
+  },
+  {
+    "group": "transiciones",
+    "time": 69.9,
+    "collisions": []
+  },
+  {
+    "group": "transiciones",
+    "time": 70.2,
+    "collisions": []
+  },
+  {
+    "group": "transiciones",
+    "time": 71.0,
+    "collisions": []
+  },
+  {
+    "group": "recomendacion",
+    "time": 94.0,
+    "collisions": []
+  },
+  {
+    "group": "recomendacion",
+    "time": 94.5,
+    "collisions": []
+  },
+  {
+    "group": "recomendacion",
+    "time": 95.3,
+    "collisions": []
+  },
+  {
+    "group": "recomendacion",
+    "time": 96.1,
+    "collisions": []
+  },
+  {
+    "group": "recomendacion",
+    "time": 97.0,
+    "collisions": []
+  },
+  {
+    "group": "recomendacion",
+    "time": 98.5,
+    "collisions": []
+  }
+]

@@ -1,0 +1,134 @@
+Submission and Description
+
+Public Score
+
+Select
+
+candidate_D_conservative_probability_economic.csv
+Complete · 6d ago · HT5954v2 D_conservative_probability_economic recent development production single_lgb_multi offset025 contacts 9769 no leaderboard selection
+417.748
+
+candidate_C_probability_ensemble_economic.csv
+Complete · 6d ago · HT5954v2 C_probability_ensemble_economic recent development production pair_lgb_binary_lgb_multi offset025 contacts 8878 no leaderboard selection
+426.831
+
+candidate_B_best_single_economic.csv
+Complete · 6d ago · HT5954v2 B_best_single_economic recent development production single_lgb_multi offset025 contacts 8277 no leaderboard selection
+437.081
+
+candidate_A_guarded_rank7.csv
+Complete · 6d ago · HT5954v2 A_guarded_rank7 recent development production rank_guard rank7 contacts 11555 no leaderboard selection
+415.581
+
+HT5955_contacts_12000.csv
+Complete · 6d ago · HT5955 fixed recipe, contacts=12000
+401.915
+
+HT5955_contacts_11500.csv
+Complete · 6d ago · HT5955 fixed recipe, contacts=11500
+401.915
+
+HT5955_contacts_11000.csv
+Complete · 6d ago · HT5955 fixed recipe, contacts=11000
+396.581
+
+HT5955_contacts_10500.csv
+Complete · 6d ago · HT5955 fixed recipe, contacts=10500
+388.748
+
+HT5955_contacts_10000.csv
+Complete · 6d ago · HT5955 fixed recipe, contacts=10000
+390.081
+
+HT5955_contacts_9500.csv
+Complete · 6d ago · HT5955 fixed recipe, contacts=9500
+386.998
+
+HT5955_contacts_9000.csv
+Complete · 6d ago · HT5955 fixed recipe, contacts=9000
+389.998
+
+HT5955_contacts_8500.csv
+Complete · 6d ago · HT5955 fixed recipe, contacts=8500
+380.831
+
+HT5955_contacts_8000.csv
+Complete · 6d ago · HT5955 fixed recipe, contacts=8000
+366.081
+
+NO_UPLOAD_candidate_mc_intercept_p025.csv
+Complete · 11d ago · HT5953 | Standalone XGBoost multiclass, 192 rounds, 278 features, seed 333803. Trained Feb-Jul 2021; intercept calibration on May-Jul out-of-time predictions. Contact when calibrated P(BAJA+2)>0.025, no fixed quota. 10,928 contacts.
+381.248
+
+NO_UPLOAD_candidate_blend_base.csv
+Complete · 11d ago · HT5947 LGBM75-XGBmulticlass25 rank blend; XGB base278, depth6, eta0.05, rounds192, seed333803; top7%=11555
+408.498
+
+candidate_best_blend.csv
+Complete · 12d ago · TH05-temporal best_blend frozen equal_all seeds 3 rate 0.07 seed=333803
+394.581
+
+candidate_best_single.csv
+Complete · 12d ago · TH05-temporal best_single frozen tuned_2587ad8d seeds 1 rate 0.07 seed=333803
+406.331
+
+candidate_anchor_A.csv
+Complete · 12d ago · TH05-temporal anchor_A frozen A_fixed seeds 1 rate 0.0605781579393734 seed=333803
+356.248
+
+profit_selected.csv
+Complete · 13d ago · TH05-profit pooled_us0.5_raw_fixed lr=0.02204 leaves=10 minleaf=56 ff=0.959 l2=1.5084 bag=0.863 models=3 rate=0.06058 seed=333803
+333.748
+
+final_top10000.csv
+Complete · 13d ago · TH05 final seed=333803 lr=0.03543 leaves=28 minleaf=411 ff=0.840 l2=0.0000 bag=1.000 rounds=192 top=10000
+356.748
+
+submission_rpart_random__fine__0.5_6.0_150.0_15.0.csv
+Complete · 19d ago · stage=fine config=rpart_random__fine__0.5_6.0_150.0_15.0 seed=333803 ff=0.50 cp=-1 md=6 ms=150 mb=15 trees=32
+338.581
+
+submission_rpart_random__fine__0.6_8.0_300.0_12.0.csv
+Complete · 19d ago · stage=fine config=rpart_random__fine__0.6_8.0_300.0_12.0 seed=333803 ff=0.60 cp=-1 md=8 ms=300 mb=12 trees=32
+345.331
+
+submission_rpart_random__fine__0.6_4.0_250.0_15.0.csv
+Complete · 19d ago · stage=fine config=rpart_random__fine__0.6_4.0_250.0_15.0 seed=333803 ff=0.60 cp=-1 md=4 ms=250 mb=15 trees=32
+324.832
+
+submission_rpart_random__fine__0.5_6.0_150.0_20.0.csv
+Complete · 19d ago · stage=fine config=rpart_random__fine__0.5_6.0_150.0_20.0 seed=333803 ff=0.50 cp=-1 md=6 ms=150 mb=20 trees=32
+340.915
+
+submission_rpart_random__fine__0.7_6.0_400.0_12.0.csv
+Complete · 19d ago · stage=fine config=rpart_random__fine__0.7_6.0_400.0_12.0 seed=333803 ff=0.70 cp=-1 md=6 ms=400 mb=12 trees=32
+338.248
+
+submission_rpart_random__fine__0.5_4.0_250.0_25.0.csv
+Complete · 19d ago · stage=fine config=rpart_random__fine__0.5_4.0_250.0_25.0 seed=333803 ff=0.50 cp=-1 md=4 ms=250 mb=25 trees=32
+323.082
+
+submission_rpart_random__fine__0.6_8.0_500.0_10.0.csv
+Complete · 19d ago · stage=fine config=rpart_random__fine__0.6_8.0_500.0_10.0 seed=333803 ff=0.60 cp=-1 md=8 ms=500 mb=10 trees=32
+352.498
+
+submission_rpart_random__fine__0.8_10.0_300.0_12.0.csv
+Complete · 19d ago · stage=fine config=rpart_random__fine__0.8_10.0_300.0_12.0 seed=333803 ff=0.80 cp=-1 md=10 ms=300 mb=12 trees=32
+333.081
+
+submission_rpart_random__fine__0.4_8.0_200.0_25.0.csv
+Complete · 19d ago · stage=fine config=rpart_random__fine__0.4_8.0_200.0_25.0 seed=333803 ff=0.40 cp=-1 md=8 ms=200 mb=25 trees=32
+336.915
+
+submission_rpart_random__fine__0.4_6.0_200.0_15.0.csv
+Complete · 19d ago · stage=fine config=rpart_random__fine__0.4_6.0_200.0_15.0 seed=333803 ff=0.40 cp=-1 md=6 ms=200 mb=15 trees=32
+343.581
+
+submission_rpart_random__fine__0.7_8.0_400.0_10.0.csv
+Complete · 19d ago · stage=fine config=rpart_random__fine__0.7_8.0_400.0_10.0 seed=333803 ff=0.70 cp=-1 md=8 ms=400 mb=10 trees=32
+345.081
+
+submission_rpart_random__fine__0.5_6.0_200.0_20.0.csv
+Complete · 19d ago · stage=fine config=rpart_random__fine__0.5_6.0_200.0_20.0 seed=333803 ff=0.50 cp=-1 md=6 ms=200 mb=20 trees=32
+340.581
+

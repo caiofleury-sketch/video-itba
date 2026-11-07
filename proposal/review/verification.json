@@ -1,0 +1,116 @@
+{
+  "status": "REVIEW_DRAFT_VERIFIED_WITH_SOURCE_GAPS",
+  "source_reconciliation": "PASS_WITH_EXPLICIT_SOURCE_GAPS",
+  "source_gaps": [
+    "HT5955 per-seed outcomes absent: original 1/3/3/5/2 seed-win counts cannot be independently reproduced.",
+    "HT5956 summary/per-month outcomes absent: original exact profit deltas and all month-win counts cannot be independently reproduced.",
+    "Earlier Inicial reference 408.498 / submission 57670712 absent from supplied exports and audit report.",
+    "Training data, native models, live submission queries, and source-manifest hashes are not supplied or rerun."
+  ],
+  "original_voiceover_words": 172,
+  "revised_voiceover_words": 187,
+  "revised_segment_word_counts": [
+    27,
+    30,
+    37,
+    27,
+    33,
+    33
+  ],
+  "revised_segment_target_wpm": [
+    135.0,
+    128.6,
+    130.6,
+    124.6,
+    116.5,
+    116.5
+  ],
+  "duration": "90-second edit target; recording not supplied or measured",
+  "browser_scene_boundary_checks": [
+    {
+      "time": 0,
+      "scene": "design"
+    },
+    {
+      "time": 6.0,
+      "scene": "design"
+    },
+    {
+      "time": 11.999,
+      "scene": "design"
+    },
+    {
+      "time": 12,
+      "scene": "relative"
+    },
+    {
+      "time": 19.0,
+      "scene": "relative"
+    },
+    {
+      "time": 25.999,
+      "scene": "relative"
+    },
+    {
+      "time": 26,
+      "scene": "screen"
+    },
+    {
+      "time": 34.5,
+      "scene": "screen"
+    },
+    {
+      "time": 42.999,
+      "scene": "screen"
+    },
+    {
+      "time": 43,
+      "scene": "inicial"
+    },
+    {
+      "time": 49.5,
+      "scene": "inicial"
+    },
+    {
+      "time": 55.999,
+      "scene": "inicial"
+    },
+    {
+      "time": 56,
+      "scene": "pilot"
+    },
+    {
+      "time": 64.5,
+      "scene": "pilot"
+    },
+    {
+      "time": 72.999,
+      "scene": "pilot"
+    },
+    {
+      "time": 73,
+      "scene": "decision"
+    },
+    {
+      "time": 81.5,
+      "scene": "decision"
+    },
+    {
+      "time": 89.999,
+      "scene": "decision"
+    }
+  ],
+  "browser_errors": [],
+  "layout_issues": [],
+  "scene_navigation_checked": true,
+  "headshot_guide_checked": true,
+  "play_pause_checked": true,
+  "within_scene_reveals_checked": true,
+  "rendered_keyframes": 6,
+  "keyframe_dimensions": [
+    1920,
+    1080
+  ],
+  "final_manim_build": "NOT RUN",
+  "final_video_render": "NOT RUN"
+}

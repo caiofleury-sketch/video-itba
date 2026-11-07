@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "voiceover_words": 172,
+  "segment_word_counts": [
+    29,
+    28,
+    30,
+    32,
+    26,
+    27
+  ],
+  "spoken_word_estimate_splitting_hyphenated_compounds": 181,
+  "average_words_per_minute_over_90s": 114.7,
+  "timing_is_edit_target_not_measured_recording": true,
+  "feature_screen_rows_verified": 5,
+  "pilot_rows_verified": 8,
+  "feature_and_ema_parameters_verified": true,
+  "public_scores_verified": 5,
+  "separate_competition_tracks": true,
+  "ema_relative_weights_not_normalized_percentages": true,
+  "future_candidates_not_claimed_as_public_winners": true,
+  "svg_frames_validated": 7,
+  "javascript_syntax_checked": true,
+  "brief_matches_voiceover_plan": true
+}

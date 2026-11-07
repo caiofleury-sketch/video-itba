@@ -1,0 +1,67 @@
+{
+  "status": "PASS_WITH_PROFIT_RESULTS_PENDING",
+  "duration": 108,
+  "scoring_rules_scene_removed": true,
+  "feature_construction_beats": 9,
+  "overview_included": true,
+  "profit_only_layout": true,
+  "verified_profit_values_available": 0,
+  "explicit_recommendation": true,
+  "example_math_verified": true,
+  "browser_errors": [],
+  "geometry_issues": [],
+  "poses": [
+    {
+      "pose": "history",
+      "time": 10
+    },
+    {
+      "pose": "lag",
+      "time": 18.1
+    },
+    {
+      "pose": "delta",
+      "time": 21.749000000000002
+    },
+    {
+      "pose": "mean",
+      "time": 24.877000000000002
+    },
+    {
+      "pose": "relative",
+      "time": 29.568
+    },
+    {
+      "pose": "utilization",
+      "time": 37.909
+    },
+    {
+      "pose": "six_month",
+      "time": 43.643
+    },
+    {
+      "pose": "usage",
+      "time": 47.813
+    },
+    {
+      "pose": "ranks",
+      "time": 55.111000000000004
+    },
+    {
+      "pose": "ema",
+      "time": 61.366
+    },
+    {
+      "pose": "overview",
+      "time": 68
+    },
+    {
+      "pose": "profit_layout",
+      "time": 90
+    },
+    {
+      "pose": "recommendation",
+      "time": 106
+    }
+  ]
+}

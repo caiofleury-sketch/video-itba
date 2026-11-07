@@ -1,0 +1,103 @@
+{
+  "estado": "VERIFICADO",
+  "fotogramas_decodificados": 16,
+  "apertura_3d_incluida": true,
+  "muestras": [
+    {
+      "tiempo": 4.25,
+      "fotograma": 102,
+      "diferencia_media_rgb": 1.085,
+      "diferencia_area_grafica": 1.083
+    },
+    {
+      "tiempo": 10,
+      "fotograma": 240,
+      "diferencia_media_rgb": 1.216,
+      "diferencia_area_grafica": 1.347
+    },
+    {
+      "tiempo": 17.5,
+      "fotograma": 420,
+      "diferencia_media_rgb": 1.19,
+      "diferencia_area_grafica": 1.289
+    },
+    {
+      "tiempo": 21.125,
+      "fotograma": 507,
+      "diferencia_media_rgb": 1.22,
+      "diferencia_area_grafica": 1.354
+    },
+    {
+      "tiempo": 24.25,
+      "fotograma": 582,
+      "diferencia_media_rgb": 1.259,
+      "diferencia_area_grafica": 1.438
+    },
+    {
+      "tiempo": 29.125,
+      "fotograma": 699,
+      "diferencia_media_rgb": 1.235,
+      "diferencia_area_grafica": 1.386
+    },
+    {
+      "tiempo": 33.25,
+      "fotograma": 798,
+      "diferencia_media_rgb": 1.29,
+      "diferencia_area_grafica": 1.508
+    },
+    {
+      "tiempo": 37,
+      "fotograma": 888,
+      "diferencia_media_rgb": 1.183,
+      "diferencia_area_grafica": 1.274
+    },
+    {
+      "tiempo": 43,
+      "fotograma": 1032,
+      "diferencia_media_rgb": 1.243,
+      "diferencia_area_grafica": 1.404
+    },
+    {
+      "tiempo": 45.875,
+      "fotograma": 1101,
+      "diferencia_media_rgb": 1.215,
+      "diferencia_area_grafica": 1.343
+    },
+    {
+      "tiempo": 54.125,
+      "fotograma": 1299,
+      "diferencia_media_rgb": 1.226,
+      "diferencia_area_grafica": 1.367
+    },
+    {
+      "tiempo": 61.25,
+      "fotograma": 1470,
+      "diferencia_media_rgb": 1.271,
+      "diferencia_area_grafica": 1.466
+    },
+    {
+      "tiempo": 68,
+      "fotograma": 1632,
+      "diferencia_media_rgb": 1.333,
+      "diferencia_area_grafica": 1.6
+    },
+    {
+      "tiempo": 70.75,
+      "fotograma": 1698,
+      "diferencia_media_rgb": 1.12,
+      "diferencia_area_grafica": 1.126
+    },
+    {
+      "tiempo": 100.5,
+      "fotograma": 2412,
+      "diferencia_media_rgb": 1.329,
+      "diferencia_area_grafica": 1.535
+    },
+    {
+      "tiempo": 106,
+      "fotograma": 2544,
+      "diferencia_media_rgb": 1.289,
+      "diferencia_area_grafica": 1.493
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "times": [
+    3.5,
+    6,
+    16.5,
+    17.2,
+    62.4,
+    63,
+    74.4,
+    75
+  ],
+  "issues": [],
+  "method": "Transformed browser bounding boxes of text, including nested glyphs, normalized to SVG coordinates"
+}

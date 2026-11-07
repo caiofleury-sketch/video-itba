@@ -1,0 +1,74 @@
+{
+  "layouts": [
+    {
+      "file": "frame_90s.svg",
+      "crosses_content_divider_or_canvas": []
+    },
+    {
+      "file": "frame_45s.svg",
+      "crosses_content_divider_or_canvas": []
+    },
+    {
+      "file": "insert_35s_inicial.svg",
+      "crosses_content_divider_or_canvas": []
+    },
+    {
+      "file": "frame_60s.svg",
+      "crosses_content_divider_or_canvas": []
+    },
+    {
+      "file": "frame_15s.svg",
+      "crosses_content_divider_or_canvas": []
+    },
+    {
+      "file": "frame_75s.svg",
+      "crosses_content_divider_or_canvas": []
+    },
+    {
+      "file": "frame_30s.svg",
+      "crosses_content_divider_or_canvas": []
+    }
+  ],
+  "timing": [
+    {
+      "time": 35,
+      "visual": "A final recipe reached the public board",
+      "narration": "After tuning, that ensemble scored about four hundred and two on Inicial, below our earlier reference. We then tested six-month history, monetary ranks, usage changes, and an exponential moving average."
+    },
+    {
+      "time": 45,
+      "visual": "Let recent history speak louder",
+      "narration": "After tuning, that ensemble scored about four hundred and two on Inicial, below our earlier reference. We then tested six-month history, monetary ranks, usage changes, and an exponential moving average."
+    },
+    {
+      "time": 48,
+      "visual": "Let recent history speak louder",
+      "narration": "We expected EMA to flag disengagement by emphasizing recent behavior. Six-month funds and three-month usage improved historical profit in both months. EMA\u2019s profit benefit was inconsistent. These variants were never publicly scored."
+    },
+    {
+      "time": 49,
+      "visual": "Let recent history speak louder",
+      "narration": "We expected EMA to flag disengagement by emphasizing recent behavior. Six-month funds and three-month usage improved historical profit in both months. EMA\u2019s profit benefit was inconsistent. These variants were never publicly scored."
+    },
+    {
+      "time": 50,
+      "visual": "Consistency matters as much as the average",
+      "narration": "We expected EMA to flag disengagement by emphasizing recent behavior. Six-month funds and three-month usage improved historical profit in both months. EMA\u2019s profit benefit was inconsistent. These variants were never publicly scored."
+    },
+    {
+      "time": 60,
+      "visual": "Consistency matters as much as the average",
+      "narration": "We expected EMA to flag disengagement by emphasizing recent behavior. Six-month funds and three-month usage improved historical profit in both months. EMA\u2019s profit benefit was inconsistent. These variants were never publicly scored."
+    },
+    {
+      "time": 75,
+      "visual": "Check the actual public result",
+      "narration": "Later engineered pipelines reached the Senior leaderboard. None beat our champion\u2019s public score of about four hundred and fifty-four. That champion already includes extensive historical features."
+    },
+    {
+      "time": 90,
+      "visual": "Keep our best model. Make the next test precise.",
+      "narration": "Our recommendation: keep the rich-history champion. Prioritize controlled retests of six-month funds history and three-month usage. Keep EMA exploratory, and distinguish historical improvements from measured public performance."
+    }
+  ]
+}

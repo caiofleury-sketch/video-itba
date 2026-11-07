@@ -1,0 +1,194 @@
+{
+  "estado": "VERIFICADO",
+  "primera_nota_programada": 0.6,
+  "primer_audio_detectado": 0.6060833333333333,
+  "cues": 37,
+  "muestras": [
+    {
+      "tiempo": 0.6,
+      "accion": "Dos saldos iguales comparten la misma nota",
+      "pico_ventana_800ms_dbfs": -23.46
+    },
+    {
+      "tiempo": 2.6,
+      "accion": "La cámara abre la historia",
+      "pico_ventana_800ms_dbfs": -23.11
+    },
+    {
+      "tiempo": 3.3,
+      "accion": "Se separan los planos del pasado",
+      "pico_ventana_800ms_dbfs": -25.75
+    },
+    {
+      "tiempo": 8.8,
+      "accion": "Dos referencias personales, dos historias",
+      "pico_ventana_800ms_dbfs": -23.16
+    },
+    {
+      "tiempo": 16.08,
+      "accion": "Entrada: Valor del mes anterior",
+      "pico_ventana_800ms_dbfs": -25.46
+    },
+    {
+      "tiempo": 17.8,
+      "accion": "El valor anterior llega a su nueva posición",
+      "pico_ventana_800ms_dbfs": -25.48
+    },
+    {
+      "tiempo": 19.729,
+      "accion": "Entrada: Cambios mensuales",
+      "pico_ventana_800ms_dbfs": -25.78
+    },
+    {
+      "tiempo": 20.099,
+      "accion": "Se revela el descenso mensual",
+      "pico_ventana_800ms_dbfs": -26.68
+    },
+    {
+      "tiempo": 22.857,
+      "accion": "Entrada: Promedios de tres meses",
+      "pico_ventana_800ms_dbfs": -26.19
+    },
+    {
+      "tiempo": 23.127,
+      "accion": "Tres observaciones construyen la referencia",
+      "pico_ventana_800ms_dbfs": -26.43
+    },
+    {
+      "tiempo": 24.577,
+      "accion": "La superficie alcanza la media",
+      "pico_ventana_800ms_dbfs": -22.82
+    },
+    {
+      "tiempo": 27.548,
+      "accion": "Entrada: Fondos relativos · 3 meses",
+      "pico_ventana_800ms_dbfs": -25.44
+    },
+    {
+      "tiempo": 29.268,
+      "accion": "La diferencia se expresa a escala personal",
+      "pico_ventana_800ms_dbfs": -24.33
+    },
+    {
+      "tiempo": 31.168,
+      "accion": "Vuelven los dos clientes de la apertura",
+      "pico_ventana_800ms_dbfs": -20.57
+    },
+    {
+      "tiempo": 32.568,
+      "accion": "La caída y la estabilidad quedan contrastadas",
+      "pico_ventana_800ms_dbfs": -20.0
+    },
+    {
+      "tiempo": 35.889,
+      "accion": "Entrada: Utilización de tarjeta",
+      "pico_ventana_800ms_dbfs": -25.67
+    },
+    {
+      "tiempo": 36.109,
+      "accion": "El anillo muestra la proporción utilizada",
+      "pico_ventana_800ms_dbfs": -28.48
+    },
+    {
+      "tiempo": 41.623,
+      "accion": "Entrada: Fondos relativos · 6 meses",
+      "pico_ventana_800ms_dbfs": -25.5
+    },
+    {
+      "tiempo": 41.843,
+      "accion": "La referencia incorpora seis meses",
+      "pico_ventana_800ms_dbfs": -28.69
+    },
+    {
+      "tiempo": 45.793,
+      "accion": "Entrada: Uso relativo",
+      "pico_ventana_800ms_dbfs": -25.95
+    },
+    {
+      "tiempo": 45.963,
+      "accion": "La actividad deja seis posiciones vacías",
+      "pico_ventana_800ms_dbfs": -28.65
+    },
+    {
+      "tiempo": 53.091,
+      "accion": "Entrada: Rangos monetarios",
+      "pico_ventana_800ms_dbfs": -25.69
+    },
+    {
+      "tiempo": 53.461,
+      "accion": "Los valores recorren carriles para ordenarse",
+      "pico_ventana_800ms_dbfs": -26.86
+    },
+    {
+      "tiempo": 55.411,
+      "accion": "El orden queda establecido",
+      "pico_ventana_800ms_dbfs": -24.59
+    },
+    {
+      "tiempo": 59.346,
+      "accion": "Entrada: Promedio exponencial",
+      "pico_ventana_800ms_dbfs": -26.19
+    },
+    {
+      "tiempo": 59.466,
+      "accion": "Las observaciones recientes pesan más",
+      "pico_ventana_800ms_dbfs": -29.25
+    },
+    {
+      "tiempo": 65,
+      "accion": "Las nueve familias forman un mapa",
+      "pico_ventana_800ms_dbfs": -25.76
+    },
+    {
+      "tiempo": 70,
+      "accion": "Entrada a la comparación de ganancia",
+      "pico_ventana_800ms_dbfs": -26.68
+    },
+    {
+      "tiempo": 94.25,
+      "accion": "Aparece la variable recomendada 1",
+      "pico_ventana_800ms_dbfs": -25.37
+    },
+    {
+      "tiempo": 94.7,
+      "accion": "Aparece la variable recomendada 2",
+      "pico_ventana_800ms_dbfs": -25.61
+    },
+    {
+      "tiempo": 95.15,
+      "accion": "Aparece la variable recomendada 3",
+      "pico_ventana_800ms_dbfs": -26.19
+    },
+    {
+      "tiempo": 95.6,
+      "accion": "Aparece la variable recomendada 4",
+      "pico_ventana_800ms_dbfs": -26.52
+    },
+    {
+      "tiempo": 97.8,
+      "accion": "La variable 1 añade una capa al modelo",
+      "pico_ventana_800ms_dbfs": -24.17
+    },
+    {
+      "tiempo": 98.25,
+      "accion": "La variable 2 añade una capa al modelo",
+      "pico_ventana_800ms_dbfs": -24.29
+    },
+    {
+      "tiempo": 98.7,
+      "accion": "La variable 3 añade una capa al modelo",
+      "pico_ventana_800ms_dbfs": -24.4
+    },
+    {
+      "tiempo": 99.15,
+      "accion": "La variable 4 añade una capa al modelo",
+      "pico_ventana_800ms_dbfs": -24.57
+    },
+    {
+      "tiempo": 100.5,
+      "accion": "Las cuatro variables quedan incorporadas",
+      "pico_ventana_800ms_dbfs": -25.78
+    }
+  ],
+  "fuente_visual_coincide": true
+}

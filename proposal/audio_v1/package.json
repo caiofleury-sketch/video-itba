@@ -1,0 +1,7 @@
+{
+  "name": "video-itba-soundscape",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Banda sonora programada para la película de ingeniería de variables",
+  "dependencies": {"tone": "15.1.22"}
+}

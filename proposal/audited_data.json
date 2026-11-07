@@ -1,0 +1,183 @@
+{
+  "scope": "Added feature packages, their rationale, controlled impact, and final recipe outcome. Exclude inflation/IPC and pre-existing feature inventory.",
+  "baseline_auc": 0.895958660563797,
+  "features": [
+    {
+      "id": "lag1_core",
+      "label": "Last-month values",
+      "columns": 6,
+      "mean_auc": 0.895450269711805,
+      "delta_auc": -0.0005083908519920577,
+      "selected": false,
+      "definition": {
+        "columns": 6,
+        "formula": "x[t-1], exact calendar lookup",
+        "id": "lag1_core",
+        "scope": "core_fields"
+      }
+    },
+    {
+      "id": "delta1_core",
+      "label": "Month-to-month changes",
+      "columns": 6,
+      "mean_auc": 0.896405244435461,
+      "delta_auc": 0.00044658387166396363,
+      "selected": false,
+      "definition": {
+        "columns": 6,
+        "formula": "x[t]-x[t-1], both finite",
+        "id": "delta1_core",
+        "scope": "core_fields"
+      }
+    },
+    {
+      "id": "prior3_core",
+      "label": "Three-month averages",
+      "columns": 12,
+      "mean_auc": 0.896636813784094,
+      "delta_auc": 0.000678153220296962,
+      "selected": false,
+      "definition": {
+        "columns": 12,
+        "formula": "prior-only mean t-1:t-3, minimum 2 finite values, plus known count",
+        "id": "prior3_core",
+        "scope": "core_fields"
+      }
+    },
+    {
+      "id": "relative3_funds",
+      "label": "Relative balance + payroll",
+      "columns": 4,
+      "mean_auc": 0.89741463061654,
+      "delta_auc": 0.0014559700527430053,
+      "selected": true,
+      "definition": {
+        "columns": 4,
+        "formula": "clip((current-prior3_min2_mean)/max(abs(prior3_min2_mean),1),-10,10), plus near-zero prior flag",
+        "id": "relative3_funds",
+        "scope": [
+          "mcuentas_saldo",
+          "mpayroll"
+        ]
+      }
+    },
+    {
+      "id": "card_utilization",
+      "label": "Card utilization",
+      "columns": 2,
+      "mean_auc": 0.895789819583712,
+      "delta_auc": -0.0001688409800850721,
+      "selected": false,
+      "definition": {
+        "columns": 2,
+        "formula": "clip(msaldototal/mlimitecompra,-10,10), finite numerator and positive finite denominator",
+        "id": "card_utilization",
+        "scope": [
+          "Master",
+          "Visa"
+        ]
+      }
+    }
+  ],
+  "hpo": {
+    "evaluations": 20,
+    "winner_trial": 10,
+    "selected_parameters": {
+      "bagging_fraction": 0.786,
+      "clip": [
+        -10,
+        10
+      ],
+      "feature_fraction": 0.6003913574386388,
+      "history_window": 3,
+      "lambda_l2": 8.7465,
+      "learning_rate": 0.04648715360654122,
+      "max_bin": 31,
+      "min_data_in_leaf": 339,
+      "minimum_known": 2,
+      "num_iterations": 308,
+      "num_leaves": 62,
+      "scale_floor": 1
+    }
+  },
+  "initial": {
+    "competition": "Inicial",
+    "score": 401.915,
+    "contacts": [
+      11500,
+      12000
+    ],
+    "curve": [
+      {
+        "contacts": 8000,
+        "score": 366.081,
+        "submission": "57852521"
+      },
+      {
+        "contacts": 8500,
+        "score": 380.831,
+        "submission": "57852522"
+      },
+      {
+        "contacts": 9000,
+        "score": 389.998,
+        "submission": "57852524"
+      },
+      {
+        "contacts": 9500,
+        "score": 386.998,
+        "submission": "57852527"
+      },
+      {
+        "contacts": 10000,
+        "score": 390.081,
+        "submission": "57852528"
+      },
+      {
+        "contacts": 10500,
+        "score": 388.748,
+        "submission": "57852529"
+      },
+      {
+        "contacts": 11000,
+        "score": 396.581,
+        "submission": "57852530"
+      },
+      {
+        "contacts": 11500,
+        "score": 401.915,
+        "submission": "57852532"
+      },
+      {
+        "contacts": 12000,
+        "score": 401.915,
+        "submission": "57852534"
+      }
+    ]
+  },
+  "pilot": {
+    "source": "Supplied audit report, section 4; qualitative outcomes only",
+    "months": [
+      "May 2021",
+      "July 2021"
+    ],
+    "public_scored": false,
+    "findings": [
+      {
+        "label": "Longer funds history",
+        "outcome": "Improved in both months",
+        "kind": "consistent"
+      },
+      {
+        "label": "Usage changes",
+        "outcome": "Improved in both months",
+        "kind": "consistent"
+      },
+      {
+        "label": "Prior-only EMA",
+        "outcome": "Mixed across months",
+        "kind": "mixed"
+      }
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "ht5955_public_scores_reconciled": 9,
+  "leaderboard_units": "million ARS, already public-subset scaled",
+  "correct_contact_ars": 975000,
+  "wrong_contact_ars": -25000,
+  "no_contact_ars": 0,
+  "reference_public_score_million_ars": 401.915,
+  "auc_delta_conversion": "delta_auc * 10000 = expected additional correctly ordered target/other pair equivalents; rounded for display",
+  "auc_to_money_conversion": false,
+  "additional_retained_customers_inferred": false,
+  "row_count_conflict_in_competition_text": "164935 vs 165076; not used to infer a customer count",
+  "private_formula_typo_in_competition_text": "Text says ganPublica/0.70 for private; not used",
+  "per_feature_public_deltas": "Pending matched Kaggle submissions"
+}
