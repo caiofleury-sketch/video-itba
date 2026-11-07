@@ -1,0 +1,444 @@
+{
+  "piano": {
+    "instrument": "acoustic_grand_piano",
+    "source": "https://raw.githubusercontent.com/gleitz/midi-js-soundfonts/gh-pages/FluidR3_GM/acoustic_grand_piano-mp3.js",
+    "bank_sha256": "00eebe0214c12ff8f32c47c2f7ac92ef352800e868ab0f883b80854486ac4ca6",
+    "license": "CC-BY-3.0",
+    "urls": {
+      "D4": "assets/piano/M62.mp3",
+      "Eb4": "assets/piano/M63.mp3",
+      "F4": "assets/piano/M65.mp3",
+      "G4": "assets/piano/M67.mp3",
+      "Ab4": "assets/piano/M68.mp3",
+      "Bb4": "assets/piano/M70.mp3",
+      "C5": "assets/piano/M72.mp3",
+      "D5": "assets/piano/M74.mp3",
+      "Eb5": "assets/piano/M75.mp3"
+    },
+    "files": [
+      {
+        "note": "D4",
+        "midi": 62,
+        "file": "assets/piano/M62.mp3",
+        "sha256": "90539782bdbbbe714de579bfbbe6f478e07e112c6f78d03e8ee82462fbf2a569",
+        "bytes": 25585
+      },
+      {
+        "note": "Eb4",
+        "midi": 63,
+        "file": "assets/piano/M63.mp3",
+        "sha256": "96586e2865651cfa0469e762f3bd40821f6e45eecf4761a86a37bc59cfebfb2c",
+        "bytes": 25585
+      },
+      {
+        "note": "F4",
+        "midi": 65,
+        "file": "assets/piano/M65.mp3",
+        "sha256": "a7426425ed95ea8652a888d850c34c4b766c7c7a11c168ed6899c38a6836be0c",
+        "bytes": 25585
+      },
+      {
+        "note": "G4",
+        "midi": 67,
+        "file": "assets/piano/M67.mp3",
+        "sha256": "37d21e13d5cecc8c0f1645c83bfe82f6032407a3b7de3dde14021c196526664e",
+        "bytes": 25585
+      },
+      {
+        "note": "Ab4",
+        "midi": 68,
+        "file": "assets/piano/M68.mp3",
+        "sha256": "e8612f8602d1c146f9b7f69a441ee518876ccdfa469457366c8064c25d9d3116",
+        "bytes": 25585
+      },
+      {
+        "note": "Bb4",
+        "midi": 70,
+        "file": "assets/piano/M70.mp3",
+        "sha256": "d8f729899595116cb62ca9b7b801b4dfb9322bdf50d1bbfa847010e43a39f8f5",
+        "bytes": 25585
+      },
+      {
+        "note": "C5",
+        "midi": 72,
+        "file": "assets/piano/M72.mp3",
+        "sha256": "7a4be6dae323ac5564ad1a617b554fd595e5e0a63f19c3581e3ee94c33ae2e4b",
+        "bytes": 25585
+      },
+      {
+        "note": "D5",
+        "midi": 74,
+        "file": "assets/piano/M74.mp3",
+        "sha256": "b25b5e541807af700f4e2272ac4c55a2f9b5cc8f176fcd9961d4456803af2b87",
+        "bytes": 25585
+      },
+      {
+        "note": "Eb5",
+        "midi": 75,
+        "file": "assets/piano/M75.mp3",
+        "sha256": "aad99b852c20c2aee66143dd103513523566716cb2f4c6ef6ac478ef84f282b0",
+        "bytes": 24753
+      }
+    ]
+  },
+  "rhodes": {
+    "instrument": "electric_piano_1",
+    "source": "https://raw.githubusercontent.com/gleitz/midi-js-soundfonts/gh-pages/FluidR3_GM/electric_piano_1-mp3.js",
+    "bank_sha256": "19041530232e66f8d9b00f43ede2fa50f59a55b1a27a81daf864c54d371426b2",
+    "license": "CC-BY-3.0",
+    "urls": {
+      "Eb3": "assets/rhodes/M51.mp3",
+      "F3": "assets/rhodes/M53.mp3",
+      "G3": "assets/rhodes/M55.mp3",
+      "Ab3": "assets/rhodes/M56.mp3",
+      "Bb3": "assets/rhodes/M58.mp3",
+      "C4": "assets/rhodes/M60.mp3",
+      "D4": "assets/rhodes/M62.mp3",
+      "Eb4": "assets/rhodes/M63.mp3",
+      "F4": "assets/rhodes/M65.mp3",
+      "G4": "assets/rhodes/M67.mp3",
+      "Bb4": "assets/rhodes/M70.mp3"
+    },
+    "files": [
+      {
+        "note": "Eb3",
+        "midi": 51,
+        "file": "assets/rhodes/M51.mp3",
+        "sha256": "37548da76846d6c34e784470214956b582ad687aaff476331cc188ff775c8677",
+        "bytes": 20333
+      },
+      {
+        "note": "F3",
+        "midi": 53,
+        "file": "assets/rhodes/M53.mp3",
+        "sha256": "57becf3b525185065fde065eb43a6f249cea0d6f0bbe83af18621a73373dda60",
+        "bytes": 21633
+      },
+      {
+        "note": "G3",
+        "midi": 55,
+        "file": "assets/rhodes/M55.mp3",
+        "sha256": "a7efc5cb372ba3e0be607aac3a7eafe7f01e9b201ed5f35d02fdb7bd0ff15cbe",
+        "bytes": 23011
+      },
+      {
+        "note": "Ab3",
+        "midi": 56,
+        "file": "assets/rhodes/M56.mp3",
+        "sha256": "e319e2b16149fba5ba27722fa4b7bee7ab2876cb3d1eff8668963c3a6d6b7939",
+        "bytes": 22881
+      },
+      {
+        "note": "Bb3",
+        "midi": 58,
+        "file": "assets/rhodes/M58.mp3",
+        "sha256": "c24632762e25afd929e7d01119fc24d9135e3d6a9f49fde6e6f1e484fd731ad3",
+        "bytes": 19111
+      },
+      {
+        "note": "C4",
+        "midi": 60,
+        "file": "assets/rhodes/M60.mp3",
+        "sha256": "096c7cdb68e9a0cb645a932eea80562a5c7d43f17dd94d231135f883e860048d",
+        "bytes": 19553
+      },
+      {
+        "note": "D4",
+        "midi": 62,
+        "file": "assets/rhodes/M62.mp3",
+        "sha256": "7cf0fa4d0f5bb7093f89d7cfe49a8a2c55663bc6a374bbf7445d4dec0b040ef8",
+        "bytes": 20489
+      },
+      {
+        "note": "Eb4",
+        "midi": 63,
+        "file": "assets/rhodes/M63.mp3",
+        "sha256": "013ed2db02a3de23c57b4062dfcc55d41a6e7326b365abdf9f5ce9b3d7361eb5",
+        "bytes": 20385
+      },
+      {
+        "note": "F4",
+        "midi": 65,
+        "file": "assets/rhodes/M65.mp3",
+        "sha256": "7831735eedc47609aced05cda5f21966fc5a9d84b6b7d633e3e00923188281be",
+        "bytes": 16927
+      },
+      {
+        "note": "G4",
+        "midi": 67,
+        "file": "assets/rhodes/M67.mp3",
+        "sha256": "22d9a79792c6edcbac7daf3b9da84df2734a1e58ca8d8de0c204806713c5fe9a",
+        "bytes": 17447
+      },
+      {
+        "note": "Bb4",
+        "midi": 70,
+        "file": "assets/rhodes/M70.mp3",
+        "sha256": "17fe158412a889c71cc4afda0a99819767b39914839881a897e525d8a23c81f6",
+        "bytes": 18929
+      }
+    ]
+  },
+  "bass": {
+    "instrument": "electric_bass_finger",
+    "source": "https://raw.githubusercontent.com/gleitz/midi-js-soundfonts/gh-pages/FluidR3_GM/electric_bass_finger-mp3.js",
+    "bank_sha256": "4b45ce5222c73a849fb6dcdf96e5cd489866a120d7cbf13498ac53a3a81e57e5",
+    "license": "CC-BY-3.0",
+    "urls": {
+      "C2": "assets/bass/M36.mp3",
+      "Eb2": "assets/bass/M39.mp3",
+      "F2": "assets/bass/M41.mp3",
+      "G2": "assets/bass/M43.mp3",
+      "Ab2": "assets/bass/M44.mp3",
+      "Bb2": "assets/bass/M46.mp3",
+      "C3": "assets/bass/M48.mp3",
+      "D3": "assets/bass/M50.mp3",
+      "Eb3": "assets/bass/M51.mp3",
+      "F3": "assets/bass/M53.mp3"
+    },
+    "files": [
+      {
+        "note": "C2",
+        "midi": 36,
+        "file": "assets/bass/M36.mp3",
+        "sha256": "bd192806d98b69e801f5a00422a236cd6967ab4954d1b0475608db9205a05814",
+        "bytes": 15783
+      },
+      {
+        "note": "Eb2",
+        "midi": 39,
+        "file": "assets/bass/M39.mp3",
+        "sha256": "0eceb57f00bde51d490ba32d59ece1db33b43b6908f9474f8427f0aacafdd8ad",
+        "bytes": 17135
+      },
+      {
+        "note": "F2",
+        "midi": 41,
+        "file": "assets/bass/M41.mp3",
+        "sha256": "5f1cedd280ab60c17c88f30ae2f2b7e3b64f0192cce60033bd3015adb3cc4601",
+        "bytes": 16043
+      },
+      {
+        "note": "G2",
+        "midi": 43,
+        "file": "assets/bass/M43.mp3",
+        "sha256": "6a5e8ad64a123f715de09da31cbce2b69ca2a8635ebcc3ee22f1eb93b473a50b",
+        "bytes": 16849
+      },
+      {
+        "note": "Ab2",
+        "midi": 44,
+        "file": "assets/bass/M44.mp3",
+        "sha256": "4b1431cb0c9bcd88b4caf533fe7b7b8998513f9a80abdafad4e220725fe878e9",
+        "bytes": 16979
+      },
+      {
+        "note": "Bb2",
+        "midi": 46,
+        "file": "assets/bass/M46.mp3",
+        "sha256": "b3ac2059de8bddfe3767b9c64e22af957262ba15b6ee1e1c6d594e742f8292c6",
+        "bytes": 17551
+      },
+      {
+        "note": "C3",
+        "midi": 48,
+        "file": "assets/bass/M48.mp3",
+        "sha256": "2ebc6adc15cc1d1624f203986ede3fe818594b613f45ad4fcd2de94fc01e693a",
+        "bytes": 16173
+      },
+      {
+        "note": "D3",
+        "midi": 50,
+        "file": "assets/bass/M50.mp3",
+        "sha256": "d58647a55c5b6cae3e81f129960458140abd29484c6b70c6a4091e527ad7461e",
+        "bytes": 16121
+      },
+      {
+        "note": "Eb3",
+        "midi": 51,
+        "file": "assets/bass/M51.mp3",
+        "sha256": "ce4f7336b8196f57d8debf1719638c6590acb90d6106aac5e015dd26370c0483",
+        "bytes": 15965
+      },
+      {
+        "note": "F3",
+        "midi": 53,
+        "file": "assets/bass/M53.mp3",
+        "sha256": "a50ecdaac4d31e1f55978402f4c5d91cca344b3264b888a024815de38a4b2c57",
+        "bytes": 16615
+      }
+    ]
+  },
+  "nylon": {
+    "instrument": "acoustic_guitar_nylon",
+    "source": "https://raw.githubusercontent.com/gleitz/midi-js-soundfonts/gh-pages/FluidR3_GM/acoustic_guitar_nylon-mp3.js",
+    "bank_sha256": "5375fa9e0408d960e12b6e4ec120c42bce824d80b18e982b27ddaece146a4f64",
+    "license": "CC-BY-3.0",
+    "urls": {
+      "Eb3": "assets/nylon/M51.mp3",
+      "F3": "assets/nylon/M53.mp3",
+      "G3": "assets/nylon/M55.mp3",
+      "Ab3": "assets/nylon/M56.mp3",
+      "Bb3": "assets/nylon/M58.mp3",
+      "C4": "assets/nylon/M60.mp3",
+      "D4": "assets/nylon/M62.mp3",
+      "Eb4": "assets/nylon/M63.mp3",
+      "F4": "assets/nylon/M65.mp3",
+      "G4": "assets/nylon/M67.mp3"
+    },
+    "files": [
+      {
+        "note": "Eb3",
+        "midi": 51,
+        "file": "assets/nylon/M51.mp3",
+        "sha256": "760b4c41e6cb29086ef5449a79fc077dbceeabbbd89365efd55e33ec3a20993a",
+        "bytes": 16927
+      },
+      {
+        "note": "F3",
+        "midi": 53,
+        "file": "assets/nylon/M53.mp3",
+        "sha256": "91fc6754cf5989ec1421b69ab773a7fea0c5b6eff860254adba07880a17ab5ab",
+        "bytes": 16771
+      },
+      {
+        "note": "G3",
+        "midi": 55,
+        "file": "assets/nylon/M55.mp3",
+        "sha256": "41f45be745a67e26826d5c0f622e20b8e5cc1fbbdaae3aec21dc3e279b6a3d03",
+        "bytes": 15237
+      },
+      {
+        "note": "Ab3",
+        "midi": 56,
+        "file": "assets/nylon/M56.mp3",
+        "sha256": "c460b357cbadffc30193722cbb873614d6d509cb7c951094fd2e0f6527427626",
+        "bytes": 15185
+      },
+      {
+        "note": "Bb3",
+        "midi": 58,
+        "file": "assets/nylon/M58.mp3",
+        "sha256": "c9e5a55a0b8ea7c24003c0f23ae249152e15c702498a35c73fcc3097002a3dae",
+        "bytes": 15289
+      },
+      {
+        "note": "C4",
+        "midi": 60,
+        "file": "assets/nylon/M60.mp3",
+        "sha256": "55c2808ac0fd3f722645f6bffe0f90313e1f3a1b325d56507639f1430b4e010a",
+        "bytes": 15809
+      },
+      {
+        "note": "D4",
+        "midi": 62,
+        "file": "assets/nylon/M62.mp3",
+        "sha256": "08afa2a47225cfe2898e32562504f53a92f5f905f15144491d3575786259f143",
+        "bytes": 16043
+      },
+      {
+        "note": "Eb4",
+        "midi": 63,
+        "file": "assets/nylon/M63.mp3",
+        "sha256": "259fc4fa113076c6df6207815821089a0e99e40899e8e9c60e34d437caa04897",
+        "bytes": 18305
+      },
+      {
+        "note": "F4",
+        "midi": 65,
+        "file": "assets/nylon/M65.mp3",
+        "sha256": "3fc5839b4cc5a1a8ab937400a2cb08998ca894c71df2ca1255ccaa581e586d30",
+        "bytes": 18643
+      },
+      {
+        "note": "G4",
+        "midi": 67,
+        "file": "assets/nylon/M67.mp3",
+        "sha256": "4d28e84f45725751d0b4aee51dc8fec63b143e5738e8142cbad11c18c48d1bb9",
+        "bytes": 18695
+      }
+    ]
+  },
+  "vibes": {
+    "instrument": "vibraphone",
+    "source": "https://raw.githubusercontent.com/gleitz/midi-js-soundfonts/gh-pages/FluidR3_GM/vibraphone-mp3.js",
+    "bank_sha256": "263bf866f7facd9652d39d4f7f499e8f883bc40adbdee75d8c5caf11403132f5",
+    "license": "CC-BY-3.0",
+    "urls": {
+      "Eb4": "assets/vibes/M63.mp3",
+      "F4": "assets/vibes/M65.mp3",
+      "G4": "assets/vibes/M67.mp3",
+      "Bb4": "assets/vibes/M70.mp3",
+      "C5": "assets/vibes/M72.mp3",
+      "D5": "assets/vibes/M74.mp3",
+      "Eb5": "assets/vibes/M75.mp3",
+      "G5": "assets/vibes/M79.mp3",
+      "Bb5": "assets/vibes/M82.mp3"
+    },
+    "files": [
+      {
+        "note": "Eb4",
+        "midi": 63,
+        "file": "assets/vibes/M63.mp3",
+        "sha256": "f9225da31dc5de09775840a780586c1f39587a7e5885fa424660a2a5e5ca4f7b",
+        "bytes": 19891
+      },
+      {
+        "note": "F4",
+        "midi": 65,
+        "file": "assets/vibes/M65.mp3",
+        "sha256": "4ef711b36f9013e4a10f276d1f1e7095cb15665a2db40004fbeb6095e5de4d4c",
+        "bytes": 18565
+      },
+      {
+        "note": "G4",
+        "midi": 67,
+        "file": "assets/vibes/M67.mp3",
+        "sha256": "abb0527e8816234854cbc00d67013fd2c83677feb3e05c479b4eb4649745de97",
+        "bytes": 18097
+      },
+      {
+        "note": "Bb4",
+        "midi": 70,
+        "file": "assets/vibes/M70.mp3",
+        "sha256": "0c24426a3f3609e24a670e7a2cfa4bf4934970b42c44e49964f10bffc3e4ac96",
+        "bytes": 17915
+      },
+      {
+        "note": "C5",
+        "midi": 72,
+        "file": "assets/vibes/M72.mp3",
+        "sha256": "22e7b6e7cade7b9a8dc35ae264938a607cdce307b1125f877f15cda29f2a9b23",
+        "bytes": 18929
+      },
+      {
+        "note": "D5",
+        "midi": 74,
+        "file": "assets/vibes/M74.mp3",
+        "sha256": "5a03d36c5eae7da4ca15dfa92405afe8325c652cf9d7d13f2ec14ff363a6a9ea",
+        "bytes": 18981
+      },
+      {
+        "note": "Eb5",
+        "midi": 75,
+        "file": "assets/vibes/M75.mp3",
+        "sha256": "839f0ef551da8742822548bff594e9f8e623b6f1c3914814ba67d019904115a6",
+        "bytes": 18201
+      },
+      {
+        "note": "G5",
+        "midi": 79,
+        "file": "assets/vibes/M79.mp3",
+        "sha256": "7fc3edc7b9b81ccb146fcf27a0e1cdcc477a6756a8d30deb88c06f4578486588",
+        "bytes": 16511
+      },
+      {
+        "note": "Bb5",
+        "midi": 82,
+        "file": "assets/vibes/M82.mp3",
+        "sha256": "9e73906c7c3825919fd11c878fad66c8a2f0d21b3f3ee729ba4c113b5ddc1570",
+        "bytes": 16433
+      }
+    ]
+  }
+}

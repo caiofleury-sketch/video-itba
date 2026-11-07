@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "duration": 120,
+  "composition_unchanged": true,
+  "score_sha256": "956ca294df51652ead222f50e94363b88d8bc94c4ff267ebdb9a5b2982ea2edb",
+  "samples": 49,
+  "stems": {
+    "musica": {
+      "input_i": -28.86,
+      "input_tp": -12.0,
+      "input_lra": 7.4,
+      "input_thresh": -39.09
+    },
+    "acentos": {
+      "input_i": -37.91,
+      "input_tp": -22.0,
+      "input_lra": 11.2,
+      "input_thresh": -49.29
+    }
+  },
+  "comparison_duration": 32,
+  "comparison_common_target_lufs": -20,
+  "comparison_after_encoding": {
+    "before": {
+      "input_i": -20.26,
+      "input_tp": -6.56,
+      "input_lra": 2.7,
+      "input_thresh": -30.29
+    },
+    "after": {
+      "input_i": -20.26,
+      "input_tp": -4.46,
+      "input_lra": 2.3,
+      "input_thresh": -30.28
+    }
+  },
+  "headshot_received": false,
+  "video_edit_pending_headshot": true
+}

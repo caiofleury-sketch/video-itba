@@ -2,6 +2,17 @@
 
 Película de **dos minutos**, en español, sobre las variables añadidas a un modelo de ciencia de datos. La última revisión incorpora los tres puntajes públicos de Kaggle, una recomendación final y una composición musical nueva con estética de exploración de videojuegos de 16 bits.
 
+## Prueba nueva de instrumentos · melodía conservada
+
+Se preparó una nueva interpretación con piano acústico, piano eléctrico, bajo de dedos, guitarra de nylon y vibráfono mediante Tone.Sampler. La partitura y sus tiempos se conservan; se retiran el doble de pulso y el colchón sintético. Se comparan los mismos 32 segundos con volumen medido equivalente.
+
+- **[Descargar la prueba de instrumentos](https://github.com/caiofleury-sketch/video-itba/raw/refs/heads/main/proposal/prueba_instrumentos_v3.zip)**.
+- [Música completa con instrumentos nuevos](https://github.com/caiofleury-sketch/video-itba/raw/refs/heads/main/proposal/audio_v3/musica_instrumentos_nuevos.mp3).
+- [Comparación interactiva A/B, para descargar y abrir](proposal/audio_v3/comparar_instrumentos.html).
+- [Investigación, instrumentos, reconstrucción y créditos](proposal/audio_v3/LEEME.md).
+
+El montaje con la imagen y la voz del presentador está pendiente de recibir su grabación. Los videos enlazados a continuación conservan la instrumentación 02; esta prueba prepara la instrumentación 03 para esa edición final. Las muestras de instrumentos son FluidR3_GM, CC BY 3.0; los créditos se incluyen en la carpeta y en el paquete de escucha.
+
 ## Descargar la versión actualizada
 
 **[Descargar ZIP final — 33 MB](https://github.com/caiofleury-sketch/video-itba/raw/refs/heads/main/proposal/video_final_2min.zip)**

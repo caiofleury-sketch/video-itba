@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "score_unchanged": true,
+  "play_pause": true,
+  "switch_preserves_position": true,
+  "full_track_plays": true,
+  "mobile_without_overflow": true,
+  "javascript_errors": []
+}
