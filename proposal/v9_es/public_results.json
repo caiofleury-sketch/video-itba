@@ -1,0 +1,29 @@
+{
+  "source": "Puntajes y submission IDs informados por el usuario en esta conversación",
+  "independent_kaggle_fetch": false,
+  "metric": "Public score, expresado por el usuario en millones de ARS",
+  "recipes": [
+    {
+      "id": "snapshot",
+      "label": "Snapshot original",
+      "features": 152,
+      "submission": "58080299",
+      "score_million_ars": "343.498"
+    },
+    {
+      "id": "relative3_funds",
+      "label": "Fondos relativos · 3 meses",
+      "features": 156,
+      "submission": "57852532",
+      "score_million_ars": "401.915"
+    },
+    {
+      "id": "funds3_funds6",
+      "label": "Fondos · 3 + 6 meses",
+      "features": 160,
+      "submission": "58080309",
+      "score_million_ars": "392.831"
+    }
+  ],
+  "interpretation": "Comparación de recetas publicadas. No identifica efectos individuales de las otras familias ni prueba causalidad bajo controles no documentados."
+}

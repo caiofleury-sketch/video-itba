@@ -1,0 +1,111 @@
+{
+  "engine": "Tone.js 15.1.22 / Chromium OfflineAudioContext",
+  "preroll_seconds": 3,
+  "crossfade_seconds": 0.2,
+  "stems": [
+    {
+      "stem": "music",
+      "samples": 5760000,
+      "peak": 0.20031209290027618,
+      "windows": [
+        {
+          "start": 0,
+          "end": 16,
+          "render_seconds": 7.06,
+          "notes": 242
+        },
+        {
+          "start": 16,
+          "end": 32,
+          "render_seconds": 9.77,
+          "notes": 355
+        },
+        {
+          "start": 32,
+          "end": 48,
+          "render_seconds": 10.11,
+          "notes": 360
+        },
+        {
+          "start": 48,
+          "end": 64,
+          "render_seconds": 10.19,
+          "notes": 366
+        },
+        {
+          "start": 64,
+          "end": 80,
+          "render_seconds": 10.26,
+          "notes": 258
+        },
+        {
+          "start": 80,
+          "end": 96,
+          "render_seconds": 9.33,
+          "notes": 169
+        },
+        {
+          "start": 96,
+          "end": 112,
+          "render_seconds": 10.09,
+          "notes": 275
+        },
+        {
+          "start": 112,
+          "end": 120,
+          "render_seconds": 3.9,
+          "notes": 178
+        }
+      ]
+    },
+    {
+      "stem": "fx",
+      "samples": 5760000,
+      "peak": 0.019111016765236855,
+      "windows": [
+        {
+          "start": 0,
+          "end": 16,
+          "render_seconds": 1.06,
+          "notes": 2
+        },
+        {
+          "start": 16,
+          "end": 32,
+          "render_seconds": 1.42,
+          "notes": 5
+        },
+        {
+          "start": 32,
+          "end": 48,
+          "render_seconds": 1.34,
+          "notes": 4
+        },
+        {
+          "start": 48,
+          "end": 64,
+          "render_seconds": 1.54,
+          "notes": 5
+        },
+        {
+          "start": 64,
+          "end": 80,
+          "render_seconds": 1.44,
+          "notes": 5
+        },
+        {
+          "start": 80,
+          "end": 96,
+          "render_seconds": 1.19,
+          "notes": 2
+        },
+        {
+          "start": 96,
+          "end": 112,
+          "render_seconds": 1.21,
+          "notes": 4
+        }
+      ]
+    }
+  ]
+}

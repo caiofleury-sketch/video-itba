@@ -1,0 +1,49 @@
+{
+  "status": "PASS",
+  "duration": 120,
+  "bpm": 120,
+  "bars": 60,
+  "melody_sections": [
+    "A",
+    "B",
+    "reduced_results",
+    "recapitulation",
+    "written_cadence"
+  ],
+  "music_notes": 1826,
+  "fx_notes": 24,
+  "layer_count": 9,
+  "silent_gaps_detected": false,
+  "stereo_balance_db": 0.157,
+  "window_boundary_samples": [
+    {
+      "time": 16,
+      "adjacent_sample_jump": 0.0001032
+    },
+    {
+      "time": 32,
+      "adjacent_sample_jump": 8.95e-05
+    },
+    {
+      "time": 48,
+      "adjacent_sample_jump": 2.74e-05
+    },
+    {
+      "time": 64,
+      "adjacent_sample_jump": 8.77e-05
+    },
+    {
+      "time": 80,
+      "adjacent_sample_jump": 2.25e-05
+    },
+    {
+      "time": 96,
+      "adjacent_sample_jump": 2.44e-05
+    },
+    {
+      "time": 112,
+      "adjacent_sample_jump": 5.84e-05
+    }
+  ],
+  "scope": "Technical continuity, layer presence and measured signal levels; not a substitute for listening preferences."
+}

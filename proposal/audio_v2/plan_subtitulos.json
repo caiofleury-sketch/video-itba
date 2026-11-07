@@ -1,0 +1,242 @@
+{
+  "idioma": "es-AR",
+  "sincronizacion": "PROVISIONAL: guion y tiempos de escena; no hay locución grabada",
+  "guion_integro": true,
+  "palabras": 220,
+  "cantidad_subtitulos": 33,
+  "maximo_caracteres_por_segundo": 16.73,
+  "maximo_lineas": 2,
+  "subtitulos": [
+    {
+      "start": 0.04,
+      "end": 1.899,
+      "text": "Mismo saldo. ¿Misma historia?",
+      "lines": "Mismo saldo. ¿Misma historia?",
+      "scene": "question"
+    },
+    {
+      "start": 1.979,
+      "end": 5.778,
+      "text": "En un cliente, el saldo se mantiene estable.",
+      "lines": "En un cliente, el saldo se mantiene estable.",
+      "scene": "question"
+    },
+    {
+      "start": 5.858,
+      "end": 8.202,
+      "text": "En otro, acaba de caer.",
+      "lines": "En otro, acaba de caer.",
+      "scene": "question"
+    },
+    {
+      "start": 8.282,
+      "end": 11.596,
+      "text": "La foto del mes oculta esa diferencia.",
+      "lines": "La foto del mes oculta esa diferencia.",
+      "scene": "question"
+    },
+    {
+      "start": 11.676,
+      "end": 13.536,
+      "text": "Creamos variables para revelar",
+      "lines": "Creamos variables para revelar",
+      "scene": "question"
+    },
+    {
+      "start": 13.616,
+      "end": 15.96,
+      "text": "el contexto detrás del número.",
+      "lines": "el contexto detrás del número.",
+      "scene": "question"
+    },
+    {
+      "start": 16.04,
+      "end": 19.609,
+      "text": "El valor del mes anterior aporta memoria.",
+      "lines": "El valor del mes anterior aporta memoria.",
+      "scene": "features"
+    },
+    {
+      "start": 19.689,
+      "end": 22.737,
+      "text": "El cambio mensual muestra movimientos bruscos.",
+      "lines": "El cambio mensual muestra movimientos bruscos.",
+      "scene": "features"
+    },
+    {
+      "start": 22.817,
+      "end": 27.428,
+      "text": "El promedio de tres meses estima el comportamiento habitual.",
+      "lines": "El promedio de tres meses estima\nel comportamiento habitual.",
+      "scene": "features"
+    },
+    {
+      "start": 27.508,
+      "end": 31.077,
+      "text": "Los cambios relativos de saldo y haberes",
+      "lines": "Los cambios relativos de saldo y haberes",
+      "scene": "features"
+    },
+    {
+      "start": 31.157,
+      "end": 35.769,
+      "text": "comparan el presente con la historia de cada cliente.",
+      "lines": "comparan el presente con la\nhistoria de cada cliente.",
+      "scene": "features"
+    },
+    {
+      "start": 35.849,
+      "end": 39.418,
+      "text": "La utilización de tarjeta relaciona el saldo",
+      "lines": "La utilización de tarjeta relaciona el saldo",
+      "scene": "features"
+    },
+    {
+      "start": 39.498,
+      "end": 41.503,
+      "text": "con el límite disponible.",
+      "lines": "con el límite disponible.",
+      "scene": "features"
+    },
+    {
+      "start": 41.583,
+      "end": 45.673,
+      "text": "Una referencia de seis meses incorpora más historia.",
+      "lines": "Una referencia de seis meses\nincorpora más historia.",
+      "scene": "features"
+    },
+    {
+      "start": 45.753,
+      "end": 50.886,
+      "text": "El uso relativo compara las operaciones con la actividad habitual,",
+      "lines": "El uso relativo compara las\noperaciones con la actividad habitual,",
+      "scene": "features"
+    },
+    {
+      "start": 50.966,
+      "end": 52.971,
+      "text": "buscando señales de desinterés.",
+      "lines": "buscando señales de desinterés.",
+      "scene": "features"
+    },
+    {
+      "start": 53.051,
+      "end": 59.226,
+      "text": "Los rangos monetarios indican la posición de cada cliente dentro del mes.",
+      "lines": "Los rangos monetarios indican la\nposición de cada cliente dentro del mes.",
+      "scene": "features"
+    },
+    {
+      "start": 59.306,
+      "end": 64.96,
+      "text": "Y el promedio exponencial da más peso a las observaciones recientes.",
+      "lines": "Y el promedio exponencial da más\npeso a las observaciones recientes.",
+      "scene": "features"
+    },
+    {
+      "start": 70.04,
+      "end": 72.572,
+      "text": "Ahora, el resultado público.",
+      "lines": "Ahora, el resultado público.",
+      "scene": "comparison"
+    },
+    {
+      "start": 72.652,
+      "end": 77.797,
+      "text": "El modelo original obtuvo 343,5 millones de pesos.",
+      "lines": "El modelo original obtuvo\n343,5 millones de pesos.",
+      "scene": "comparison"
+    },
+    {
+      "start": 77.877,
+      "end": 82.368,
+      "text": "Al incorporar fondos relativos de tres meses,",
+      "lines": "Al incorporar fondos relativos de tres meses,",
+      "scene": "comparison"
+    },
+    {
+      "start": 82.448,
+      "end": 85.633,
+      "text": "la receta alcanzó 401,9 millones:",
+      "lines": "la receta alcanzó 401,9 millones:",
+      "scene": "comparison"
+    },
+    {
+      "start": 85.713,
+      "end": 87.593,
+      "text": "58,4 millones más.",
+      "lines": "58,4 millones más.",
+      "scene": "comparison"
+    },
+    {
+      "start": 87.673,
+      "end": 92.164,
+      "text": "Extenderla a seis meses dio 392,8 millones,",
+      "lines": "Extenderla a seis meses dio 392,8 millones,",
+      "scene": "comparison"
+    },
+    {
+      "start": 92.244,
+      "end": 96.736,
+      "text": "unos 9,1 millones menos que el control.",
+      "lines": "unos 9,1 millones menos que el control.",
+      "scene": "comparison"
+    },
+    {
+      "start": 96.816,
+      "end": 101.96,
+      "text": "Entre estas recetas, más historia no fue mejor.",
+      "lines": "Entre estas recetas, más\nhistoria no fue mejor.",
+      "scene": "comparison"
+    },
+    {
+      "start": 102.04,
+      "end": 103.806,
+      "text": "Por eso, recomendamos agregar",
+      "lines": "Por eso, recomendamos agregar",
+      "scene": "takeaway"
+    },
+    {
+      "start": 103.886,
+      "end": 107.037,
+      "text": "los cambios relativos de saldo y haberes",
+      "lines": "los cambios relativos de saldo y haberes",
+      "scene": "takeaway"
+    },
+    {
+      "start": 107.117,
+      "end": 109.806,
+      "text": "contra su promedio de tres meses,",
+      "lines": "contra su promedio de tres meses,",
+      "scene": "takeaway"
+    },
+    {
+      "start": 109.886,
+      "end": 112.114,
+      "text": "junto con sus dos indicadores",
+      "lines": "junto con sus dos indicadores",
+      "scene": "takeaway"
+    },
+    {
+      "start": 112.194,
+      "end": 113.96,
+      "text": "de escala casi nula.",
+      "lines": "de escala casi nula.",
+      "scene": "takeaway"
+    },
+    {
+      "start": 114.04,
+      "end": 116.729,
+      "text": "Conservamos las cuatro variables del control;",
+      "lines": "Conservamos las cuatro variables del control;",
+      "scene": "takeaway"
+    },
+    {
+      "start": 116.809,
+      "end": 119.96,
+      "text": "no sumamos la extensión de seis meses.",
+      "lines": "no sumamos la extensión de seis meses.",
+      "scene": "takeaway"
+    }
+  ]
+}

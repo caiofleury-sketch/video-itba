@@ -1,0 +1,7 @@
+Mismo saldo. ¿Misma historia? En un cliente, el saldo se mantiene estable. En otro, acaba de caer. La foto del mes oculta esa diferencia. Creamos variables para revelar el contexto detrás del número.
+
+El valor del mes anterior aporta memoria. El cambio mensual muestra movimientos bruscos. El promedio de tres meses estima el comportamiento habitual. Los cambios relativos de saldo y haberes comparan el presente con la historia de cada cliente. La utilización de tarjeta relaciona el saldo con el límite disponible. Una referencia de seis meses incorpora más historia. El uso relativo compara las operaciones con la actividad habitual, buscando señales de desinterés. Los rangos monetarios indican la posición de cada cliente dentro del mes. Y el promedio exponencial da más peso a las observaciones recientes.
+
+Ahora, el resultado público. El modelo original obtuvo 343,5 millones de pesos. Al incorporar fondos relativos de tres meses, la receta alcanzó 401,9 millones: 58,4 millones más. Extenderla a seis meses dio 392,8 millones, unos 9,1 millones menos que el control. Entre estas recetas, más historia no fue mejor.
+
+Por eso, recomendamos agregar los cambios relativos de saldo y haberes contra su promedio de tres meses, junto con sus dos indicadores de escala casi nula. Conservamos las cuatro variables del control; no sumamos la extensión de seis meses.

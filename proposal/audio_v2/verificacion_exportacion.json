@@ -1,0 +1,55 @@
+{
+  "status": "PASS",
+  "full_decode": 3,
+  "duration": 120,
+  "frames": [
+    {
+      "time": 10,
+      "video_vs_svg_mae_rgb": 3.3
+    },
+    {
+      "time": 24.25,
+      "video_vs_svg_mae_rgb": 3.318
+    },
+    {
+      "time": 33.25,
+      "video_vs_svg_mae_rgb": 3.302
+    },
+    {
+      "time": 61.25,
+      "video_vs_svg_mae_rgb": 3.296
+    },
+    {
+      "time": 74,
+      "video_vs_svg_mae_rgb": 3.304,
+      "actual_subtitle_pixel_error": 2.355
+    },
+    {
+      "time": 82,
+      "video_vs_svg_mae_rgb": 3.321,
+      "actual_subtitle_pixel_error": 2.781
+    },
+    {
+      "time": 92,
+      "video_vs_svg_mae_rgb": 3.365,
+      "actual_subtitle_pixel_error": 3.341
+    },
+    {
+      "time": 100,
+      "video_vs_svg_mae_rgb": 3.365,
+      "actual_subtitle_pixel_error": 2.458
+    },
+    {
+      "time": 110,
+      "video_vs_svg_mae_rgb": 3.336,
+      "actual_subtitle_pixel_error": 2.615
+    },
+    {
+      "time": 118,
+      "video_vs_svg_mae_rgb": 3.336,
+      "actual_subtitle_pixel_error": 2.493
+    }
+  ],
+  "portable_h264_aac": true,
+  "subtitle_timing": "provisional until the actual voice recording"
+}

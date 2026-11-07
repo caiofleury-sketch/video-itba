@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "public_scores": "User-reported Kaggle submissions",
+  "independently_fetched": false,
+  "recipe_count": 3,
+  "best_recipe": "relative3_funds",
+  "delta_control_vs_snapshot": 58.417,
+  "delta_extension_vs_control": -9.084,
+  "delta_extension_vs_snapshot": 49.333,
+  "duration": 120,
+  "no_auc_to_money_conversion": true,
+  "not_an_individual_feature_causal_claim": true
+}

@@ -1,4 +1,4 @@
-Última revisión visual: `v8_es/index.html` y `v8_es/pelicula_completa_108s.mp4`. La primera banda sonora original está en `audio_v1/video_con_sonido_compatible.mp4`; `audio_v1/escucha_interactiva.html` permite revisar música y acentos por separado. El guion en español se conserva en `v8_es/guion.txt`. Las versiones anteriores permanecen disponibles.
+Última revisión: `v9_es/` contiene la película visual de dos minutos y los puntajes públicos. `audio_v2/` contiene la nueva composición, los videos con y sin subtítulos y sus verificaciones. El paquete de descarga actualizado es `video_final_2min.zip`. Las revisiones anteriores permanecen disponibles.
 
 This is a reviewed and revised proposal, not a finished video or a new experiment.
 

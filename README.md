@@ -1,53 +1,54 @@
 # El contexto detrás del número
 
-Video de ingeniería de variables para una presentación de ciencia de datos. Incluye gráficos y animaciones programadas, guion en español, música original generada con Tone.js y una versión con subtítulos.
+Película de **dos minutos**, en español, sobre las variables añadidas a un modelo de ciencia de datos. La última revisión incorpora los tres puntajes públicos de Kaggle, una recomendación final y una composición musical nueva con estética de exploración de videojuegos de 16 bits.
 
-**Duración: 1:48.** El audio contiene música y acentos; la voz del presentador todavía no está incorporada.
+## Descargar la versión actualizada
 
-## Descargar para reproducir localmente
+**[Descargar ZIP final — 33 MB](https://github.com/caiofleury-sketch/video-itba/raw/refs/heads/main/proposal/video_final_2min.zip)**
 
-**[Descargar el ZIP con los videos](https://github.com/caiofleury-sketch/video-itba/raw/refs/heads/main/proposal/video_para_descargar.zip)** — aproximadamente 28 MB.
+Extraé el ZIP y abrí `video_con_subtitulos.mp4` en tu reproductor local. Si el MP4 no funciona, probá `alternativa_con_subtitulos.webm`, por ejemplo con VLC.
 
-Extraé el ZIP y abrí `video_con_subtitulos.mp4` con un reproductor local. Si tu reproductor no admite el MP4, probá `video_con_subtitulos.webm`, por ejemplo con VLC.
+El paquete contiene la película con subtítulos y sin ellos, la alternativa WebM, la música sola, el guion actualizado, el SRT editable y el registro de los resultados públicos.
 
-El paquete incluye:
+- [Música nueva para escuchar sola](https://github.com/caiofleury-sketch/video-itba/raw/refs/heads/main/proposal/audio_v2/musica_escucha.m4a).
+- [MP4 con subtítulos · 1080p](proposal/audio_v2/video_final_subtitulos.mp4).
+- [MP4 sin subtítulos · 1080p](proposal/audio_v2/video_final.mp4).
+- [Alternativa WebM · 720p](proposal/audio_v2/video_final_subtitulos.webm).
+- [Guion en español](proposal/v9_es/guion.txt) y [subtítulos SRT](proposal/audio_v2/subtitulos_es.srt).
 
-| Archivo | Contenido |
-| --- | --- |
-| `video_con_subtitulos.mp4` | Película completa en 1080p, con música y subtítulos en español incorporados a la imagen. |
-| `video_con_subtitulos.webm` | Alternativa en 720p con los mismos subtítulos y música. |
-| `video_sin_subtitulos.mp4` | Película en 1080p con música y sin subtítulos incorporados. |
-| `subtitulos_es.srt` | Subtítulos editables para usar sobre la versión sin texto. |
-| `LEEME.txt` | Instrucciones de reproducción. |
+En la página de un archivo binario, usá **Download raw** si GitHub no muestra una vista previa. El audio incluye música y acentos; todavía no contiene la voz del presentador. Los tiempos de los subtítulos son provisionales hasta incorporar esa grabación.
 
-También se pueden descargar individualmente desde [la carpeta de audio y entregables](proposal/audio_v1/). En la página de un archivo binario, usá **Download raw** si GitHub no muestra una vista previa. Las exportaciones MP4 recomendadas usan H.264 Constrained Baseline y AAC-LC; las alternativas WebM usan VP9 y Opus. Se comprobaron la decodificación completa y la reproducción directa con imagen, audio, saltos de tiempo y llegada al final en Chromium. Esto no garantiza la compatibilidad de todos los reproductores.
+## Resultados y recomendación
 
-## Revisar el video y su composición musical
+| Receta | Variables | Submission | Puntaje público · M ARS |
+| --- | ---: | --- | ---: |
+| Snapshot | 152 | 58080299 | 343,498 |
+| Fondos relativos de 3 meses | 156 | 57852532 | **401,915** |
+| Fondos de 3 + 6 meses | 160 | 58080309 | 392,831 |
 
-- [Vista de escucha autónoma](proposal/audio_v1/escucha_interactiva.html): descargar el HTML y abrirlo localmente. Incluye el video y las pistas, y permite ajustar o silenciar música y acentos por separado.
-- [Guion en español](proposal/v8_es/guion.txt) y [guion con tiempos](proposal/v8_es/guion_con_tiempos.md).
-- [Dirección musical y herramientas investigadas](proposal/audio_v1/propuesta_sonora.md).
-- [Mapa de motivos musicales y acciones visuales](proposal/audio_v1/mapa_musical.md).
-- [Revisión incremental de gráficos y animaciones](proposal/v8_es/REVISION_VISUAL.md).
-- [Antes y después](proposal/v8_es/revision/antes_despues.jpg).
+La receta de tres meses supera al snapshot en **58,417 M ARS**. Añadir la extensión de seis meses queda **9,084 M por debajo del control de tres meses**, aunque sigue por encima del snapshot.
 
-Los subtítulos cubren las 204 palabras del guion en 31 frases. Sus tiempos son provisionales: se ajustarán cuando esté disponible la grabación real de la voz.
+La recomendación conserva las cuatro variables de fondos relativos de tres meses: dos cambios relativos de saldo y haberes y dos indicadores de escala casi nula. Las diferencias comparan recetas completas y no demuestran efectos públicos individuales para las nueve familias de variables. La fuente es la tabla de submissions proporcionada por el usuario; no se efectuó una consulta independiente al leaderboard. No se convierte AUC a pesos. La locución redondea las cifras para facilitar la lectura; el gráfico conserva la precisión informada.
+
+## Música recompuesta
+
+La versión 02 reemplaza la primera propuesta por una pieza original con una melodía de ocho compases, una respuesta distinta, piano FM, inversiones de acordes, bajo, arpegios, percusión ligera y un cierre escrito. La mezcla se aligera durante la explicación financiera y deja margen para la futura voz.
+
+Se estudiaron ejemplos de juegos y secuenciadores hechos con Tone.js y la organización de un tracker. Las referencias y lo aplicado están documentados en [la investigación musical](proposal/audio_v2/research/REFERENCIAS.md). No se reutilizó una melodía comercial.
+
+La [vista de escucha autónoma](proposal/audio_v2/escucha_interactiva.html) se puede descargar y abrir localmente para silenciar o ajustar música y acentos por separado. La copia `musica_escucha.m4a` tiene un nivel mayor que el acompañamiento del video para facilitar la evaluación de la composición.
 
 ## Fuentes y reconstrucción
 
 | Carpeta | Contenido |
 | --- | --- |
-| [`proposal/v8_es/`](proposal/v8_es/) | Última revisión visual en español, escenas SVG/JavaScript, render y comprobaciones. |
-| [`proposal/audio_v1/`](proposal/audio_v1/) | Partitura JavaScript, síntesis Tone.js, mezcla, exportaciones compatibles, subtítulos y verificaciones. |
+| [`proposal/v9_es/`](proposal/v9_es/) | Última película visual, resultados públicos, escenas SVG/JavaScript, guion, render y verificaciones. |
+| [`proposal/audio_v2/`](proposal/audio_v2/) | Nueva partitura Tone.js, instrumentos, mezcla, exportaciones, subtítulos y verificaciones. |
 | [`proposal/source/`](proposal/source/) | Archivos de experimento y propuestas aportados, conservados para trazabilidad. |
-| [`proposal/v3/`](proposal/v3/), …, [`proposal/v7_es/`](proposal/v7_es/) | Revisiones anteriores de la propuesta y sus verificaciones. |
+| [`proposal/v8_es/`](proposal/v8_es/), [`proposal/audio_v1/`](proposal/audio_v1/) y revisiones anteriores | Historial de trabajo y entregables previos. |
 
-Las instrucciones de reconstrucción están en [la guía visual](proposal/v8_es/LEEME.md) y [la guía de audio y subtítulos](proposal/audio_v1/LEEME.md). Se utiliza Python con Pillow, NumPy, SciPy y Playwright, Chromium, FFmpeg con libass, y Tone.js 15.1.22. La distribución fijada de Tone.js y su licencia MIT están incluidas en `proposal/audio_v1/vendor/`; no hace falta descargarla para escuchar las exportaciones.
+Las instrucciones están en [la guía visual](proposal/v9_es/LEEME.md) y [la guía de audio](proposal/audio_v2/LEEME.md). Se usa Python con Pillow, NumPy, SciPy y Playwright, Chromium, FFmpeg con libass y Tone.js 15.1.22. La distribución fijada de Tone.js y su licencia MIT están en `proposal/audio_v1/vendor/`.
 
-Se conservan las fuentes, las revisiones y los entregables. Las dependencias instaladas, las cachés y los audios temporales de síntesis se excluyen del control de versiones y pueden regenerarse con los scripts.
+Los archivos finales se comprobaron por decodificación completa, reproducción directa con imagen y audio, saltos de escena, comparación de fotogramas, continuidad de audio y niveles. La geometría de los textos se revisó en 960 instantes. Estas pruebas técnicas no reemplazan la evaluación musical del oyente ni el ajuste final con la voz real.
 
-## Alcance de los resultados
-
-La presentación se concentra en las variables añadidas y su motivación. El ajuste por inflación y el inventario de variables preexistentes quedan fuera del video. Los ejemplos gráficos son ilustrativos.
-
-Los resultados monetarios comparables por familia de variables siguen pendientes de verificación. La recomendación de priorizar saldo y haberes relativos se basa en la evaluación controlada de ordenamiento; la mejora pública de ganancia incremental todavía no se ha confirmado. No se convierten cambios de AUC en pesos.
+Se conservan las fuentes, las revisiones y los entregables. Las dependencias instaladas, las cachés y los audios temporales se excluyen del control de versiones y se regeneran con los scripts. El análisis de inflación y el inventario de variables preexistentes permanecen fuera de la presentación.

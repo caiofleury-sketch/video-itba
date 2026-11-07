@@ -1,0 +1,18 @@
+[
+  {
+    "repo": "https://github.com/tomjhinton/cyberbloboftherings.git",
+    "commit": "bce11b722ee51ec95c07cb7f663f53355cfba9dc"
+  },
+  {
+    "repo": "https://github.com/jjlljj/space-invaders.git",
+    "commit": "fee25c9dfa0ddae5a5a4ed789e55e26552448b80"
+  },
+  {
+    "repo": "https://github.com/jenissimo/das-model.git",
+    "commit": "d7ff1a93d19177056e25f4ab2d187fc55a2daecc"
+  },
+  {
+    "repo": "https://github.com/mbitsnbites/soundbox.git",
+    "commit": "0916910e7cb3d40a0e89ad9c9435d7bae09a7e0f"
+  }
+]

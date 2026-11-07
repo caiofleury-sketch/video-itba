@@ -1,0 +1,143 @@
+[
+  {
+    "file": "video_final.mp4",
+    "status": "PASS",
+    "decoded_picture_audio_seek_end": true,
+    "samples": [
+      {
+        "time": 10.429333,
+        "videoWidth": 1920,
+        "videoHeight": 1080,
+        "frames": 52,
+        "litPixels": 2105,
+        "audioRms": 0.04370719380408399,
+        "paused": false,
+        "error": null
+      },
+      {
+        "time": 82.386667,
+        "videoWidth": 1920,
+        "videoHeight": 1080,
+        "frames": 67,
+        "litPixels": 4785,
+        "audioRms": 0.015039807352906342,
+        "paused": false,
+        "error": null
+      },
+      {
+        "time": 92.381333,
+        "videoWidth": 1920,
+        "videoHeight": 1080,
+        "frames": 80,
+        "litPixels": 6398,
+        "audioRms": 0.018601732910360148,
+        "paused": false,
+        "error": null
+      },
+      {
+        "time": 110.389333,
+        "videoWidth": 1920,
+        "videoHeight": 1080,
+        "frames": 95,
+        "litPixels": 4677,
+        "audioRms": 0.04166274156802117,
+        "paused": false,
+        "error": null
+      }
+    ]
+  },
+  {
+    "file": "video_final_subtitulos.mp4",
+    "status": "PASS",
+    "decoded_picture_audio_seek_end": true,
+    "samples": [
+      {
+        "time": 10.385778,
+        "videoWidth": 1920,
+        "videoHeight": 1080,
+        "frames": 50,
+        "litPixels": 2302,
+        "audioRms": 0.03459520876052674,
+        "paused": false,
+        "error": null
+      },
+      {
+        "time": 82.372429,
+        "videoWidth": 1920,
+        "videoHeight": 1080,
+        "frames": 63,
+        "litPixels": 5013,
+        "audioRms": 0.022327187637185306,
+        "paused": false,
+        "error": null
+      },
+      {
+        "time": 92.37992,
+        "videoWidth": 1920,
+        "videoHeight": 1080,
+        "frames": 76,
+        "litPixels": 6598,
+        "audioRms": 0.01862798516033774,
+        "paused": false,
+        "error": null
+      },
+      {
+        "time": 110.389333,
+        "videoWidth": 1920,
+        "videoHeight": 1080,
+        "frames": 90,
+        "litPixels": 4833,
+        "audioRms": 0.041718826055231015,
+        "paused": false,
+        "error": null
+      }
+    ]
+  },
+  {
+    "file": "video_final_subtitulos.webm",
+    "status": "PASS",
+    "decoded_picture_audio_seek_end": true,
+    "samples": [
+      {
+        "time": 10.377585,
+        "videoWidth": 1280,
+        "videoHeight": 720,
+        "frames": 97,
+        "litPixels": 2256,
+        "audioRms": 0.03892268751219105,
+        "paused": false,
+        "error": null
+      },
+      {
+        "time": 82.36,
+        "videoWidth": 1280,
+        "videoHeight": 720,
+        "frames": 158,
+        "litPixels": 5046,
+        "audioRms": 0.026297000122935614,
+        "paused": false,
+        "error": null
+      },
+      {
+        "time": 92.330435,
+        "videoWidth": 1280,
+        "videoHeight": 720,
+        "frames": 218,
+        "litPixels": 6655,
+        "audioRms": 0.029289709387838786,
+        "paused": false,
+        "error": null
+      },
+      {
+        "time": 110.368842,
+        "videoWidth": 1280,
+        "videoHeight": 720,
+        "frames": 279,
+        "litPixels": 4910,
+        "audioRms": 0.050943611468669214,
+        "paused": false,
+        "error": null
+      }
+    ]
+  }
+]

@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "duration": 120,
+  "sample_rate": 48000,
+  "channels": 2,
+  "bits": 24,
+  "voiceover_included": false,
+  "stems": {
+    "musica": {
+      "gain_db": 0.03999999999999915,
+      "measurement": {
+        "input_i": -28.5,
+        "input_tp": -13.92,
+        "input_lra": 8.8,
+        "input_thresh": -39.01
+      }
+    },
+    "acentos": {
+      "gain_db": 12.369999999999997,
+      "measurement": {
+        "input_i": -39.1,
+        "input_tp": -22.0,
+        "input_lra": 8.2,
+        "input_thresh": -50.27
+      }
+    },
+    "mezcla": {
+      "measurement": {
+        "input_i": -28.47,
+        "input_tp": -13.92,
+        "input_lra": 8.8,
+        "input_thresh": -38.98
+      }
+    }
+  }
+}

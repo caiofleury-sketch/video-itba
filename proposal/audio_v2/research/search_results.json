@@ -1,0 +1,48 @@
+[
+  {
+    "query": "Tone.js mario",
+    "results": [],
+    "count": 0
+  },
+  {
+    "query": "Tone.js zelda",
+    "results": [],
+    "count": 0
+  },
+  {
+    "query": "Tone.js soundtrack",
+    "results": [
+      {
+        "repo": "stormgraser-ux/Cipher",
+        "description": "Coded music — procedural soundtracks, dark synths, trap beats. Tone.js + Strudel.",
+        "stars": 0
+      },
+      {
+        "repo": "tomjhinton/cyberbloboftherings",
+        "description": "A Three.js game with a Tone.js soundtrack and a ridiculous title.",
+        "stars": 1
+      },
+      {
+        "repo": "MatthewDegtyar/aria-demo",
+        "description": "Aria — couples app v0. Three.js chrome heart, Tone.js bar-locked soundtrack engine, JourneyConfig registry.",
+        "stars": 0
+      },
+      {
+        "repo": "philip-AIaddict/galaxy-of-meaning",
+        "description": "A 42-second animated explainer of embeddings and retrieval, built on real Wikipedia data, with an original Tone.js soundtrack.",
+        "stars": 0
+      },
+      {
+        "repo": "jjlljj/space-invaders",
+        "description": "A space 'vaders' mini game with soundtrack programmed in JSONified midi using the Tone.Js library and Web-Audio API. Game built in Javasc…",
+        "stars": 0
+      }
+    ],
+    "count": 5
+  },
+  {
+    "query": "Tone.js sequencer chiptune",
+    "results": [],
+    "count": 0
+  }
+]

@@ -1,0 +1,239 @@
+{
+  "feature_beats": [
+    0.0,
+    3.649,
+    6.777,
+    11.468,
+    19.809,
+    25.543,
+    29.713,
+    37.011,
+    43.266
+  ],
+  "duration": 120,
+  "rows": [
+    {
+      "profit_delta_million_ars": null,
+      "profit_result_status": "awaiting_matched_profit",
+      "id": "lag1_core",
+      "label": "Valor del mes anterior",
+      "definition": "Valor del mes calendario anterior",
+      "hypothesis": "Aportar contexto reciente.",
+      "delta_auc": -0.0005083908519920577,
+      "selected": false,
+      "profit": "unavailable",
+      "profit_label": "—"
+    },
+    {
+      "profit_delta_million_ars": null,
+      "profit_result_status": "awaiting_matched_profit",
+      "id": "delta1_core",
+      "label": "Cambios mensuales",
+      "definition": "Valor actual menos el del mes anterior",
+      "hypothesis": "Revelar movimientos bruscos.",
+      "delta_auc": 0.00044658387166396363,
+      "selected": false,
+      "profit": "unavailable",
+      "profit_label": "—"
+    },
+    {
+      "profit_delta_million_ars": null,
+      "profit_result_status": "awaiting_matched_profit",
+      "id": "prior3_core",
+      "label": "Promedios de tres meses",
+      "definition": "Promedio de los tres meses previos",
+      "hypothesis": "Estimar la conducta habitual.",
+      "delta_auc": 0.000678153220296962,
+      "selected": false,
+      "profit": "unavailable",
+      "profit_label": "—"
+    },
+    {
+      "profit_delta_million_ars": null,
+      "profit_result_status": "awaiting_matched_profit",
+      "id": "relative3_funds",
+      "label": "Fondos relativos · 3 meses",
+      "definition": "Cambio de saldo/haberes frente a su historia",
+      "hypothesis": "Comparar cambios a escala personal.",
+      "delta_auc": 0.0014559700527430053,
+      "selected": true,
+      "profit": "reference",
+      "profit_label": "Referencia"
+    },
+    {
+      "profit_delta_million_ars": null,
+      "profit_result_status": "awaiting_matched_profit",
+      "id": "card_utilization",
+      "label": "Utilización de tarjeta",
+      "definition": "Saldo de tarjeta ÷ límite positivo",
+      "hypothesis": "Medir el uso del crédito.",
+      "delta_auc": -0.0001688409800850721,
+      "selected": false,
+      "profit": "unavailable",
+      "profit_label": "—"
+    },
+    {
+      "profit_delta_million_ars": null,
+      "profit_result_status": "awaiting_matched_profit",
+      "id": "relative6_funds",
+      "label": "Fondos relativos · 6 meses",
+      "definition": "Fondos relativos con más historia",
+      "hypothesis": "Usar una referencia más estable.",
+      "delta_auc": null,
+      "selected": false,
+      "profit": "both_months",
+      "profit_label": "Mejoró en ambos meses"
+    },
+    {
+      "profit_delta_million_ars": null,
+      "profit_result_status": "awaiting_matched_profit",
+      "id": "relative3_usage",
+      "label": "Uso relativo",
+      "definition": "Uso frente al promedio propio de 3 meses",
+      "hypothesis": "Detectar cambios en la actividad.",
+      "delta_auc": null,
+      "selected": false,
+      "profit": "both_months",
+      "profit_label": "Mejoró en ambos meses"
+    },
+    {
+      "profit_delta_million_ars": null,
+      "profit_result_status": "awaiting_matched_profit",
+      "id": "monetary_ranks",
+      "label": "Rangos monetarios",
+      "definition": "Orden de los montos dentro del mismo mes",
+      "hypothesis": "Llevar los montos a una escala común.",
+      "delta_auc": null,
+      "selected": false,
+      "profit": "unverified",
+      "profit_label": "Resultado pendiente de verificación"
+    },
+    {
+      "profit_delta_million_ars": null,
+      "profit_result_status": "awaiting_matched_profit",
+      "id": "prior_ema3",
+      "label": "Promedio exponencial",
+      "definition": "Promedio exponencial del pasado",
+      "hypothesis": "Dar más peso a lo reciente.",
+      "delta_auc": null,
+      "selected": false,
+      "profit": "mixed",
+      "profit_label": "Resultado mixto entre meses"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "question",
+      "start": 0,
+      "end": 16,
+      "label": "Mismo saldo, otra historia",
+      "title": "Mismo saldo. Otra historia.",
+      "voiceover": "Mismo saldo. ¿Misma historia? En un cliente, el saldo se mantiene estable. En otro, acaba de caer. La foto del mes oculta esa diferencia. Creamos variables para revelar el contexto detrás del número."
+    },
+    {
+      "id": "features",
+      "start": 16,
+      "end": 70,
+      "label": "Variables e hipótesis",
+      "title": "Nueve formas de revelar el contexto",
+      "voiceover": "El valor del mes anterior aporta memoria. El cambio mensual muestra movimientos bruscos. El promedio de tres meses estima el comportamiento habitual. Los cambios relativos de saldo y haberes comparan el presente con la historia de cada cliente. La utilización de tarjeta relaciona el saldo con el límite disponible. Una referencia de seis meses incorpora más historia. El uso relativo compara las operaciones con la actividad habitual, buscando señales de desinterés. Los rangos monetarios indican la posición de cada cliente dentro del mes. Y el promedio exponencial da más peso a las observaciones recientes."
+    },
+    {
+      "id": "comparison",
+      "start": 70,
+      "end": 102,
+      "label": "Comparación de resultados",
+      "title": "Más contexto, no siempre más historia",
+      "voiceover": "Ahora, el resultado público. El modelo original obtuvo 343,5 millones de pesos. Al incorporar fondos relativos de tres meses, la receta alcanzó 401,9 millones: 58,4 millones más. Extenderla a seis meses dio 392,8 millones, unos 9,1 millones menos que el control. Entre estas recetas, más historia no fue mejor."
+    },
+    {
+      "id": "takeaway",
+      "start": 102,
+      "end": 120,
+      "label": "Recomendación",
+      "title": "Elegimos tres meses de contexto",
+      "voiceover": "Por eso, recomendamos agregar los cambios relativos de saldo y haberes contra su promedio de tres meses, junto con sus dos indicadores de escala casi nula. Conservamos las cuatro variables del control; no sumamos la extensión de seis meses."
+    }
+  ],
+  "public_recipes": [
+    {
+      "id": "snapshot",
+      "label": "Snapshot original",
+      "features": 152,
+      "submission": "58080299",
+      "score_million_ars": 343.498,
+      "delta_snapshot": 0.0,
+      "delta_control": -58.417
+    },
+    {
+      "id": "relative3_funds",
+      "label": "Fondos relativos · 3 meses",
+      "features": 156,
+      "submission": "57852532",
+      "score_million_ars": 401.915,
+      "delta_snapshot": 58.417,
+      "delta_control": 0.0
+    },
+    {
+      "id": "funds3_funds6",
+      "label": "Fondos · 3 + 6 meses",
+      "features": 160,
+      "submission": "58080309",
+      "score_million_ars": 392.831,
+      "delta_snapshot": 49.333,
+      "delta_control": -9.084
+    }
+  ],
+  "public_evidence": {
+    "source": "Puntajes y submission IDs informados por el usuario en esta conversación",
+    "independent_kaggle_fetch": false,
+    "metric": "Public score, expresado por el usuario en millones de ARS",
+    "recipes": [
+      {
+        "id": "snapshot",
+        "label": "Snapshot original",
+        "features": 152,
+        "submission": "58080299",
+        "score_million_ars": "343.498"
+      },
+      {
+        "id": "relative3_funds",
+        "label": "Fondos relativos · 3 meses",
+        "features": 156,
+        "submission": "57852532",
+        "score_million_ars": "401.915"
+      },
+      {
+        "id": "funds3_funds6",
+        "label": "Fondos · 3 + 6 meses",
+        "features": 160,
+        "submission": "58080309",
+        "score_million_ars": "392.831"
+      }
+    ],
+    "interpretation": "Comparación de recetas publicadas. No identifica efectos individuales de las otras familias ni prueba causalidad bajo controles no documentados."
+  },
+  "economics": {
+    "correct_contact_ars": 975000,
+    "wrong_contact_ars": -25000,
+    "no_contact_ars": 0,
+    "reference_public_score_million_ars": 401.915,
+    "feature_public_results_pending": false
+  },
+  "references": {
+    "auc": "Variables originales con reparaciones",
+    "profit": "Variables originales + fondos relativos de 3 meses"
+  },
+  "limits": {
+    "no_common_performance_scale": false,
+    "rank_outcome_verified": false,
+    "no_global_ranking": true,
+    "exact_pilot_profit_deltas_included": false,
+    "source_gaps": [
+      "HT5955 per-seed outcomes absent: original 1/3/3/5/2 seed-win counts cannot be independently reproduced.",
+      "HT5956 summary/per-month outcomes absent: original exact profit deltas and all month-win counts cannot be independently reproduced.",
+      "Earlier Inicial reference 408.498 / submission 57670712 absent from supplied exports and audit report.",
+      "Training data, native models, live submission queries, and source-manifest hashes are not supplied or rerun."
+    ]
+  }
+}
