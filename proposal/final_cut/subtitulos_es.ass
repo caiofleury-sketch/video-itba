@@ -1,0 +1,47 @@
+[Script Info]
+Title: El contexto detrás del número — guion en español
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Spanish,Liberation Sans,38,&H00F1EEE8,&H00F1EEE8,&H60000000,&H60000000,0,0,0,0,100,100,0,0,3,3,0,2,120,120,24,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.35,0:00:02.07,Spanish,,0,0,0,,Mismo saldo. ¿Misma historia?
+Dialogue: 0,0:00:02.53,0:00:04.66,Spanish,,0,0,0,,En un cliente, el saldo se mantiene estable.
+Dialogue: 0,0:00:05.89,0:00:06.91,Spanish,,0,0,0,,En otro, acaba de caer.
+Dialogue: 0,0:00:07.19,0:00:11.21,Spanish,,0,0,0,,La foto del mes oculta esa diferencia.
+Dialogue: 0,0:00:11.69,0:00:13.31,Spanish,,0,0,0,,Creamos variables para revelar
+Dialogue: 0,0:00:13.31,0:00:15.56,Spanish,,0,0,0,,el contexto detrás del número.
+Dialogue: 0,0:00:16.11,0:00:18.81,Spanish,,0,0,0,,El valor del mes anterior aporta memoria.
+Dialogue: 0,0:00:20.03,0:00:22.56,Spanish,,0,0,0,,El cambio mensual muestra movimientos bruscos.
+Dialogue: 0,0:00:22.91,0:00:26.41,Spanish,,0,0,0,,El promedio de tres meses estima\Nel comportamiento habitual.
+Dialogue: 0,0:00:27.51,0:00:30.61,Spanish,,0,0,0,,Los cambios relativos de saldo y haberes
+Dialogue: 0,0:00:31.51,0:00:34.81,Spanish,,0,0,0,,comparan el presente con la\Nhistoria de cada cliente.
+Dialogue: 0,0:00:35.99,0:00:39.31,Spanish,,0,0,0,,La utilización de tarjeta relaciona el saldo
+Dialogue: 0,0:00:39.75,0:00:41.21,Spanish,,0,0,0,,con el límite disponible.
+Dialogue: 0,0:00:42.49,0:00:46.26,Spanish,,0,0,0,,Una referencia de seis meses\Nincorpora más historia.
+Dialogue: 0,0:00:46.61,0:00:50.81,Spanish,,0,0,0,,El uso relativo compara las\Noperaciones con la actividad habitual,
+Dialogue: 0,0:00:51.49,0:00:53.61,Spanish,,0,0,0,,buscando señales de desinterés.
+Dialogue: 0,0:00:54.15,0:00:58.16,Spanish,,0,0,0,,Los rangos monetarios indican la\Nposición de cada cliente dentro del mes.
+Dialogue: 0,0:00:59.85,0:01:05.06,Spanish,,0,0,0,,Y el promedio exponencial da más\Npeso a las observaciones recientes.
+Dialogue: 0,0:01:08.47,0:01:10.16,Spanish,,0,0,0,,Ahora, el resultado público.
+Dialogue: 0,0:01:10.25,0:01:16.01,Spanish,,0,0,0,,El modelo original obtuvo\N343,5 millones de pesos.
+Dialogue: 0,0:01:17.17,0:01:19.71,Spanish,,0,0,0,,Al incorporar fondos relativos de tres meses,
+Dialogue: 0,0:01:19.71,0:01:24.01,Spanish,,0,0,0,,la receta alcanzó 401,9 millones:
+Dialogue: 0,0:01:24.71,0:01:28.36,Spanish,,0,0,0,,58,4 millones más.
+Dialogue: 0,0:01:29.37,0:01:33.91,Spanish,,0,0,0,,Extenderla a seis meses dio 392,8 millones,
+Dialogue: 0,0:01:34.07,0:01:38.81,Spanish,,0,0,0,,unos 9,1 millones menos que el control.
+Dialogue: 0,0:01:38.91,0:01:41.16,Spanish,,0,0,0,,Entre estas recetas, más\Nhistoria no fue mejor.
+Dialogue: 0,0:01:42.73,0:01:44.36,Spanish,,0,0,0,,Por eso, recomendamos agregar
+Dialogue: 0,0:01:44.61,0:01:46.91,Spanish,,0,0,0,,los cambios relativos de saldo y haberes
+Dialogue: 0,0:01:47.47,0:01:49.61,Spanish,,0,0,0,,contra su promedio de tres meses,
+Dialogue: 0,0:01:50.63,0:01:52.81,Spanish,,0,0,0,,junto con sus dos indicadores
+Dialogue: 0,0:01:52.81,0:01:54.21,Spanish,,0,0,0,,de escala casi nula.
+Dialogue: 0,0:01:54.45,0:01:56.61,Spanish,,0,0,0,,Conservamos las cuatro variables del control;
+Dialogue: 0,0:01:57.23,0:01:59.31,Spanish,,0,0,0,,no sumamos la extensión de seis meses.

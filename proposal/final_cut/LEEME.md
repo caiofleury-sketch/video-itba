@@ -1,9 +1,19 @@
-# Preparación del corte con presentador
+# Corte final con presentador
 
-`fetch_drive_recording.py` recibe un enlace compartido de Drive y descarga el archivo original fuera del repositorio, en `/workspace/presenter_private/`. Requiere que la política de red permita los hosts de Drive. No utiliza ni solicita credenciales de Google.
+- `video_final.mp4`: voz e imagen del presentador, música suave, sin subtítulos impresos.
+- `video_final_subtitulos.mp4`: el mismo montaje con subtítulos en español.
+- `subtitulos_es.srt`: subtítulos editables, ajustados a los grupos de frases de la grabación.
+- `montaje.json`: parámetros de montaje y sincronización.
+- `verificacion.json`: comprobaciones técnicas de los archivos exportados.
 
-`inspect_recording.py` recibe el archivo local y genera, también fuera del repositorio, metadatos, mediciones de sonoridad, candidatos conservadores de recorte y doce fotogramas. Los límites de actividad son una ayuda de inspección y no sustituyen la revisión del primer y último contenido hablado.
+Se recorta la grabación entre 0,49 y 119,93 segundos. Duración resultante aproximada: 1:59. La imagen permanece en una ventana pequeña con esquinas redondeadas, arriba a la derecha; se conserva el filtro de personaje del archivo recibido. La luz se ajusta con gamma 1,035 y brillo +0,008. Las entradas de las escenas y las familias de variables se adaptan a las pausas de la locución, sin alterar la velocidad ni la sincronización de labios de la cámara.
 
-La edición prevista comprende recorte del silencio inicial y final, encuadre del rostro para la esquina superior derecha reservada, ajuste moderado de exposición, nivelación de la voz, mezcla de la instrumentación 03 y atenuación de música según la locución. La posición se mantiene fuera de los textos y los subtítulos de las escenas. Los tiempos se ajustarán a la grabación real.
+La voz recibe filtrado conservador, reducción leve de ruido y normalización a −16 LUFS. La música de piano se sitúa a −33 LUFS antes de una atenuación adicional activada por el habla. Se eliminan percusión, arpegios y efectos de acento. Los finales de imagen y música se funden suavemente.
 
-Los parámetros definitivos, el encuadre, la corrección de luz y la sincronización no se pueden determinar antes de inspeccionar el archivo. El original de cámara y sus fotogramas de inspección no se incorporan automáticamente al repositorio público; se publicará el corte editado solicitado.
+Los subtítulos conservan el guion aprobado; sus entradas se ajustan a los grupos de actividad vocal, con divisiones manuales dentro de algunas frases. No se generan mediante reconocimiento automático de palabras.
+
+Se mantienen los resultados públicos aportados y la recomendación de conservar las cuatro variables del control de fondos relativos de tres meses. Los puntajes comparan recetas completas.
+
+Reconstrucción: `python proposal/audio_v4/render_audio.py` y luego `python proposal/final_cut/build_final.py /ruta/grabacion.mp4`. Los originales y los audios de trabajo permanecen fuera del repositorio, en `/workspace/presenter_private/`. Solo se publica el montaje editado solicitado, además de las fuentes de reconstrucción. El video usa H.264 Baseline, YUV420p, AAC y `faststart`.
+
+Las muestras de piano y acompañamiento son FluidR3_GM, CC BY 3.0: [créditos](../audio_v4/assets/CREDITS.md). Tone.js 15.1.22: MIT.

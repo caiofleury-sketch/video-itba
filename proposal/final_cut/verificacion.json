@@ -1,0 +1,108 @@
+{
+  "status": "PASS",
+  "exports": [
+    {
+      "file": "video_final.mp4",
+      "bytes": 9631509,
+      "duration": 119.458333,
+      "full_decode": "PASS",
+      "faststart": true,
+      "h264_baseline_aac": true,
+      "browser_playback_and_seek": [
+        {
+          "time": 8.541144,
+          "paused": false,
+          "ready": 4,
+          "width": 1920,
+          "height": 1080,
+          "audioBytes": 202621,
+          "frames": 233,
+          "error": null
+        },
+        {
+          "time": 78.535474,
+          "paused": false,
+          "ready": 4,
+          "width": 1920,
+          "height": 1080,
+          "audioBytes": 267545,
+          "frames": 307,
+          "error": null
+        },
+        {
+          "time": 110.529208,
+          "paused": false,
+          "ready": 4,
+          "width": 1920,
+          "height": 1080,
+          "audioBytes": 346959,
+          "frames": 399,
+          "error": null
+        }
+      ]
+    },
+    {
+      "file": "video_final_subtitulos.mp4",
+      "bytes": 9469352,
+      "duration": 119.458333,
+      "full_decode": "PASS",
+      "faststart": true,
+      "h264_baseline_aac": true,
+      "browser_playback_and_seek": [
+        {
+          "time": 8.531634,
+          "paused": false,
+          "ready": 4,
+          "width": 1920,
+          "height": 1080,
+          "audioBytes": 202153,
+          "frames": 233,
+          "error": null
+        },
+        {
+          "time": 78.522334,
+          "paused": false,
+          "ready": 4,
+          "width": 1920,
+          "height": 1080,
+          "audioBytes": 267099,
+          "frames": 307,
+          "error": null
+        },
+        {
+          "time": 110.532744,
+          "paused": false,
+          "ready": 4,
+          "width": 1920,
+          "height": 1080,
+          "audioBytes": 429666,
+          "frames": 498,
+          "error": null
+        }
+      ]
+    }
+  ],
+  "burned_subtitles": [
+    {
+      "time": 8,
+      "subtitle_pixels": 4197
+    },
+    {
+      "time": 30,
+      "subtitle_pixels": 4644
+    },
+    {
+      "time": 83,
+      "subtitle_pixels": 3736
+    },
+    {
+      "time": 111.5,
+      "subtitle_pixels": 3380
+    }
+  ],
+  "measured_final_audio": {
+    "integrated_lufs": -16.02,
+    "true_peak_dbtp": -1.3,
+    "loudness_range_lu": 4.6
+  }
+}

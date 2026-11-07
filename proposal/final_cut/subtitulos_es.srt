@@ -1,0 +1,139 @@
+1
+00:00:00,350 --> 00:00:02,070
+Mismo saldo. ¿Misma historia?
+
+2
+00:00:02,530 --> 00:00:04,660
+En un cliente, el saldo se mantiene estable.
+
+3
+00:00:05,890 --> 00:00:06,910
+En otro, acaba de caer.
+
+4
+00:00:07,190 --> 00:00:11,210
+La foto del mes oculta esa diferencia.
+
+5
+00:00:11,690 --> 00:00:13,310
+Creamos variables para revelar
+
+6
+00:00:13,310 --> 00:00:15,560
+el contexto detrás del número.
+
+7
+00:00:16,110 --> 00:00:18,810
+El valor del mes anterior aporta memoria.
+
+8
+00:00:20,030 --> 00:00:22,560
+El cambio mensual muestra movimientos bruscos.
+
+9
+00:00:22,910 --> 00:00:26,410
+El promedio de tres meses estima
+el comportamiento habitual.
+
+10
+00:00:27,510 --> 00:00:30,610
+Los cambios relativos de saldo y haberes
+
+11
+00:00:31,510 --> 00:00:34,810
+comparan el presente con la
+historia de cada cliente.
+
+12
+00:00:35,990 --> 00:00:39,310
+La utilización de tarjeta relaciona el saldo
+
+13
+00:00:39,750 --> 00:00:41,210
+con el límite disponible.
+
+14
+00:00:42,490 --> 00:00:46,260
+Una referencia de seis meses
+incorpora más historia.
+
+15
+00:00:46,610 --> 00:00:50,810
+El uso relativo compara las
+operaciones con la actividad habitual,
+
+16
+00:00:51,490 --> 00:00:53,610
+buscando señales de desinterés.
+
+17
+00:00:54,150 --> 00:00:58,160
+Los rangos monetarios indican la
+posición de cada cliente dentro del mes.
+
+18
+00:00:59,850 --> 00:01:05,060
+Y el promedio exponencial da más
+peso a las observaciones recientes.
+
+19
+00:01:08,470 --> 00:01:10,160
+Ahora, el resultado público.
+
+20
+00:01:10,250 --> 00:01:16,010
+El modelo original obtuvo
+343,5 millones de pesos.
+
+21
+00:01:17,170 --> 00:01:19,710
+Al incorporar fondos relativos de tres meses,
+
+22
+00:01:19,710 --> 00:01:24,010
+la receta alcanzó 401,9 millones:
+
+23
+00:01:24,710 --> 00:01:28,360
+58,4 millones más.
+
+24
+00:01:29,370 --> 00:01:33,910
+Extenderla a seis meses dio 392,8 millones,
+
+25
+00:01:34,070 --> 00:01:38,810
+unos 9,1 millones menos que el control.
+
+26
+00:01:38,910 --> 00:01:41,160
+Entre estas recetas, más
+historia no fue mejor.
+
+27
+00:01:42,730 --> 00:01:44,360
+Por eso, recomendamos agregar
+
+28
+00:01:44,610 --> 00:01:46,910
+los cambios relativos de saldo y haberes
+
+29
+00:01:47,470 --> 00:01:49,610
+contra su promedio de tres meses,
+
+30
+00:01:50,630 --> 00:01:52,810
+junto con sus dos indicadores
+
+31
+00:01:52,810 --> 00:01:54,210
+de escala casi nula.
+
+32
+00:01:54,450 --> 00:01:56,610
+Conservamos las cuatro variables del control;
+
+33
+00:01:57,230 --> 00:01:59,310
+no sumamos la extensión de seis meses.

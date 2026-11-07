@@ -1,0 +1,101 @@
+{
+  "duration": 119.44000000000001,
+  "source_trim": [
+    0.49,
+    119.93
+  ],
+  "scene_retiming": [
+    [
+      0,
+      0
+    ],
+    [
+      16,
+      16.1
+    ],
+    [
+      19.649,
+      20.03
+    ],
+    [
+      22.777,
+      22.91
+    ],
+    [
+      27.468,
+      27.51
+    ],
+    [
+      35.809,
+      35.99
+    ],
+    [
+      41.543,
+      42.49
+    ],
+    [
+      45.713,
+      46.61
+    ],
+    [
+      53.011,
+      54.15
+    ],
+    [
+      59.266,
+      59.85
+    ],
+    [
+      65,
+      65.2
+    ],
+    [
+      70,
+      68.47
+    ],
+    [
+      73,
+      70.25
+    ],
+    [
+      80,
+      77.17
+    ],
+    [
+      90,
+      89.37
+    ],
+    [
+      102,
+      102.73
+    ],
+    [
+      120,
+      119.44000000000001
+    ]
+  ],
+  "presenter": {
+    "x": 1630,
+    "y": 60,
+    "width": 200,
+    "height": 212,
+    "gamma": 1.035,
+    "brightness": 0.008
+  },
+  "voice_target_lufs": -16,
+  "music_target_lufs_before_ducking": -33,
+  "music": "Tone.js sampled acoustic piano; quiet Rhodes and bass; no percussion, arpeggios or accents",
+  "voice_input_measurement_after_cleanup": {
+    "input_i": "-17.02",
+    "input_tp": "-0.95",
+    "input_lra": "4.90",
+    "input_thresh": "-27.73",
+    "output_i": "-15.46",
+    "output_tp": "-1.50",
+    "output_lra": "4.20",
+    "output_thresh": "-26.15",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.54"
+  },
+  "subtitles": "approved script, phrase timings aligned to recorded activity; manual within-phrase splits"
+}
